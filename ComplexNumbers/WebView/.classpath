@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Presentation"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/gwt-api-checker.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/gwt-codeserver.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/gwt-dev.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/gwt-elemental.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/gwt-servlet-deps.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/gwt-servlet.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/gwt-soyc-vis.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/gwt-user.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/requestfactory-apt-src.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/requestfactory-apt.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/requestfactory-client-src.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/requestfactory-client.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/requestfactory-client+src.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/requestfactory-server-src.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/requestfactory-server.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/requestfactory-server+src.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/gwt-2.5.0/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
