@@ -3,6 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Presentation"/>
-	<classpathentry kind="lib" path="/Users/kirill-kornyakov/Dropbox/Work/AgileCourse/new_agile_course/swt/MacOSX-64/swt.jar"/>
+	<classpathentry kind="lib" path="../../Dependencies/swt/MacOSX-64/swt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
