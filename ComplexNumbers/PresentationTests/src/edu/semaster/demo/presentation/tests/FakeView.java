@@ -1,4 +1,4 @@
-package edu.semaster.demo.presentationtests;
+package edu.semaster.demo.presentation.tests;
 
 import edu.semaster.demo.presentation.ClickHandler;
 import edu.semaster.demo.presentation.IView;

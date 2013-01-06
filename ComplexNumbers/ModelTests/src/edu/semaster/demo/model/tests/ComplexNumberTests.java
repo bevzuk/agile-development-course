@@ -1,4 +1,4 @@
-package edu.semaster.demo.modeltests;
+package edu.semaster.demo.model.tests;
 
 import org.junit.Test;
 

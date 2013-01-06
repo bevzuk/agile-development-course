@@ -1,4 +1,4 @@
-package edu.semaster.demo.presentationtests;
+package edu.semaster.demo.presentation.tests;
 
 import junit.framework.Assert;
 
