@@ -1,4 +1,5 @@
 bin/
 gwt-unitCache/
+war/
 
 *.html
