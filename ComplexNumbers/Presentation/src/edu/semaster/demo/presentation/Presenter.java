@@ -4,7 +4,6 @@ import edu.semaster.demo.model.ComplexNumber;
 
 public class Presenter
 {
-	//private ComplexNumber m_complexNumber;
 	private IView m_view;
 
 	public Presenter(IView view)
