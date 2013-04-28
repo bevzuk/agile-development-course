@@ -1,0 +1,26 @@
+---
+layout: post
+---
+
+h1. Список литературы
+
+*Must read*
+# _Robert Martin_ - SOLID principles of OOD ("pdf":http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf)
+# _Robert Martin_ - Agile Software Development: Principles, Patterns, and Practices. (_Роберт К. Мартин, Джеймс В. Ньюкирк, Роберт С. Косс_ - Быстрая разработка программ. Принципы, примеры, практика.)
+# _Robert Martin_ - Clean Code: A Handbook of Agile Software Craftsmanship. (_Роберт Мартин_ - Чистый код. Создание, анализ и рефакторинг.)
+# _Martin Fowler_ - Refactoring: Improving the Design of Existing Code. (_Мартин Фаулер_ - Рефакторинг. Улучшение существующего кода.)
+# _Eric Evans_ - Domain-Driven Design - Tackling Complexity in the Heart of Software.
+# _Kent Beck_ - Test Driven Development: By Example. (_Кент Бек_ - Экстремальное программирование: разработка через тестирование.)
+
+*Recommended*
+# _Michael Feathers_ - Working Effectively with Legacy Code. (_Майкл Физерс_ - Эффективная работа с унаследованным кодом.)
+# _Erich Gamma, Richard Helm, Ralph Johnson, and John M. Vlissides_ - Design Patterns: Elements of Reusable Object-Oriented Software.
+# _Мартин Фаулер_ - Архитектура корпоративных программных приложений (Patterns of Enterprise Application Architecture)
+# _Джимми Нильссон_ - Применение DDD и шаблонов проектирования. Проблемно-ориентированное проектирование приложений с примерами на C# и .NET.
+# Application Architecture Guide (на сайте Microsoft можно скачать, http://apparchguide.codeplex.com).
+# _Kent Beck_ - Extreme Programming Explained: Embrace Change. (_Кент Бек_ - Экстремальное программирование.)
+# _Э. Хант, Д. Томас_ - Программист-прагматик. Путь от подмастерья к мастеру.
+# _Neal Ford_ - Productive Programmer ("Google Books":http://books.google.ru/books?id=oVadw8Jf0cYC&dq=productive+programmer+com)
+
+* Ref2Patterns
+* code complete

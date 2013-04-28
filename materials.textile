@@ -1,0 +1,28 @@
+---
+layout: post
+---
+
+h2. Учебные материалы
+
+* "Информация об успеваемости":https://docs.google.com/spreadsheet/ccc?key=0AsBBkrQIoSbjdGh5UFhSRVdQZmZhWXJLNjhwV08zU0E&authkey=CNXx0YMC&hl=en&authkey=CNXx0YMC#gid=5
+
+*Допуск к экзамену*
+
+# Наличие всех лабораторных работ
+# Наличие всех "летучек"
+
+*Вопросы*
+
+# "Летучки":questions.html
+# "Список экзаменационных вопросов":https://spreadsheets.google.com/ccc?key=0AsBBkrQIoSbjdDBDS2FTb3B3d3ZlUldJcl9HUmtEaUE&hl=en&authkey=CKGP8vYB#gid=0 (_under construction_)
+
+*Лабораторные работы*
+
+# "Темы заданий":https://docs.google.com/spreadsheet/ccc?key=0AsBBkrQIoSbjdFYyOGVEVDdLam5OeExfOVlPM0dpbVE&hl=en_US
+# "Рекомендации к оформлению":recommendations.html
+# "Описание заданий":labs.html
+
+*Материалы для изучения*
+
+# "Список литературы":literature.html
+# "Ссылки":links.html

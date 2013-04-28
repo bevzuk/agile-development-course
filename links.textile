@@ -1,0 +1,19 @@
+---
+layout: post
+---
+
+h1. Ссылки
+
+Рекомендуемые к изучению авторы
+* Robert Martin http://www.objectmentor.com/resources/omi_reports_index.html
+* Martin Fowler http://martinfowler.com/
+* Steve McConnell http://www.stevemcconnell.com/
+* Jim McCarthy http://www.mccarthyshow.com
+
+Профессиональные сообщества
+* http://www.infoq.com
+* Семинар ITLab по Программной Инженерии http://groups.google.com/group/itlab_se
+
+Подкасты
+* SE Radio http://www.se-radio.net
+* "What good technology podcasts are out there?":http://stackoverflow.com/questions/1644/what-good-technology-podcasts-are-out-there

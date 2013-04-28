@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Agile Development</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Agile Development</h1>
+        <p>Гибкая разработка ПО</p>
+        <ul>
+          <li><a href="index.html">В начало</a></li>
+          <li><a href="materials.html">Учебные материалы</a></li>
+          <li><a href="questions.html">Вопросы</a></li>
+        </ul>
+      </header>
+      <section>
+      <h1>Рекомендации к оформлению</h1>
+<h3>Организация проекта</h3>
+<ol>
+	<li>Один solution, количество сборок в нем &#8211; на каждый <span class="caps">DDD</span>-слой по сборке, плюс сборка модульных тестов.</li>
+	<li>Удалите из solution все, что вам не нужно &#8211; лишние файлы и регионы. Удалите ненужные комментарии, автосгенерированный текст. По нажатию Ctrl+A должны запускаться только ваши unit-тесты, а не автосгенерированные заготовки.</li>
+	<li>Не заливайте в репозиторий bin, obj, TestResults папки.</li>
+</ol>
+<h3>Дизайн кода</h3>
+<ol>
+	<li>Код должен быть написан в духе Test-Driven Development.</li>
+	<li>Следуйте принципам хорошего объектно-ориентированного подхода (принципы <span class="caps">SOLID</span>). Типичная ошибка &#8211; иметь в сборке высокоуровнего кода (абстракции, слоя, независимого от технологии) ссылку на слой низкоуровневого кода (реализации, слоя, зависимого от технологии).</li>
+	<li>При проектировании классов следите за соблюдением инкапсуляции.</li>
+</ol>
+<h3>Чистота кода</h3>
+<ol>
+	<li>Следуйте принципу <span class="caps">DRY</span> &#8211; Don&#8217;t Repeat Yourself. В коде не должно быть дублирования.</li>
+	<li>Ни в коем случае не оставляйте &#8220;мертвый код&#8221; &#8211; тот, который не вызывается.</li>
+	<li>Пройдитесь Resharper&#8217;ом по исходному коду, большинство предупреждений, который показывает Resharper, следует устранить (например, относительно пространств имен и избыточного кода).</li>
+	<li>Проверьте текст на опечатки. Грамматические ошибки снижают впечатление от работы.</li>
+	<li>Соблюдайте единый стиль кодирования при расстановке фигурных скобок &#8211; особенно в условных конструкциях (например, правило, ставить или не ставить скобки для тела из одной строки должны распространяться на весь проект).</li>
+	<li>Используйте autoproperty, где это подходит. Кода становится значительно меньше.</li>
+</ol>
+<h3>Именование</h3>
+<ol>
+	<li>Используйте единый стиль именования. Например, не годится, если функции называются то с большой буквы, то с малой, то <code>ВерблюжьимСтилем</code>, то <code>с_подчеркиваниями</code>.</li>
+	<li>Называйте все файлы и сущности по-человечески (названия типа Form1 или UnitTest1 не принимаются). Избегайте названий переменных типа br, flag или d &#8211; название должно отражать суть.</li>
+	<li>Не нужно сокращений типа Mul вместо Multiply &#8211; постарайтесь, чтобы код был близок к английскому тексту.</li>
+	<li>Названия класса и файла, в котором он находится, должны совпадать. Соответственно, один файл – один класс.</li>
+	<li>Не добавляйте в имя больше контекста, чем надо (например, SolutionOfSomething.sln или CalculatorLibrary или BarClass.cs).</li>
+	<li>Вы будете развивать этот проект на протяжении всех лаб, поэтому названия в духе 1_Lab_TDD станут неактуальными. Представьте, что вы развиваете продукт, и именуйте соответственно. Никаких суффиксов вроде <span class="caps">MVP</span>, Lab, <span class="caps">TDD</span> не должно быть в названии solution или проекта.</li>
+	<li>Префиксы/постфиксы Test в именах тестовых методов обычно только добавляют шуму. От них надо избавиться, и так понятно, что это тест.</li>
+</ol>
+<h3>Тесты</h3>
+<ol>
+	<li>Тесты должны сначала &#8220;падать&#8221;, а потом, когда напишете код, &#8211; проходить. Тесты на то, что конструктор вернет не null &#8211; бессмысленны.</li>
+	<li>Названия тестовых методов должны показывать не то, что вы делаете, а то, какое требование вы предъявляете к коду. Пересмотрите еще раз называния тестов &#8211; по ним читатель должен понять, что требуется от кода, (&#8220;бросить ошибку если &#8230;&#8221;, &#8220;сложить два числа&#8221;, &#8220;Возвести в степень комплексное число&#8221; и т.п.).</li>
+	<li>Никаких if-операторов в тестах. Циклов тоже не надо. Иначе тесты по сложности приближаются к коду программы, и в них тоже станет легко делать ошибки.</li>
+	<li>Обратите внимание на порядок аргументов в Assert&#8217;ах (expected, actual).</li>
+	<li>Тесты должны быть написаны в соответствии с Single Responsibility Principle. Обратите внимание на число и характер Assert&#8217;ов.</li>
+	<li>Вместо <code>Assert.AreEqual</code> для сравнения с булевым значением есть соответствующие конструкции <code>Assert.IsTrue</code> и <code>Assert.IsFalse</code>.</li>
+	<li>Ни в коем случае не должно быть составных Assert-ов (типа <code>Assert.IsTrue(condition1 || condition2 &amp;&amp; condition3)</code> &#8211; разбейте на части.)</li>
+	<li>Там, где есть потеря точности, не используйте конструкции типа <code>Assert.IsTrue(norm.Length - 1 &lt; Eps);</code> Вместо этого используйте <code>Assert.AreEqual(1, norm.Length, Eps);</code></li>
+</ol>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="http://github.com/kirill-kornyakov">Kirill Kornyakov</a>
+        <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <ul>
+          <li><a href="https://github.com/kirill-kornyakov/agile-master-course/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/kirill-kornyakov/agile-master-course/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="http://github.com/kirill-kornyakov/agile-master-course">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
