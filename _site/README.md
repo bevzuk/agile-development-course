@@ -1,6 +1,6 @@
 # Agile Development
 
-TBD
+These are sources of the following site: <http://kirill-kornyakov.github.io/agile-master-course>.
 
 # License
 
