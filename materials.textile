@@ -13,7 +13,7 @@ h2. Учебные материалы
 
 *Вопросы*
 
-# "Летучки":questions2.html
+# "Летучки":questions.html
 # "Список экзаменационных вопросов":https://spreadsheets.google.com/ccc?key=0AsBBkrQIoSbjdDBDS2FTb3B3d3ZlUldJcl9HUmtEaUE&hl=en&authkey=CKGP8vYB#gid=0 (_under construction_)
 
 *Лабораторные работы*
