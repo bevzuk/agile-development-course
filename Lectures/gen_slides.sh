@@ -30,3 +30,14 @@ if [ $input -nt $output ]; then
 else
     echo "Nothing new to generate..."
 fi
+
+cd ..
+cd ./02-clean-code/
+input=./lec02.markdown
+output=../lecture02.html
+
+if [ $input -nt $output ]; then
+    pandoc -t slidy --self-contained -c ../style/slidy.css $input -o $output
+else
+    echo "Nothing new to generate..."
+fi
