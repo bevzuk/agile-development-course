@@ -1,12 +1,22 @@
 # Clean Code
 
-Evgeny Sorokin (Intel), Kirill Kornyakov (Itseez)
+Евгений Сорокин,  
+Кирилл Корняков
 
 Сентябрь 2013
 
+<!-- TOOD
+
+ - Вставить пример на полиморфизм с камерой
+ - Уточнить пример с булевским флагом
+ - Идеальный код, ИКР, примеры
+ - Зачем писать код: чтобы быстро разбираться и фиксить проблемы,
+   когда это нужно будет сделать срочно
+-->
+
 # Содержание
 
-  * Почему?
+  * Зачем?
   * Ключевые понятия
   * Чистый код
     - наименование
@@ -16,28 +26,29 @@ Evgeny Sorokin (Intel), Kirill Kornyakov (Itseez)
     - юнит тесты
   * Заключение
 
-# Почему?
+# Зачем?
 
-  "Почему? Наши клиенты не смотрят на исходном коде. Почему мы должны держать его в чистоте? ... "
+> "Зачем? Наши клиенты не смотрят на исходный код. Почему мы должны держать его в чистоте?."
 
-  Генеральный директор компании по разработке программного обеспечения,
+  Генеральный директор компании по разработке ПО,
   Нижний Новгород, Август 2010
 
-# Качество кода
+# Что такое качество кода?
 
 ![](./images/quality.jpg)
 
 # Ключевые понятия
 
-  Код должен быть простым и понятным с первого взгляда! 
-
-* Дублирование
-* Шум
-* Принцип единой ответсвтенности(ортогональность)
-* Уровни абстракции 
-* Единообразие
+ - Дублирование
+ - Шум
+ - Единообразие (единый стиль)
+ - Принцип единой ответственности
+ - Ортогональность
+ - Уровни абстракции
 
 # Основные принципы
+
+Код должен быть простым и понятным с первого взгляда! 
 
 * DRY: Don't repeat yourself
 * KISS: keep it simple, stupid
@@ -45,39 +56,51 @@ Evgeny Sorokin (Intel), Kirill Kornyakov (Itseez)
 * Write clearly - don't be too cleaver.
 * Write clearly - don't sacrifice clarity for "efficiency".
 
-# Наименование 
+# Именование 
 
-# Наименование типов
+# Именование типов
 
-  * public class IncompleteOrder {}
-  * public class incompleteOrder {}
-  * public int currentPosition = -1;
-  * public const int NUMBEROFCONTEXTS = 10;
-  * private int collectionsize;
-  * private string m_strName;
-  * private byte _array;
+<font face="Courier New">
+public class IncompleteOrder {}  
+public int currentPosition = -1;  
+private bool isBlocked // can, is, has
 
-# Абривиатуры
+<font color=red>
+public class incompleteOrder {}  
+private bool Blocked
 
-  * int fstIvPos;
-  * int firstValidInvoicePosition;
-  * private IConnection ODBCConnection;
-  * private string DBProvider;
-  * private string SqlStatement;
-  * string deliveryNoteId;
-  * string orderId;
+public const int NUMBEROFCONTEXTS = 10;  
+private int collectionsize;  
+private string m_strName;  
+private byte _array;  
+</font>
+</font>
+
+# Аббревиатуры
+
+<font face="Courier New">
+int firstValidInvoicePosition;  
+private string DBProvider;  
+private string SqlStatement;  
+string orderId;  
+
+<font color=red>
+int fstIvPos;  
+private IConnection ODBCConnection;  
+string deliveryNoteId;  
+</font>
+</font>
 
 # Классы и методы
 
-  * private bool IsBlocked // Can, Is, Has
-  * private bool Blocked
-  * public PayableOrder
-  * FindById(InternalKey id)
+```
+public PayableOrder
+FindById(InternalKey id)
+```
 
 # Паттерн "Команда"
 
-``
-
+```
     var commands = new List<ICommand> {
        new CompareImages(diff4Big),
        new ExcludeFailedContainers(),
@@ -88,43 +111,54 @@ Evgeny Sorokin (Intel), Kirill Kornyakov (Itseez)
     foreach (var command in commands) {
        command.Run(data);
     } 
+```
 
-# Насследованные классы
+# Наследованные классы
 
-  * public class SpecializedAttribute : Attribute {}
-  * public class CustomerCollection : CollectionsBase {}
+```
+public class SpecializedAttribute : Attribute {}
+public class CustomerCollection : CollectionsBase {}
+```
+
+Это соответствует проверке "Is A".
 
 # Контекст
 
   * customer.Name
   * customer.CustomerName
 
-# Magin numbers
+# Magic numbers
 
-  * НЕ ИСПОЛЬЗУЙТЕ ИХ !!!
+Не используйте их!
 
-``
-
+```
     int dailyPay = hourlyRate * 8;
     double milesWalked = feetWalked / 5280;
+    int step = width * 4;
+```
 
-  * Используйте:
-    - WORK_HOURS_PER_DAY
-    - FEET_PER_MILE
+Используйте:
+
+> - `WORK_HOURS_PER_DAY`
+  - `FEET_PER_MILE`
+  - `sizeof(int)`
 
 # Имена
 
-  * Хорошие имена => самодокументируемый код
-  * Плохие имена => Вы не понимаете бизнес область вашего приложения
+* Хорошие имена => самодокументированный код
+* Плохие имена <= Вы не понимаете предметную область вашего приложения
 
-
-  * void DoStuff();
-  * void SpecificMethod1();
-  * List\<PECustomerDetailsData\> RetrieveValidateAndConvertCustomerSpecificDataIntoPresentationEntities();
+<font face="Courier New" color=red>
+void DoStuff();  
+void SpecificMethod1();  
+List\<PECustomerDetailsData\> RetrieveValidateAndConvertCustomerSpecificDataIntoPresentationEntities();
+</font>
 
 # Функции 
 
 Какова нормальная длина функции?
+
+<!-- TBD: вставить оригинальную картинку -->
 
     { 
       { 
@@ -258,15 +292,15 @@ Evgeny Sorokin (Intel), Kirill Kornyakov (Itseez)
 
 # Мертвый код
 
-#
-"Functions should do one thing. They
-should do it well. They should do it
-only."
+# Функции: резюме
+
+> "Functions should do one thing.  
+   They should do it well.  
+   They should do it only."
+
 Robert Martin
 
 # Комментарии 
-
-``
 
     // When I wrote this, only God and I understood what I was doing
     // Now, God only knows
@@ -285,8 +319,6 @@ Robert Martin
 
 # Неактуальная информация, Большой header
 
-``
-
     /*---------------------------------------------------------------
     -----------------------
     Created by: NANDA
@@ -304,18 +336,13 @@ Robert Martin
 
 # Устаревший комментарий
 
-``
-
     ...
     // Gets the login user id
     // Gets the CRM details
     FetchCrmDetails();
     ...
 
-
 # Избыточный комментарий 
-
-``
 
     // If the server variable is empty , throw the error
     message
@@ -325,8 +352,6 @@ Robert Martin
     }
 
 # Плохой комментарий
-
-``
 
     public void LoadProperties() {
         try
@@ -344,11 +369,13 @@ Robert Martin
 
 # Закоментированный код
 
+TBD
+
 # Еще хуже
 
-# Дезинформация 
+TBD
 
-``
+# Дезинформация 
 
     /*Auxiliary method: returns control if this.closed is true.
     Throws exception when timeout is reached*/
@@ -363,31 +390,34 @@ Robert Martin
 
 # Позволительные комментарии
 
-* // format matched kk:mm:ss EEE, MMM dd, yyyy
+* Пояснения в **нетривиальных** случаях
 
-``
+```
+// format matched kk:mm:ss EEE, MMM dd, yyyy
+Pattern timeMatcher = Pattern.Compile("\\d*:\\d*:\\d* \\w*, \\w* \\d*, \\d*");
+```
 
-    Pattern timeMatcher = Pattern.Compile("\\d*:\\d*:\\d* \\w*, \\w* \\d*, \\d*");
+* Заметки разработчика (желательно избегать)
 
-* // для разработчика
-
-``
-
-    // TODO
-    // FIXME
-
+```
+    //TODO: ...
+    //FIXME: ...
+    //HACK, NOTE, WARNING
+```
 
 * API (doxygen)
 
-#
-"Don’t comment bad code — rewrite it!"
+# Комментарии: резюме
+
+> "Don’t comment bad code — rewrite it!"
+
 B. Kernighan, P. Plauger
 The Elements of Programming Style
 
-
 # Контрольные вопросы
 
-  1. ...
+TBD
 
 # Спасибо за внимание!
-  * Вопросы?
+
+Вопросы?
