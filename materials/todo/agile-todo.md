@@ -1,10 +1,15 @@
 # General
   - Удалить проект Agile Course из Redmine, положить все на GitHub
-  - GitHub
+  - Перенести все с проекта Agile Course
+  - GitHub Pages
     - Remove contents of the *_site* folder
     - Разобраться с русскими шрифтами
-    - Непонятно как быть с новостями (google groups)
     - Insert G+, facebook like and other buttons
+
+# Лекции
+  - Понятие антипаттерна <http://en.wikipedia.org/wiki/Anti-pattern#Software_design_anti-patterns>
+    - <http://habrahabr.ru/post/43761/>
+    - <http://c2.com/cgi/wiki?AntiPatternsCatalog>
 
 # Презентации
   - Положить туда все презентации (имею ли я на это право - спросить Антона)

@@ -1,0 +1,580 @@
+/* COLOR CHEAT SHEET */
+/* Colors and names from http://www.visibone.com/colorlab/ */
+
+/* Scheme--weak blues, greys
+ * 
+ * CCCCFF  pale weak blue
+ * 9999CC  light weak blue
+ * 666699  medium weak blue
+ * 333366  dark weak blue
+ * 000033  obscure weak blue
+ *
+ * CCCCCC  pale gray
+ * 666666  dark gray
+ * 333333  obscure gray
+ */
+
+
+/* GENERAL SETUP */
+
+body {
+  margin: 1em;
+  padding: 0;
+  font-family: verdana, "trebuchet MS", helvetica, sans-serif;
+  color: black;
+  background: white;
+  font-size: 12px;
+}
+  
+p {
+  margin-top: 0; padding-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Times, serif;
+  color: #333366;
+  background-color: transparent;
+  margin: 5px 0 0 0;
+  letter-spacing: .04em;
+}
+
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+  font-family: Georgia, Times, serif;
+  font-size: 100%;
+}
+
+h1 {
+  font-size:  24px;
+}
+
+h2 {
+  font-size:  18px;
+}
+
+h3 {
+  font-size:  16px;
+}
+
+h4 {
+  font-size:  14px;
+}
+
+h5 {
+  font-size:  12px;
+}
+
+h6 {
+  font-size:  12px;
+}
+
+a {
+  text-decoration:  none;
+  font-weight:  bold;
+}
+
+#body a {
+  border-bottom: solid 1px;
+  border-color: #CCCCFF;  
+}
+
+a:link  {
+  color: #333399;
+  background-color: transparent;
+}
+
+a:visited {
+  color: #666666;
+  background-color: transparent;
+}
+
+a:active  {
+  color: #000000;
+  background-color: transparent;
+}
+
+a:hover {
+  background-color: #CCCCFF;
+  text-decoration: underline;
+}
+
+dt  {
+  font-weight: bold;
+}
+
+ol, li, dl, dt, dd {
+  line-height: 1.5em;
+}
+  
+img {
+  /* turns off gaps around images */
+  border: 0
+}
+
+code, tt, pre {
+  font: "andale mono", monaco, courier, "courier new", monospace;
+  color: #06c;
+  background: transparent;
+}
+
+
+
+/* ALL PAGES */
+
+#header, #menu {
+  border: solid 1px;
+  border-color: #666666;
+  padding: 0.8em;
+  background-color: #EEEEEE;
+}
+
+#body {
+  width: 100%;
+}
+
+#footer {
+  clear: both;
+  border-top: thin solid;
+  margin-bottom: 0;
+}
+
+#footer .copyright p {
+  margin: 0;
+  font-size: 75%;
+}
+
+#footer .promo {
+  font-family: Times, serif;
+  font-style: italic;
+  font-size: 120%;
+}
+
+/* MENU, ARTICLES */
+
+/* Menu structure borrowed from www.jeffreyzeldman.com.  Used with permission. */
+
+#menu dd, #menu dt, .articles dd, .articles dt {
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 17px;
+  margin-bottom: 4px;
+  letter-spacing: .04em;
+}
+
+#menu dt, .articles dt  {
+  font-size: 110%;
+  font-variant: small-caps;
+  letter-spacing: .38em;
+  margin-top: 3ex;
+  padding: .2em .4em;
+  background: #666699;
+  color: white;
+}
+
+#menu dd, .articles dd {
+  padding-left: .4em;
+}
+
+#menu a:link, #menu a:visited {
+  font-weight : normal; 
+}
+
+#menu, .articles {
+  vertical-align: top;
+}
+
+.articles {
+  font-weight: bold;
+}
+
+.articles .summary {
+  font-weight: normal;
+}
+
+
+/* HEADER */
+
+#header {
+  text-align: center;
+}
+
+#header h1 {
+  letter-spacing: .04em;
+}
+
+
+
+/* INDEX */
+
+p.index {
+  line-height: 1em;
+}
+
+p.index a {
+  font-weight: normal;
+}
+
+#body h2.index {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+  border-bottom: thin dotted;
+  margin-bottom: 1em;
+}
+
+
+
+/* STORIES */
+
+#body {
+  vertical-align: top;
+}
+
+#body h1, #body h2, #body h3, #body h4, #body h5, #body h6 {
+  font-weight: normal;
+}
+
+#body h2 {
+  margin-top: 1ex;
+  padding-top: 4ex;
+  border-top: thin dotted;
+}
+
+#body {
+  padding: 3ex 3% 0 3%;
+}
+
+.story {
+  text-align: justify;
+}
+
+.date, .subheading, .print {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.permlink, .breadcrumbs {
+  font-variant: small-caps;
+}
+
+.permlink {
+  text-align: right;
+}
+
+.story p {
+  line-height: 2em;
+}
+
+.date, .subheading {
+  font-size: 85%;
+}
+
+.print {
+  float: right;
+  border-style: outset;
+  border-width: 1px;
+  padding: .25em .5em .25em .5em;
+  margin: 3em 0 0 1em;
+  background-color: #EEEEFF;
+  cursor: pointer;
+}
+
+.print:hover {
+  background-color: #CCCCFF;
+}
+
+.print:active {
+  border-style: inset;
+  padding: .30em .45em .20em .55em;
+}
+
+.series {
+  float: right;
+  border-style: groove;
+  border-width: 4px;
+  padding: .25em .5em .25em .5em;
+  margin: 0 0 .5em 1em;
+  background-color: #EEEEEE;
+  text-align: left;
+  width: 20%;
+}
+
+
+
+/* STORY MARKUP */
+
+blockquote, .code {
+  padding: 0.5em 0.5em 0.5em 1em;
+  border-left: thin solid #333366;
+  background-color: #DDDDFF;
+}
+
+/* The previous rule prevents hover links from standing out.  We fix that here. */
+blockquote a:hover {
+  background-color: white;
+}
+
+blockquote .caption {
+  margin-bottom: 0;
+}
+
+#body blockquote p {
+  line-height: 1.3em;
+}
+
+blockquote.pullquote {
+  float: right;
+  border-left: none;
+  border-top: double;
+  border-bottom: double;
+  background-color: white;
+  margin: 1em 0 1em 1em;
+  margin: 0 0 0 1em;
+  font-size: 1.5em;
+  font-family: Georgia, Times, serif;
+  width: 40%;
+  text-align: left;  
+}
+
+.sig {
+  text-align: right;
+  font-family: Times, serif;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.sig:before {
+  content: "--";
+}
+
+h3 {
+  margin-top: 1.5em;
+}
+
+.postscript, .update, .aside, .caption, .figure p, .related {
+  font-family: Times, serif;
+  font-style: italic;
+  line-height: 1.5em !important;
+}
+
+em, strong, .language, .update, .articles .summary {
+  font-family: Times, serif;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.aside em, .update em {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+strong {
+  background-color: #FFFF99;
+}
+
+pre em, pre strong {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+#body .separator {
+  text-align:center;
+  line-height:1.5em;
+}
+
+.code {
+  text-align: left;
+  font-family: "andale mono", monaco, courier, "courier new", monospace;
+}
+
+.code em {
+  background-color: #FFFF99;
+  font-family: "andale mono", monaco, courier, "courier new", monospace;
+  font-size: 100%;
+  font-style: normal;
+}
+
+.code div.em {
+  background-color: #FFFF99;
+}
+
+.book {
+  /* for later use--intended to be used thusly: u class="book" */
+}
+
+
+/* tables */
+table {
+  margin-bottom: 1em;
+}
+
+table.left, table.list {
+  border-style: dashed none dashed none;
+  border-width: 1px;
+  border-color: black;
+}
+
+table.left th {
+  white-space: nowrap;
+  font-variant: small-caps;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 1em;
+  vertical-align: top;
+}
+
+table.left th:after {
+  content: ":";
+}
+
+table.left td {
+  vertical-align: top;
+}
+
+table.list th {
+  white-space: nowrap;
+  font-variant: small-caps;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.list td {
+  padding-right: 1em;
+  vertical-align: top;
+}
+
+table.designmap {
+  border-collapse: collapse;
+}
+
+table.designmap th, table.designmap td {
+  border: solid 1px;
+  border-color: black;
+  padding: 0 1em 0 1em;
+}
+
+table.designmap td {
+  border: solid 1px;
+  border-color: black;
+  text-align: center;
+}
+
+
+/* figures */
+.figure {
+  float:right;
+  padding-left: 0.5em;
+}
+
+
+
+
+/* BOOK */
+
+.goal {
+  font-family: Times, serif;
+  font-style: italic;
+  font-size: 120%;
+}
+
+.audience {
+  clear: right;
+  float: right;
+  border-style: inset;
+  border-width: 1px;
+  padding: .25em 1em .25em 1em;
+  margin: 0 0 .5em 1em;
+  background-color: #EEEEEE;
+  text-align: center;
+  width: 20%;
+}
+
+.audience dt {
+  font-size: 110%;
+  letter-spacing: .1em;
+  font-variant: small-caps;
+  text-align: center;
+  border-bottom: 1px solid #666699;
+}
+
+.audience dd {
+  margin-left: 0;
+}
+
+.practice {
+  clear: right;
+  float: right;
+  border-style: inset;
+  border-width: 1px;
+  padding: .25em 1em .25em 1em;
+  margin: 1ex 0 0 1em;
+  background-color: #EEEEEE;
+  text-align: center;
+  width: 7em;
+}
+
+.practice dt {
+  font-size: 90%;
+  letter-spacing: .1em;
+  font-variant: small-caps;
+  text-align: center;
+  border-bottom: 1px solid #666699;
+}
+
+.practice dd {
+  font-size: 75%;
+  margin-left: 0;
+}
+
+.practice dd.separated {
+  margin-top: 0.5ex;
+  padding-top: 0.5ex;
+  border-top: 1px dotted grey;
+}
+
+.faq {
+  font-size: 120%;
+  font-family: Times, serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+blockquote.coach {
+  clear: right;
+  float: right;
+  border-left: none;
+  border-top: double;
+  border-bottom: double;
+  background-color: white;
+  margin: 1ex 0 0 1em;
+  font-size: 1.25em;
+  font-family: Georgia, Times, serif;
+  width: 30%;
+  text-align: left;  
+}
+
+blockquote.notetip {
+  background-color: #EEEEEE;
+  border: solid 3px;
+  margin: 0 2em 1em 2em;
+}
+
+.for {
+  margin: 0 2em 1em 2em;
+  color: #444444;
+}
+
+.for_who {
+  font-variant: small-caps;
+}
+
+.for_body {
+  background-color: pink;
+  border: dashed 1px;
+  padding: 1ex 1em 0 1em;
+}
+
+.link {
+  font-size: .7em;
+  border-bottom: dashed 1px;
+}

@@ -1,0 +1,1843 @@
+Content-Type: multipart/related; start=<op.mhtml.1160568438998.190c7e754167fa7c@10.0.16.52>; boundary=----------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Location: http://www.osp.ru/text/302/39295/
+Subject: =?utf-8?Q?=D0=9F=D0=B0=D1=80=D0=BD=D0=BE=D0=B5=20=D0=BF=D1=80=D0=BE=D0=B3=D1=80=D0=B0=D0=BC=D0=BC=D0=B8=D1=80=D0=BE=D0=B2=D0=B0=D0=BD=D0=B8=D0=B5:=20=D0=9E=D1=82=D0=BA=D1=80=D1=8B=D1=82=D1=8B=D0=B5=20=D1=81=D0=B8=D1=81=D1=82=D0=B5=D0=BC=D1=8B?=
+MIME-Version: 1.0
+
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=default.htm
+Content-Type: text/html; name=default.htm
+Content-Id: <op.mhtml.1160568438998.190c7e754167fa7c@10.0.16.52>
+Content-Location: http://www.osp.ru/text/302/39295/
+Content-Transfer-Encoding: 8bit
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Парное программирование: Открытые системы</title>
+<style type="text/css">
+
+</style>
+<link href="/style.css" rel="stylesheet" type="text/css">
+<link href="/styles/CW.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head><body  bgcolor="#ffffff" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+
+
+
+
+<div class="topbanner">
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_cw_i_top_728";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="728" height="90" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="728" height="90" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_cw_i_top_728?37127" width="728" height="90" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_cw_i_top_728" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_cw_i_top_728" alt="MadBanner" width="728" height="90" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+</div>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+    <td rowspan="2" class="logo"><a href="/index.html">
+<img src="/images/logoosp.gif" alt="Издательство &quot;Открытые системы&quot;" width="166" height="48" border="0"></a><a href="/issues/285/fresh.html"><img src="/images/logo/logo_cw.gif" alt="Computerworld" style="margin-left:33px; margin-right:20px" border="0"></a>    </td>
+    <td align="right" valign="top">
+      
+<table cellpadding="0" cellspacing="0">
+   <tr>
+      <td nowrap="nowrap">
+         <div class="hd">
+            <a href="/forum/register.html?goto=*L3RleHQvMzAyLzM5Mjk1Lz9fcj0zMTkxMDExNjA1NjgyOTIuODg5NDg=^" class="hd">Регистрация</a>
+            &nbsp;&#149;&nbsp;
+            <a href="/forum/adm/edit_fuser.html?goto=*L3RleHQvMzAyLzM5Mjk1Lz9fcj0zMTkxMDExNjA1NjgyOTIuODg5NDg=^" class="hd">Настройка</a>
+            &nbsp;&#149;&nbsp;
+            <a href="/forum/index.html" class="hd">Форум</a>
+            <hr>
+         </div>
+      </td>                                         
+   </tr>                                         
+</table>
+
+     </td>
+</tr>
+<tr>
+	<td align="right" valign="bottom">
+           
+
+<form NAME="search_form" METHOD="get" ACTION="/search.html" style="padding: 0 0 0 0; margin: 0 0 0 0;">
+<table cellpadding="0" cellspacing="0">
+    <tr>
+       <td class="search">
+         <span class="searchform">Поиск:&nbsp;</span>
+         <select name="pd" class="inputs">
+            <option value="" selected>Весь сервер
+            <option value="">_______________</option>
+            <option value="285" >Computerworld
+            <option value="91008" >Мир ПК
+            <option value="91023" >Открытые системы
+            <option value="91018" >Windows IT Pro
+            <option value="90998" >LAN
+            <option value="91003" >Сети
+            <option value="91013" >Директор ИС
+         </select>
+         <input NAME="words" SIZE=15 value="" class="inputs">
+         <input TYPE="submit" VALUE="Искать" class="inputs">
+       </td>
+       <td class="search">
+         <a HREF="/advsearch.html" class="advsearch">Расширенный<br>поиск</a>
+       </td>	
+    </tr>
+</table>
+    </form>
+
+	
+	</td>
+</tr>
+</table>
+<script language="javascript">
+IE4 = (document.all) ? 1 : 0;
+NS4 = (document.layers) ? 1 : 0;
+var NS6 = 0;
+if(navigator.appName.indexOf("Netscape") != -1){if (navigator.userAgent.indexOf("Gecko") != -1) {NS6=1}}
+Active = new Array;
+
+function show(id) {
+ hide_all();
+ Active[id]=1;
+ var ix;
+ if (NS4) {
+   ix = document.layers[id];
+   if (ix) ix.visibility = "show";
+ } else {
+  if (IE4) {
+    ix = document.all[id];
+    if (ix) ix.style.visibility = "visible";
+  }
+  if (NS6) {
+    ix=document.getElementById(id);
+    if (ix) ix.style.visibility="visible";
+  }
+ }
+ var coord = getAnchorPosition("a_"+id);
+ if ( ix ) {
+   ix.style.left=coord.x;
+   ix.style.top=coord.y+24;
+ }
+ return false;
+}
+
+function hide_all() {
+  for (id in Active) {
+    hide(id);
+  }
+}
+
+function hide(id) {
+ if (Active[id]==1) {return false}
+ if (NS4) {
+  var ix=document.layers[id];
+  if (ix && ix.visibility != "hide") {
+   ix.visibility = "hide";
+  }
+ }
+ else if (IE4) {
+  var ix=document.all[id];
+  if (ix && ix.style.visibility != "hidden") {
+   ix.style.visibility = "hidden";
+  }
+ }
+ else if (NS6) {
+  var ix=document.getElementById(id);
+  if (ix && ix.style.visibility != "hidden") {
+   ix.style.visibility = "hidden";
+  }
+ }
+}
+
+function keep (id) {
+ Active[id]=1;
+ return false;
+}
+
+function off (id) {
+ Active[id]=0;
+ setTimeout('hide("'+id+'")', 1000);
+ return false;
+}
+
+function getAnchorPosition(anchorname) {
+	// This function will return an Object with x and y properties
+	var useWindow=false;
+	var coordinates=new Object();
+	var x=0,y=0;
+	// Browser capability sniffing
+	var use_gebi=false, use_css=false, use_layers=false;
+	if (document.getElementById) { use_gebi=true; }
+	else if (document.all) { use_css=true; }
+	else if (document.layers) { use_layers=true; }
+	// Logic to find position
+ 	if (use_gebi && document.all) {
+		x=AnchorPosition_getPageOffsetLeft(document.all[anchorname]);
+		y=AnchorPosition_getPageOffsetTop(document.all[anchorname]);
+		}
+	else if (use_gebi) {
+		var o=document.getElementById(anchorname);
+		x=AnchorPosition_getPageOffsetLeft(o);
+		y=AnchorPosition_getPageOffsetTop(o);
+		}
+ 	else if (use_css) {
+		x=AnchorPosition_getPageOffsetLeft(document.all[anchorname]);
+		y=AnchorPosition_getPageOffsetTop(document.all[anchorname]);
+		}
+	else if (use_layers) {
+		var found=0;
+		for (var i=0; i<document.anchors.length; i++) {
+			if (document.anchors[i].name==anchorname) { found=1; break; }
+			}
+		if (found==0) {
+			coordinates.x=0; coordinates.y=0; return coordinates;
+			}
+		x=document.anchors[i].x;
+		y=document.anchors[i].y;
+		}
+	else {
+		coordinates.x=0; coordinates.y=0; return coordinates;
+		}
+	coordinates.x=x;
+	coordinates.y=y;
+	return coordinates;
+	}
+
+// Functions for IE to get position of an object
+function AnchorPosition_getPageOffsetLeft (el) {
+	var ol=el.offsetLeft;
+	while ((el=el.offsetParent) != null) { ol += el.offsetLeft; }
+	return ol;
+	}
+function AnchorPosition_getPageOffsetTop (el) {
+	var ot=el.offsetTop;
+	while((el=el.offsetParent) != null) { ot += el.offsetTop; }
+	return ot;
+	}
+
+</script>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="topmenutop">
+	<table cellpadding="0" cellspacing="0">
+
+	<tr>
+	<td class="topmenu"><a href="/index.html" class="topmenu">Главная</a></td>	
+	<td class="topmenu"><a href="/news.html" class="topmenu">Новости</a></td>	
+	<td class="topmenug"><a href="/issues/285/fresh.html" class="topmenu">Статьи</a></td>	
+	<td class="topmenu"><a href="/info.html" class="topmenu">Информация</a></td>	
+	<td class="topmenu"><a href="/company.html" class="topmenu">Компаниям</a></td>	
+	<td class="topmenu"><a href="/forum/" class="topmenu">Форум</a></td>	
+	<td class="topmenu"><a href="/edition/index.html" class="topmenu">Издания</a></td>	
+	<td class="topmenu"><a href="/subscribe/sform.html" class="topmenu">Подписка</a></td>	
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<table border="0" width=100% cellpadding="0" cellspacing="0">
+<tr>
+  <td class="topmenubot">
+    <table border="0" cellpadding="0" cellspacing="0" class="menu2">
+    <tr>
+      <td 
+        id="a_div_0"
+        onMouseOver="this.className='active'; show('div_0');"
+        onMouseOut="this.className='inactive'; off('div_0')"
+      ><a href="/cw/"><b>Computerworld</b></a></td>      <td 
+        id="a_div_1"
+        onMouseOver="this.className='active'; show('div_1');"
+        onMouseOut="this.className='inactive'; off('div_1')"
+      ><a href="/nets/">Сети</a></td>      <td 
+        id="a_div_2"
+        onMouseOver="this.className='active'; show('div_2');"
+        onMouseOut="this.className='inactive'; off('div_2')"
+      ><a href="/cio/">Директор ИС</a></td>      <td 
+        id="a_div_3"
+        onMouseOver="this.className='active'; show('div_3');"
+        onMouseOut="this.className='inactive'; off('div_3')"
+      ><a href="/lan/">LAN</a></td>      <td 
+        id="a_div_4"
+        onMouseOver="this.className='active'; show('div_4');"
+        onMouseOut="this.className='inactive'; off('div_4')"
+      ><a href="/win2000/">Windows IT Pro</a></td>      <td 
+        id="a_div_5"
+        onMouseOver="this.className='active'; show('div_5');"
+        onMouseOut="this.className='inactive'; off('div_5')"
+      ><a href="/os/">Открытые системы</a></td>      <td 
+        id="a_div_6"
+        onMouseOver="this.className='active'; show('div_6');"
+        onMouseOut="this.className='inactive'; off('div_6')"
+      ><a href="/pcworld/">Мир ПК</a></td>      <td 
+        id="a_div_7"
+        onMouseOver="this.className='active'; show('div_7');"
+        onMouseOut="this.className='inactive'; off('div_7')"
+      ><a href="http://www.ospint.com">OSP International</a></td>    </tr>
+    </table>
+  </td>
+</tr>
+</table>
+
+
+<div class="grline"><span class="grline">
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_cw_i_txt_top";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="100%" height="20" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="100%" height="20" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_cw_i_txt_top?" width="100%" height="20" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_main_textline_top" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_cw_i_txt_top?" alt="MadBanner" width="100%" height="20" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+</span></div>
+
+
+
+
+
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tr>
+  <td><img src="/images/0.gif" border="0" width="8" height="10"></td>
+  <td><img src="/images/0.gif" border="0" width="240" height="10"></td>
+  <td><img src="/images/0.gif" border="0" width="12" height="10"></td>
+  <td width="100%"><img src="/images/0.gif" border="0" width="1" height="10"></td>
+  <td><img src="/images/0.gif" border="0" width="12" height="10"></td>
+  <td><img src="/images/0.gif" border="0" width="160" height="10"></td>
+  <td><img src="/images/0.gif" border="0" width="8" height="10"></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/0.gif" border="0" width="8" height="10"></td>
+      <td width="240">
+      
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_cw_i_left_234";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="234" height="120" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="234" height="120" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_cw_i_left_234?5981" width="234" height="120" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_cw_i_left_234" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_cw_i_left_234" alt="MadBanner" width="234" height="120" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+
+      <br>      
+      
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td class="yellow">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td>
+<a href="/cw/" style="text-decoration: none;"><h3 class="submenu">Computerworld</h3></a>
+  <li><a href="/issues/rub/39183/240687.html" class="botmenu">События</a></li>
+</td></tr><tr><td>
+  <h3 class="submenu"><a href="/issues/rub/39183/240688.html" class="botmenu">Индустрия</a></h3>
+  <li><a href="/issues/rub/39183/240689.html" class="botmenu">Компания</a></li>
+  <li><a href="/issues/rub/39183/240690.html" class="botmenu">Регионы</a></li>
+  <li><a href="/issues/rub/39183/240691.html" class="botmenu">Дистрибуция</a></li>
+  <li><a href="/issues/rub/39183/240692.html" class="botmenu">Подробности</a></li>
+</td></tr><tr><td>
+  <h3 class="submenu"><a href="/issues/rub/39183/240693.html" class="botmenu">Технологии</a></h3>
+  <li><a href="/issues/rub/39183/240694.html" class="botmenu">Современные архитектуры</a></li>
+  <li><a href="/issues/rub/39183/240695.html" class="botmenu">Программное обеспечение</a></li>
+  <li><a href="/issues/rub/39183/240696.html" class="botmenu">Сети и телекомуникации</a></li>
+  <li><a href="/issues/rub/39183/240697.html" class="botmenu">Подробности</a></li>
+</td></tr><tr><td>
+  <h3 class="submenu"><a href="/issues/rub/39183/240698.html" class="botmenu">Предприятие</a></h3>
+  <li><a href="/issues/rub/39183/240699.html" class="botmenu">Управление</a></li>
+  <li><a href="/issues/rub/39183/240700.html" class="botmenu">Карьера</a></li>
+  <li><a href="/issues/rub/39183/240701.html" class="botmenu">Корпоративные системы</a></li>
+  <li><a href="/issues/rub/39183/240702.html" class="botmenu">Подробности</a></li>
+</td></tr></table>
+<hr>
+<li><a href="/issues/rub/39183/240703.html" class="botmenu">Разное</a></li>
+<hr>
+<li><a href="/issues/list/39183.html" class="botmenu"><b>Все статьи номера</b></a></li>
+<li><a href="/issues/archive/285.html" class="botmenu"><b>Архив номеров</b></a>
+</div>
+</td></tr>
+</table>
+
+      <br>
+      
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_cw_i_left_240";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="240" height="400" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="240" height="400" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_cw_i_left_240?31038" width="240" height="400" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_cw_i_left_240" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_cw_i_left_240" alt="MadBanner" width="240" height="400" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+
+
+
+      <br>
+      
+<div class="gray"><h3 class="title">Также в разделе</h3>
+ <ul class="news">
+  <li class="news"><a class="lastnews" href="/text/302/39226/">Оффшорный айсберг всплывает</a></li>
+  <li class="news"><a class="lastnews" href="/text/302/39292/">Экстремальное программирование</a></li>
+  <li class="news"><a class="lastnews" href="/text/302/9584/">«Фотоджет»: бумага российская</a></li>
+  <li class="news"><a class="lastnews" href="/text/302/9463/">Вычисления в пробирке</a></li>
+  <li class="news"><a class="lastnews" href="/text/302/9409/">Равнение на производителя</a></li>
+  <li class="news"><a class="lastnews" href="/text/302/9348/">Следи за взглядом</a></li>
+  <li class="news"><a class="lastnews" href="/text/302/9342/">Новые метафоры взаимодействия: человек и компьютер</a></li>
+  <li class="news"><a class="lastnews" href="/text/302/9351/">Пользователи выбирают настраиваемые интерфейсы</a></li>
+  <li class="news"><a class="lastnews" href="/text/302/9345/">Aqua облагораживает Mac OS X</a></li>
+  <li class="news"><a class="lastnews" href="/text/302/9176/">Круглый стол с острыми углами</a></li>
+ </ul>
+</div>
+
+      <br>
+      
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_cw_i_240_90";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="240" height="90" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="240" height="90" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_cw_i_240_90?12771" width="240" height="90" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_cw_i_240_90" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_cw_i_240_90" alt="MadBanner" width="240" height="90" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+
+<img src="/images/0.gif" border="0" width="240" height="12">
+
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_obmen_from_se";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="100%"  marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="100%"  border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_obmen_from_se?" width="100%" height="" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_main_textline_top" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_obmen_from_se?" alt="MadBanner" width="100%" height="" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+
+      </td>
+      <td width="12"><img src="/images/0.gif" border="0" width="12" height="10"></td>
+      <td>
+<table border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 10;" width="100%"><tr>
+<td width="83%"><div class="white"><h3 class="title">Computerworld #09/2001</h3></div></td>
+<td align="right"><a href="prinver.htm" OnClick="window.open('/text/print/302/39295.html','','width=650,height=500,scrollbars=yes');return false;" target="_blank"><img src="/images/icons/print.gif" alt="Версия для печати" width="20" height="20" title="Версия для печати" border="0"></a>&nbsp;<a href="#opinions"><img src="/images/icons/opinion.gif" alt="мнения" title="Мнения" width="20" height="20" border="0"></a>
+</td></tr></table>
+<h4 class="top" style="margin-top:4px;">Парное программирование</h4>
+
+<div class="authors">
+Магги Биггз
+</div>
+
+
+
+<a HREF="/issues/39183.html" class="grad">Computerworld</a> :: Подробности
+
+
+
+<br>
+<h4>Объединение разработчиков в группы из двух человек позволяет увеличить качество создаваемых приложений, при этом «напарники» будут писать программы с большим удовольствием.</h4>
+<p class="text">Есть занятия, которые при всем желании трудно разделить с кем-либо, — пасьянсы, вождение автомобиля, чтение. Казалось бы, то же самое в полной мере относится и к написанию программ. Когда речь идет о разработке программного обеспечения, воображение рисует образ тощего человека с лихорадочным блеском в глазах, вперившегося в экран компьютера и напряженно набивающего строчки кода. (Да-да, конечно, рядом стоит бутылка кока-колы и смятый пакетик из-под чипсов.) Но верно ли, что группа таких «эгоцентриков» — действительно лучший коллектив для создания программного обеспечения?</p>
+<p class="text">Поборники относительно новой философии разработки программ, называемой парным программированием (часть подхода, известного как экстремальное программирование, или XP), утверждают, что объединение разработчиков в подгруппы из двух человек позволяет увеличить качество создаваемых приложений. Более того, напарники якобы будут получать от своей деятельности большее удовлетворение. Сторонники такого подхода считают, что он, несмотря на очевидную избыточность, сулит большую экономию, поскольку качество программного обеспечения окажется выше, на переделку станет уходить намного меньше времени. А поскольку разработчики будут довольны, их руководство сможет избежать затрат, возникающих в связи с уходом ведущих сотрудников. (При этом пока никто не подсчитывал, во что выльются расходы на коку и чипсы).</p>
+<p class="text">Метод парного программирования предполагает, что два разработчика сидят бок о бок за одним и тем же компьютером и вместе составляют один и тот же фрагмент программного обеспечения. Многим такой способ взаимодействия между двумя программистами и, в частности, необходимость работать на одной компьютере, может показаться неэффективным и совершенно нерентабельным. Так почему же парное программирование вызывает сейчас столь большой интерес? Попробую ответить на этот вопрос.</p>
+<h3>Совместное владение кодом</h3>
+<p class="text">Начну с общих рассуждений. Прежде всего, как начинается проект разработки для парного программирования? В рамках модели XP большая часть работы над проектом формулируется с помощью карт CRC (class, responsibility, collaboration — «класс, обязанности и сотрудничество») — листов бумаги, представляющих собой объекты данного проекта.</p>
+<p class="text">Перед началом проекта рабочая группа проводит встречи, на которых моделируются взаимосвязи всех известных объектов, причем карты CRC используются для наглядности. Программистам приходится обсуждать аспекты, вызывающие наибольшие сомнения, и убирать или добавлять новые карты, чтобы отразить изменения в плане. Описывая объекты как отдельные сущности, сложные концепции можно упростить, превратив их в понятную структуру.</p>
+<p class="text">Результатом этапа CRC становится список небольших задач. Разработчики разбиваются на пары, и каждая пара определяет модульный тест для выделенной ей задачи. Следует отметить, что такие тесты создаются до того, как начинается сам процесс кодирования. По словам сторонников XP, такой подход упрощает и ускоряет разработку приложений: тесты при этом пишутся более аккуратно, поскольку они служат для проверки критически важной функциональности, кроме того, улучшается обратная связь, позволяющая точно определить, что именно требуется сделать. Иными словами, отпадает необходимость тратить время на создание огромных тестов для проверки работоспособности проекта в целом.</p>
+<p class="text">Затем каждая пара разработчиков приступает к кодированию в соответствии со спецификациями поставленной перед ней задачи. Высококвалифицированный программист всегда работает в паре с менее опытным разработчиком. Последний «сидит за рулем» — то есть набирает текст программы на клавиатуре, а первый наблюдает из-за плеча новичка. Однако «водитель» обязан следить за грамотностью кода, то есть за синтаксисом и корректностью конструкций, а «штурман» отвечает за общую логику проекта и должен отслеживать ошибки, которые может допустить «водитель».</p>
+<p class="text">Однако использование модели парного программирования не означает, что разработчики вынуждены сидеть бок о бок в течение всего срока реализации проекта. Работа может быть организована более гибко. Программисты могут действовать в паре при создании, к примеру, единого модуля или конкретной функции, а затем присоединиться к другим группам. В любом случае рабочие роли не обязательно жестко определены — клавиатура может не раз переходить из рук в руки во время написания программы.</p>
+<p class="text">Как только код, реализующий решение задачи, за которое отвечала та или иная пара, завершен, запускается определенный ранее тест. Если код не прошел этот тест, может быть изменен либо сам тест, либо код. Если тестирование завершается успешно, код интегрируется в репозитарий, где к нему могут обращаться все члены группы разработчиков. Измененный код должен помещаться в репозитарий каждые несколько часов (по крайней мере, раз в сутки). При этом все разработчики будут получать актуальный код — такой подход снижает вероятность возникновения в проекте ошибок, связанных с нестыковкой версий.</p>
+<p class="text">Если в процессе написания кода партнеры приходят к выводу, что им требуется помощь в решении конкретного вопроса, они могут обратиться с просьбой сформировать новую пару для выполнения данной задачи. Обычно один из программистов первой пары присоединяется к другой команде, а второй вместе с новым разработчиком продолжает решение возникшего вопроса.</p>
+<p class="text">При написании программ сторонники XP часто обращаются к методике, называемой разложением (refactoring), которая предполагает постоянную доработку кода с целью его упрощения, благодаря чему программа становится максимально короткой. Добиваясь кристальной ясности кода, программисты сводят к минимуму необходимость исправления разного рода дефектов впоследствии. Методика разложения позволяет быстрее обнаружить ошибки и сразу же их исправить.</p>
+<p class="text">Последний шаг — выполнение всех модульных и функциональных тестов. Вполне вероятно, что этот процесс придется повторить несколько раз, пока не удастся достичь корректной работы и взаимодействия всех объектов. Может понадобиться провести несколько CRC-сессий; объекты, не прошедшие функциональное тестирование, должны быть переданы для доработки другой паре программистов.</p>
+<h3>С научной точки зрения</h3>
+<p class="text">Конечно, метод разработки хорош настолько, насколько хороши приложения, которые он позволяет создавать, а принципы, заложенные в модель парного программирования, столь кардинально отличаются от основ, на которые опираются методы традиционной разработки, что поневоле вызывают серьезные сомнения. С этой точки зрения в 1998 году метод был изучен в университете Темпля, а в 1999 году этим же вопросом занимались в университете штата Юта. В обоих случаях часть студентов, участвовавших в исследовании, работали индивидуально, а часть — в парах.</p>
+<p class="text">Результаты: пары всегда создавали более понятный код, в котором возникало меньше ошибок, а кроме того, программисты признавали, что такой способ работы нравился им намного больше, чем решение той же задачи в одиночку. С другой стороны, у пар на создание кода уходило несколько больше времени, чем у программистов, действовавших по отдельности. Но последующие итерации давали результаты значительно быстрее. Таким образом, хотя первое время разработчики дольше «набирали темп» (и можно предположить, что парное программирование — не самое лучшее решение для проектов с очень жесткими сроками), создается впечатление, что люди быстро адаптируются к этому процессу.</p>
+<p class="text">Нельзя утверждать, что парное программирование — это всегда хорошо. Кое-кто из программистов считает свое ремесло делом глубоко личным и чувствует себя неловко, когда им приходится делиться ею с кем-нибудь еще. Кроме того, многие руководители приходят в ужас от мысли от необходимости вдвое увеличить столь дефицитный ресурс, как разработчики. Стоит учитывать, что пара не сможет работать и в случае возникновения каких-то личных конфликтов — некоторые люди просто не в состоянии работать с другими.</p>
+<p class="text">Время покажет, оправдает ли себя парное программирование (да и экстремальное программирование в целом). В компаниях, где этот метод уже используется, например в DaimlerChrysler и Ford Motor, пока не спешат делать какие-то выводы. Тем же, кого давно беспокоят болезненные вопросы разработки приложений — организация связи между программистами, излишняя сложность, контроль и управление и, конечно же, качество программного обеспечения, имеет смысл попробовать парное программирование.</p>
+<hr>
+<h3>Парное программирование</h3>
+<font size="-1"><i><p class="text">По мнению сторонников этого подхода, парное программирование (pair programming) может обеспечить значительный рост качества программного обеспечения, пополнение знаний сотрудников, а также сделать работу программистов более приятной. Но далеко не каждый сможет работать в паре. Функциональные модули, созданные такой парой, регулярно передаются другим участникам группы разработчиков, что способствует более тесному сотрудничеству между программистами и обмену знаниями друг с другом.</p></i>
+<p class="text"><b>Достоинства:</b> стимулирует непрерывное обучение; улучшает работу в группе и укрепляет взаимосвязи между ее участниками; позволяет быстрее решать возникающие проблемы <br><b>Недостатки:</b> может порождать личные конфликты и непонимание; может удлинять цикл разработки; недостаточно апробированный метод</p></font>
+<hr>
+<a href="044_0t.htm"><h3>Модель парного программирования</h3></a>
+<font size="-1"><i><p class="text">Помимо того что метод парного программирования предполагает объединение разработчиков в пары и способствует более тесному сотрудничеству между ними, он является частью более общей методологии разработки, предусматривающей пошаговое планирование, непрерывное тестирование и разложение — процесс совершенствования и упрощения кода. Этот метод также допускает в случае необходимости изменение состава пар в рамках группы разработчиков</p></i></font>
+
+    
+  <table border="0">
+     <tr><td>
+       <table width="99%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td colspan="3" valign="top"><br><h3 class="title">Популярное на эту тему</h3><br></td>
+        </tr>
+          
+<tr>
+    
+    <td class="bgo" width="50%" valign="top">&nbsp;&nbsp;&nbsp;<b>Модернизация памяти ноутбука / (3069)</b></td>
+
+    
+    <td><img src="/images/transpdot.gif" width="6" height="1" hspace="0" vspace="0" border="0"></td>
+
+    
+    <td class="bgo" width="50%" valign="top">&nbsp;&nbsp;&nbsp;<b>Белорусские ИТ-компании планируют приПАРКоваться / (2337)</b></td>
+
+</tr>
+<tr>
+    
+    <td class="block" valign="top">
+<a class="grad" href="/issues/2665477.html">Computerworld #08/2006</a><br>
+ Модернизация памяти, пожалуй, самый простой и эффективный способ повышения быстродействия мобильного компьютера. Но тем не менее производители портативных ПК не только рекомендуют выполнять эту, казалось бы, нехитрую операцию в стенах
+    <a href="/text/302/2665936/" class="more">Далее</a></td>
+
+    
+    <td><img src="/images/transpdot.gif" width="6" height="1" hspace="0" vspace="0" border="0"></td>
+
+    
+    <td class="block" valign="top">
+<a class="grad" href="/issues/90983.html">Computerworld #43/2005</a><br>
+Территорию будущего технопарка 25 октября посетил президент Белоруссии и поручил незамедлительно приступить к реализации проекта...
+    <a href="/text/302/372505/" class="more">Далее</a></td>
+
+</tr>
+
+        <tr>
+         <td colspan="3"><img src="/images/transpdot.gif" width="1" height="9" hspace="0" vspace="0" border="0"></td>
+        </tr>
+          
+<tr>
+    
+    <td class="bgo" width="50%" valign="top">&nbsp;&nbsp;&nbsp;<b>Обзор Windows Vista Beta 2: установка и настройка / (1366)</b></td>
+
+    
+    <td><img src="/images/transpdot.gif" width="6" height="1" hspace="0" vspace="0" border="0"></td>
+
+    
+    <td class="bgo" width="50%" valign="top">&nbsp;&nbsp;&nbsp;<b>Встречайте: Windows Vista RC2 / (244)</b></td>
+
+</tr>
+<tr>
+    
+    <td class="block" valign="top">
+<a class="grad" href="/issues/380317.html">Computerworld #04/2006</a><br>
+Сколько раз в течение последних лет приходилось мне инсталлировать Windows Vista/Longhorn! Я устанавливал сборку за сборкой на многих компьютерах – на настольных и планшетных моделях, на ноутбуках, а совсем недавно - даже на Media Center PC.
+    <a href="/text/302/2589804/" class="more">Далее</a></td>
+
+    
+    <td><img src="/images/transpdot.gif" width="6" height="1" hspace="0" vspace="0" border="0"></td>
+
+    
+    <td class="block" valign="top">
+Встречайте: Windows Vista RC2
+    <a href="/text/302/3146659/" class="more">Далее</a></td>
+
+</tr>
+
+       </table>
+       <br>
+     </td>
+    </tr>
+   </table>
+
+
+<p>
+ 
+<br><a name="opinions"></a><span class="red">Выскажите свое мнение:</span>
+<br>
+<b>*</b> Для отправки сообщения вы должны <a class="top" href="/forum/login.html?goto=*L3RleHQvMzAyLzM5Mjk1Lz9fcj0zMTkxMDExNjA1NjgyOTIuODg5NDg=^">войти</a> в систему.<br>
+<b>*</b> Если вы незарегистрированы в системе - <a class="top" href="/forum/register.html?goto=*L3RleHQvMzAyLzM5Mjk1Lz9fcj0zMTkxMDExNjA1NjgyOTIuODg5NDg=^">зарегистрируйтесь</a>.
+
+ <div class="white">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td><i>По данной статье пока нет мнений</i></td></tr>
+<tr>
+    <td align="right">
+      <a href="/forum/opinion/index.html" class="more">Мнения о статьях</a>
+    </td>
+</tr>
+</table>
+</div>
+
+
+
+    </td>
+    <td><img src="/images/0.gif" border="0" width="12" height="10"></td>
+    <td>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+  <td colspan="2" bgcolor="#ffffff"><img height="1" width="2" src="/images/0.gif"></td>
+  <td width="100%" class="dark"><img height="1" width="1" src="/images/0.gif"></td>
+  <td colspan="2" bgcolor="#ffffff"><img height="1" width="2" src="/images/0.gif"></td>
+</tr>	
+<tr>
+  <td bgcolor="#ffffff"><img height="1" width="1" src="/images/0.gif"></td>
+  <td class="dark"><img height="1" width="1" src="/images/0.gif"></td>
+  <td class="light"><img height="1" width="1" src="/images/0.gif"></td>
+  <td class="dark"><img height="1" width="1" src="/images/0.gif"></td>
+  <td bgcolor="#ffffff"><img height="1" width="1" src="/images/0.gif"></td>
+</tr>
+<tr>
+  <td class="dark"><img height="1" width="1" src="/images/0.gif"></td>
+  <td class="light"><img height="1" width="1" src="/images/0.gif"></td>
+  <td class="yellow">
+    <table bgcolor="#f7e073" width="100%" cellspacing="0" cellpadding="2" border="0">
+    <tr valign="top">
+      <td class="anons"><h3 class="title">Свежий номер</h3></td>
+    </tr>
+    </table>	
+
+
+<script src="/shop/buy.js"></script>
+      <table class="issue_anons" width="100%" cellspacing="0" cellpadding="3" border="0">
+        <tr valign="top">
+          <td rowspan="2"><a href="/issues/3188423.html"><img src="/data/749/657/1235/6coverb.gif" border=0  width="73" height="93"></a>
+</td>
+          <td>
+<a class="anons" href="/issues/3188423.html">#37/2006</a>
+<br><a class="anons" href="/subscribe/sform.html">Подписка</a>
+</td>
+        </tr>
+        <tr valign="bottom"><td>
+<div><a class="anons" onclick="window.open('/cover/3188423.html','','menubar=no,resizable=yes,width=350,height=450');return false" href="#">Увеличить</a></div>
+</td></tr>
+      </table>
+
+
+  </td>
+  <td class="light"><img height="1" width="1" src="/images/0.gif"></td>
+  <td class="dark"><img height="1" width="1" src="/images/0.gif"></td>		
+</tr>
+<tr>
+  <td bgcolor="#ffffff"><img height="1" width="1" src="/images/0.gif"></td>
+  <td class="dark"><img height="1" width="1" src="/images/0.gif"></td>
+  <td class="light"><img height="1" width="1" src="/images/0.gif"></td>
+  <td class="dark"><img height="1" width="1" src="/images/0.gif"></td>
+  <td bgcolor="#ffffff"><img height="1" width="1" src="/images/0.gif"></td>
+</tr>	
+<tr>
+  <td colspan="2" bgcolor="#ffffff"><img height="1" width="2" src="/images/0.gif"></td>
+  <td width="100%" class="dark"><img height="1" width="1" src="/images/0.gif"></td>
+  <td colspan="2" bgcolor="#ffffff"><img height="1" width="2" src="/images/0.gif"></td>
+</tr>	
+</table>
+
+
+
+     <br>
+     
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_cw_i_160x600";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="160" height="600" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="160" height="600" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_cw_i_160x600?13122" width="160" height="600" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_cw_i_160x600" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_cw_i_160x600" alt="MadBanner" width="160" height="600" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+<img src="/images/transpdot.gif" border="0" height="10" width="1">
+
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_main_right_160x70";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="160" height="70" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="160" height="70" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_main_right_160x70?59634" width="160" height="70" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_main_right_160x70" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_main_right_160x70" alt="MadBanner" width="160" height="70" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+
+
+    </td>
+    <td><img src="/images/0.gif" border="0" width="8" height="10"></td>
+  </tr>
+</table>
+
+
+
+<div class="grline"><span class="grline">
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_cw_i_txt_4";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="100%" height="20" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="100%" height="20" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_cw_i_txt_4?" width="100%" height="20" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_main_textline_top" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_cw_i_txt_4?" alt="MadBanner" width="100%" height="20" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+</span></div>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="middle" class="topmenutop"><a href="/text/233590/233596.html" class="hd">Об издательстве</a>&nbsp;&nbsp;&#149;&nbsp;&nbsp;<a href="/text/233590/1323291.html" class="hd">Как нас найти</a>&nbsp;&nbsp;&#149;&nbsp;&nbsp;<a href="/text/233590/233610.html" class="hd">Реклама</a>&nbsp;&nbsp;&#149;&nbsp;&nbsp;<a href="/text/233590/233604.html" class="hd">Контакты</a></td>
+</tr>
+<tr>
+<td align="center" valign="middle" class="copy">
+<div class="copy">
+&nbsp; &nbsp;
+<a href="http://www.osp.ru/" class="edition"><b>Открытые&nbsp;системы:</b></a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/cw" class="edition">Computerworld</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/win2000" class="edition">Windows&nbsp;IT&nbsp;Pro</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/lan" class="edition">LAN</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/nets" class="edition">Сети</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/pcworld" class="edition">Мир&nbsp;ПК</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/os" class="edition">Открытые&nbsp;системы</a> &nbsp; &nbsp;
+<a href="http://old.osp.ru/publish/" class="edition">Publish</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/cio" class="edition">Директор&nbsp;ИС</a> &nbsp; &nbsp;
+<a href="http://old.osp.ru/doctore/" class="edition">Лечащий&nbsp;врач</a> &nbsp; &nbsp;
+<a href="http://old.osp.ru/flexomag/" class="edition">ФСП</a> &nbsp; &nbsp;
+<br> &nbsp; &nbsp;
+<a href="http://www.aofm.ru" class="edition">Искусcтво&nbsp;управления</a> &nbsp; &nbsp;
+<a href="http://www.whatcar.ru" class="edition">WhatCar?</a> &nbsp; &nbsp;
+<a href="http://old.osp.ru/class/" class="edition">Классный журнал</a> &nbsp; &nbsp;
+<a href="http://stuff.osp.ru/" class="edition">Stuff</a> &nbsp; &nbsp;
+<a href="http://www.ogj.ru" class="edition">Oil&amp;Gas</a> &nbsp; &nbsp;
+
+<br>
+Copyright &copy; 1992-2006. All rights reserved.
+</div>
+</td>
+</tr>
+</table>
+<div class="botbanner" align=center><table width=100% ><tr valign=bottom><td>
+<a target=_blank href="http://top.list.ru/jump?from=18926"><img src="http://top.list.ru/counter?id=18926;t=70" border=0 height=31 width=38 alt="TopList"></a>&nbsp;
+<a href="http://counter.rambler.ru/top100/" target=_blank><img src="http://old.osp.ru/top100.gif" alt="Rambler's Top100 Service" width=88 height=31 BORDER=0></A>
+<a href="http://top100.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?283" alt="Rambler's Top100" width=1 height=1 border=0></a>
+</td>
+<td align=center>
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_cw_i_niz_728";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="728" height="90" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="728" height="90" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_cw_i_niz_728?53065" width="728" height="90" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_cw_i_niz_728" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_cw_i_niz_728" alt="MadBanner" width="728" height="90" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+</td>
+<td align=right>
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write('<a href="http://www.liveinternet.ru/click" '+
+'target=_blank><img src="http://counter.yadro.ru/hit?t16.17;r'+
+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+';'+Math.random()+
+'" alt="" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодн\я" '+
+'border=0 width=88 height=31><\/a>')//--></script><!--/LiveInternet-->
+</td></tr></table></div>
+</BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=qsmall.gif
+Content-Type: image/gif; name=qsmall.gif
+Content-Location: http://www.osp.ru/images/qsmall.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhCAAIAIABAJkAAP///yH5BAEAAAEALAAAAAAIAAgAAAINjI8ZwG3tFgRv
+VnhjAQA7
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=style.css
+Content-Type: text/css; name=style.css
+Content-Location: http://www.osp.ru/style.css
+Content-Transfer-Encoding: 8bit
+
+body,p,div,span,td   { font-family:Arial, Tahoma; 	line-height : 20px; font-size:9pt; color:black; }
+body            { margin:0; background:#ffffff; }
+div.topbanner   { text-align:center; padding-top:4px; padding-bottom:4px; background:#EFEFEF; border-bottom: 1px solid #808080; }
+div.botbanner   { text-align:center; padding-top:4px; padding-bottom:4px; background:#EFEFEF; border-top: 1px solid #808080; }
+
+div.grline      { padding-top:3px; padding-bottom:3px; background:#EFEFEF; border-bottom: 1px solid #808080; border-top: 1px solid #808080; }
+
+div.textban     { border: 1px solid #808080; background:#f5f5f5; padding:3px }
+div.hd          { padding-top:3px; text-color:black; font-size:7pt; font-weight:bold; font-family:Tahoma,sans-serif; }
+div.gray        { border: 1px solid #eaeaea; background:#f5f5f5; padding:3px }
+div.yellow      { border: 1px solid #E9BE3B; background:#F7E073; padding:3px }
+div.editornote  { background:#F7E0A3;  } 
+.yellow      { background:#F7E073; }
+div.white       { padding:3px }
+div.copy        { text-color:black; font-size:8pt; font-family:Tahoma,sans-serif; line-height:12pt; }
+
+div.article p.text { text-align: justify; text-indent: 30pt; }
+div.article h1 { margin-top:30px; font-size:12pt;  color:#990000; font-weight:bold; }
+div.article h2 { margin-top:30px; font-size:12pt;  color:#990000; font-weight:bold; }
+div.article h3 { margin-top:30px; font-size:12pt;  color:#990000; font-weight:bold; }
+div.article h4 { margin-top:30px; font-size:12pt;  color:#990000; font-weight:bold; }
+span.searchform { font-family:Tahoma,sans-serif; font-weight:bold; color:#808080; }
+span.grline     { font-family:Tahoma,sans-serif; font-weight:bold; }
+
+hr              { border-top: solid #808080 1px; border-bottom: solid #ffffff 1px;}
+
+li.news {list-style-image : url(/images/qsmall.gif);}
+ul.news {margin-left:25px; margin-top:2px; margin-bottom:0px;}
+li.evennews {list-style-image : url(/images/qsmall.gif); line-height:18px;}
+li.mp {list-style-image : url(/images/qsmaller.gif); line-height:18px;}
+h3.title   { color:#000000; font-size:10pt; font-weight:bold; padding:0; margin:0; vertical-align:text-middle; font-family:Tahoma,sans-serif; }
+h3.newstitle   { color:#990000; font-size:10pt; font-weight:bold; padding:0; margin:0; vertical-align:text-middle; font-family:Tahoma,sans-serif; }
+h4.top { color:#990000; font-weight:bold; font-size:14pt; padding:0; margin:0;}
+h4.story { color:#990000; font-weight:bold; padding:0; margin:0; font-size:11pt}
+p.top { margin-top:0pt; line-height:15pt; font-size:9pt; }
+p.story { margin-top:0pt; line-height:12pt; }
+
+a { color:#990000; }
+a:visited { color:#666666; }
+a:active { color:#000000; }
+a:hover { color:#D28A00; }
+a.hd {text-color:black; text-decoration:none; font-size:7pt; font-weight:bold; font-family:Tahoma,sans-serif; margin-left:4px; margin-right:4px;}
+a.hd:visited { color:black; }
+a.hd:active { color:black; }
+a.hd:hover { color:black; text-decoration:underline; }
+a.advsearch { font-size:10px; line-height:6px; font-family:Tahoma,sans-serif; }
+a.topmenu {text-color:black; text-decoration:none; font-size:10pt; font-weight:bold; font-family:Tahoma,sans-serif; }
+a.topmenu:visited { color:black; }
+a.topmenu:active { color:black; }
+a.topmenu:hover { color:black; }
+a.botmenu {text-color:black; text-decoration:none; font-size:10pt; font-family:Tahoma,sans-serif; }
+a.botmenu:link { color:black; }
+a.botmenu:visited { color:black; }
+a.botmenu:active { color:black; }
+a.botmenu:hover { color:black; }
+a.lastnews {text-color:black; text-decoration:none; font-size:8pt;}
+a.evennews {text-color:black; text-decoration:underline; }
+a.top,a.story,a.edition { text-decoration:none; }
+a.pop { text-decoration:none; font-family:Tahoma,sans-serif; }
+a.more { font-size:10px; font-family:Tahoma,sans-serif; }
+a.specne3 { font-size:14px; font-family:Tahoma,sans-serif; text-decoration:none; line-height:21px;}
+a.specne { font-size:12px; font-family:Tahoma,sans-serif; text-decoration:none; line-height:21px;}
+a.anons {text-color:black; text-decoration:none; font-weight:bold; font-size:10pt; font-family:Tahoma,sans-serif;}
+a.grad { font-size:11px; line-height:15px; font-family:Tahoma,sans-serif; }
+a.mpktop {text-color:black; text-decoration:none; font-size:8pt; line-height:12px;}
+
+td.topmenu { align:center; padding-left:10px; padding-right:10px; height:21px; }
+td.search {padding-left:10px; padding-right:10px; padding-bottom:4px; vertical-align:text-bottom;}
+td.logo {padding-left:32px; padding-right:10px; padding-bottom:4px; padding-top:4px;}
+
+.red {
+	COLOR: #cc0000
+}
+
+.redb {
+
+	COLOR: #cc0000 ; font-weight: bold;
+
+}
+
+.inputs {font-size:12px;}
+
+TD.calendm {
+	BORDER: no; PADDING-RIGHT: 1px; PADDING-LEFT: 6px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: Black; TEXT-ALIGN: left; MARGIN-left: 1px; MARGIN-top: 1px;  MARGIN-bottom: 1px; MARGIN-right: 1px;
+}
+
+TD.boxtitle{
+	background: #E6C03B; align: center; PADDING-RIGHT: 1px; PADDING-LEFT: 6px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: Black; TEXT-ALIGN: left; MARGIN-left: 1px; MARGIN-top: 1px;  MARGIN-bottom: 1px; MARGIN-right: 1px;
+}
+
+.lblack {
+	COLOR: Black; font-size:10pt; 
+}
+
+table.menu2 { height: 24px; font-size: 12px; }
+table.menu2 td { padding: 0 10; font-size: 12px; }
+table.menu2 td a:link, table.menu2 td a:visited { font-size: 12px; color: #000000; text-decoration: none; }
+table.menu2 td.active {  }
+table.menu2 td.inactive { background-color: transparent; }
+
+table.menu3 { background-color: #f7e073; border: solid 1px #e9be3b; }
+table.menu3 td a:link, table.menu3 td a:visited { color: #000000; text-decoration: none; }
+table.menu3 td { border: solid 1px #f7e073; padding: 2 8; font-size: 11px; margin: 0; }
+table.menu3 td.active { background-color: #e9be3b; }
+table.menu3 td.inactive { background-color: transparent; }
+table.menu3 th { margin: 0; }
+
+a.opinion {}
+a.deleted_opinion { text-decoration: line-through; }
+
+
+.calendar {
+	text-align:center;
+	margin:1em 0; 
+}
+.calendar table {
+	margin:0 auto;
+	border-collapse:collapse;
+	border-spacing:0;
+	empty-cells:show;
+	font-size: x-small; /* IE5 Win */
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	font-size: small;
+}
+.calendar th, .calendar td {
+	font-size:10px;
+	text-align:center;
+	padding:2px;
+	border:1px solid #ccc;
+}
+
+.blc {
+	COLOR: #000000
+}
+
+
+TD.blockwhp {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: Black; TEXT-ALIGN: left; MARGIN-left: 9px; MARGIN-top: 6px;  MARGIN-bottom: 6px; MARGIN-right: 3px;
+}
+
+
+.reg {width:133px;background-color:#ffffcc;font:11pt Arial, Tahoma, Helvetica, sans-serif; font:italic; }
+.regkod {width:51px;background-color:#ffffcc;font:11pt Arial, Tahoma, Helvetica, sans-serif; font:italic; }
+.regnom {width:99px;background-color:#ffffcc;font:11pt Arial, Tahoma, Helvetica, sans-serif; font:italic; }
+.regprf {width:233px;background-color:#ffffcc;font:11pt Arial, Tahoma, Helvetica, sans-serif; font:italic; }
+.regtxt {width:333px;background-color:#ffffcc;font:11pt Arial, Tahoma, Helvetica, sans-serif; font:italic; }
+div.authors { font-style: italic; }
+table.admmode { border: 1px solid #000000; background: #CECECE ; }
+div.smalltext { font-size: 9px; }
+div.smalltext td { font-size: 9px; padding:0px; line-height:100%; }
+
+.mail_news { color:#000000; font-size:10pt; font-weight:bold; padding:3; margin:0; vertical-align:text-middle; font-family:Tahoma,sans-serif; background:#CAA852; }
+
+table.d8table { border-collapse: collapse; border: solid 1px #d8d8d8; } 
+table.d8table tr.head td { border-collapse: collapse; border: solid 1px #d8d8d8; }
+table.d8table tr.wb td { border-collapse: collapse; border: solid 1px #d8d8d8; }
+table.d8table tr td { padding-left:3px; }
+
+.voting {text-color:black; text-decoration:none; font-size:8pt;}
+h3.btitle   { color:#cc0000; font-size:11pt; font-weight:bold; padding:0; margin:0; vertical-align:text-middle; font-family:Tahoma,sans-serif;}
+
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=CW.css
+Content-Type: text/css; name=CW.css
+Content-Location: http://www.osp.ru/styles/CW.css
+Content-Transfer-Encoding: 8bit
+
+TD.block {
+     BORDER: #84c1ff 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 6px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: Black; TEXT-ALIGN: left; MARGIN-left: 9px; MARGIN-top: 6px;  MARGIN-bottom: 6px; MARGIN-right: 3px;
+}
+TD.blockz {
+     BORDER: #84c1ff 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: Black; TEXT-ALIGN: left; MARGIN-left: 9px; MARGIN-top: 6px;  MARGIN-bottom: 6px; MARGIN-right: 3px;
+}
+
+.bgo {
+     background: #84c1ff ; color: #535353; text-size: 11px ;
+}
+
+.submenu {
+     color:#000000; font-size:11pt; font-weight:bold; padding:3; margin:0; vertical-align:text-middle; font-family:Tahoma,sans-serif; background:#84c1ff; }
+
+td.topmenutop {
+     vertical-align:middle; background-color:#84c1ff; height:21px;
+}
+td.topmenubot {
+     vertical-align:middle; padding-left:0px; background-color:#a8d3ff; height:21px;
+}
+td.topmenug {
+     align:center; padding-left:10px; padding-right:10px; height:21px; background-color: #a8d3ff;s
+}
+td.copy {
+    vertical-align:middle; padding-left:10px; background-color:#a8d3ff; height:21px;
+}
+div.yellow {
+     border: 1px solid #84c1ff; background:#a8d3ff; padding:3px
+}
+.yellow {
+     border: 1px solid #84c1ff; background:#a8d3ff; padding:3px
+}
+
+td.anons, td.dark { background-color:#84c1ff;}
+td.light, .fill  { background-color:#a8d3ff;}
+table.issue_anons { background-color:#a8d3ff }
+table.menu2 td.active { background-color: #84c1ff; }
+
+
+
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=favicon.ico
+Content-Type: image/x-icon; name=favicon.ico
+Content-Location: http://www.osp.ru/favicon.ico
+Content-Transfer-Encoding: Base64
+
+AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAwAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAA////AHFxwwADA58AuLi3ADExtgCQkI4A1NTpAJSU
+1QDt7e0ApqamAMfHxwCurs0A4+PiANjY2AD19fUAAAABufAAAAAAAARO6QAAAAAA
+26S5bgAAAAukTuRt4QAAGqud7q7pkACqTRH7sduQDrZBER0lj+AEtK4R+lU1cAa5
+lE3FU1VQBNER5iUzMyAEERHkwzMzcA2fGU8cUzgAABvU0RHyIQAAAPrxEU8AAAAA
+ANsZsAAAAAAAD+sAAAD4fwAA+D8AAPAPAADgAwAAwAEAAMABAACAAQAAgAEAAIAB
+AACAAQAAgAEAAIADAADAAwAA8A8AAPwfAAD+PwAA
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=logoosp.gif
+Content-Type: image/gif; name=logoosp.gif
+Content-Location: http://www.osp.ru/images/logoosp.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhpgAwAPf/APLy8vf29srJyYSCguTk5MxjSsbExOjo6Le1teislu/v73l2
+duzs7Kakpfz08d2UfGhlZo6MjZKQkMBDLoiFhnJwcdbW1vDw8C0pKjQxMvXXyYB+
+foyKipyamsVTO25sbGRiYmBeXs/Oz3Bubuu8qslcQ9J0Wq6trfHu7qSioyUhItqL
+clRRUv36+ZiWliklJlxZWuGeh/je07Sys3x6euLg4IuIiJCNjqimppaUlcJJMpqY
+mHRycr06J5SSkn58fMC+vtvb26ypqjEtLnp4ebCurt+bhNzc3L68vFFOTtXV1UhF
+RqCenvry7VlWVoeEhe7IuYKBgXZ0dODg4D46O2toabKwsWdkZEVBQtV+ZMPCwkxJ
+SsNMNbq4udPS0s/Nzbi3t09MTefm5m1qa9HQ0NDOzlxcXNjX1zg0NaOgoJ6cndrZ
+2cTDw6uoqMHAwezArqmoqNfU1MzKymNgYcfGxuawnODf35qamtza2sFGMFtYWZSW
+mMRPN9TT07u6unZyctLR0b9AK0JDQ25qatiHbWxpaFNQUfDPws5qUHRwcFdUVT88
+PZiYmL27u+3r6/jn3+Xi4mJgX0dERTw4Oevr62xpavv7+yMfIO7t7ePj415bXCcj
+JOrq6vr6+v39/d/e3vz8/PX19fn5+WpnaK2rrOLi4vj4+Obl5omHh7Oxst7d3qGg
+oNDP0GZjZHp3eEA9Pujn50tHSHJvb6upqjIuL1ZTU7u5uvT09PX09MG/vzo3OG9s
+a52bnMNLNGJfYKWjpKOhoV9cXCsnKJWTk3Nwb42LjNnY2FNPULm4uMLAwL++voJ/
+f83MzMLBwj87PE5LTMjHyPPz81pXV728vLGwsEZCQ6urq/X29kNAQNLQz6ako/j5
++fDMvTo4N1tYWMbKzMLFx7Kkn/78+4uMjIuOkMuGcIqIh5eUk76bj+Lm6Xd4d4GD
+hYWDg+Dp7qutr8KvqKOlp9fV1d7d3N/e3f749eWmj/rw6lZUU1NQT97c2/38/MrI
+x/X09SIeH////////yH5BAEAAP8ALAAAAACmADAAAAj/AP8JHEiwoEGBog4cXMjw
+IAAcc6gMoYXFVZCBcFho2shRkx4InNhBGPWBk8ATICqNCqGEwZhRlWKqlMKEwEAG
+IPQ4qSDKIQQ90sYw2ABBptE5s0Qo0lTLx0IyTmDU4vDvgC8YHTU5+dCw678gH6RN
+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
+sKgm3MJY2glJMAo24cI0fFgBAQA7
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=logo_cw.gif
+Content-Type: image/gif; name=logo_cw.gif
+Content-Location: http://www.osp.ru/images/logo/logo_cw.gif
+Content-Transfer-Encoding: Base64
+
+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
+
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=0.gif
+Content-Type: image/gif; name=0.gif
+Content-Location: http://www.osp.ru/images/0.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=print.gif
+Content-Type: image/gif; name=print.gif
+Content-Location: http://www.osp.ru/images/icons/print.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhFAAUAOYAAEtJSvz8/G5ubmpqav39/WdnZ2hoaKysrKWlpWxsbGVlZWZm
+Zru7u52dnWBgYGlpaaurq7Gxsa6urtbW1vv7+3l5edTU1IqKimtra9fX17a2tp6e
+nmFhYXBwcGJiYqmpqePj487OzqGhoYuLi7q6ury8vF5eXuXl5dPT02RkZN3d3a2t
+rbS0tMPDw39/f6Ojo29vb0lJSYmJiYyMjKampsDAwEBAQJ+fn8fHx9jY2HR0csHB
+wUNDQ5qamkhISLe3t7CwsHd3d+rq6oqKiI2NjdHR0W1tbXt7e/n5+fr6+pGRkfLy
+8oiIiKenp5ycnHx8fHFxcbKysoODg4+Pj7m5ua+vr8bGxqSkpIaGhr6+vkxMTMnJ
+yYWFhZubm5OSkP7+/mNhYv///5WVlQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAUABQAAAf/gAEAYISFhodgAGGDYo2O
+j5BiiWCPAhEnL1IDBgUmCh46M5KUYgodNiFhFGGsSyoTEl5Do2JHIBY5PwgfEgcH
+WQctX18JtDABrGFfrMisCGFCD7QYYRM3QCxRVVQ0VmEIX1sC02E4IyIiTlcNRAxh
+TWENQbQdrMtIrATJEGEVWLQDvvHwkMKBgwIxLoRZEaZAI0JiEixbtUxZGH0awnB4
+SElAmAwHGJAoQYJBhFQ7QCzgGDFMDSYbumzo0WBExgwoBrA0wixfMlZFIFRgCSXA
+Bx8GOCxwYECLQgsyuLAU8IVAs56sSrhwBNFjRX3LkrAa8IQrpSmcFjxQMEBtAQUJ
+D5Q8mhSpLldFgxDpJaQoEAA7
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=opinion.gif
+Content-Type: image/gif; name=opinion.gif
+Content-Location: http://www.osp.ru/images/icons/opinion.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhFAAUAOYAAEtJSoyMjISEhH9/f42NjZSUlIGBgaampm5ubpOTk6CgoHl5
+eXt7e3Z2doqKinx8fHFxcXV1dZaWlt/f3/j4+G1tbfr6+vz8/Hp6eo6Ojn5+foaG
+hm9vb+jo6LCwsGZmZqKiond3d6ioqNTU1ImJiZGRkYiIiI+Pj3R0dN3d3dDQ0O3t
+7bOzs/Pz86Ojo3h4eHBwcIeHh66urqenp3Jycpqamq+vr7i4uJubm6ysrIODg+Pj
+4/X19WpqanNzc4WFhbGxsZCQkKGhocvLy97e3mNhYv///5WVlQAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAUABQAAAffgBcARYSFhodFAEaDR42N
+JQGRkSeOR4lFlUcbFQMGAgIGEpwZjYSOCRERHUasrR04NAmWmI0PCDutCwetRhgD
+s40EAh68urw2DcBHDRE8vA+7rUMIBKZHCxAWz9GsKQwG1p0XvAwuvEQcDtYFCDO8
+CUK8GxDKRwovFK3arRMcIPVHfIxo9eEDqxY/NCQoYK2RAxm8WK24wQBDKVpHajTI
+50GDgAADYJggUOBiowIhVEzQEUMEARIOMikTkEEBCiAKZFYyFaQHBBA5dGYyhSAE
+CwlChzJKKjPRIkRQCykKBAA7
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=transpdot.gif
+Content-Type: image/gif; name=transpdot.gif
+Content-Location: http://www.osp.ru/images/transpdot.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhAQABAJAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=6coverb.gif
+Content-Type: image/gif; name=6coverb.gif
+Content-Location: http://www.osp.ru/data/749/657/1235/6coverb.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhSQBdAPcAABASGh0UHhMWIhUYJhcbKxkdLRkZJBkeMRshNR0kOxsrPCQc
+KSgpNzQqOTU0PCwmLh8nQR4yQyMrRyQ0SiczVCk3WTc4RjU6WSo9YQlcZg1peQ9n
+djRDWixFai5KcDlFZTJNdTtNdTZTey5Wbk8sOG8vOE4eK1MzR2s5Q0lKV1ZVW1RH
+TENKZkpUaUlUeFlbZVNaeERNc1dieG1LS2VcZ2dla2pqdHZ2e3RxfnxnXV1BPxNu
+gxN4ihd7kj1ZhTptjERciVJehkdmlFllh1Z2jU1xlGVtiml0i2l2lHl7hXV8lWFv
+kWB+pA2ImBCEkgCdpgaeqBuYpAyhqhSjrRqlrx2msSuIlzCXqCSpsyurtSSmszOt
+ujWttzyxuy6iqzioyjqfw1yEmlmVrVeas0yOqkSzvUq1v0m5v1miu2qGmXmFmXyB
+imeWrHqVqXGTqmakunalukitzEq1wVy8xla3xmu8zGO6yn28zni3zG2xyGnCynPE
+zXrDznvH0V3AxoU5Po0/QpFMTJdmXZJwa6dUT6ZoW7BoWbd6Zqp2aYB5h7uEa7SK
+dpmCeceVd8KMcYWFioOLnYmKloqSm5WUm5iXm5KQj4eNoYuSo4iYqoudspSdq5yc
+opSXpJSesYqmuZqiq5intp6wvbGSiaCfpbGmkaKipqSkqqqqraenq6ytsqSrtqqz
+vLCvsrKytbW1urq6vbe4vLSpqJ2kloO8zYe4ypm2yJWww6e4x729wrW7x6K3yIXC
+z4PL04nJ1JfG1JXT2pvU3JHN1afBzqjH1aXW3bvCybbJ1brS3ara4bPe5LzX47Xg
+5b3i6Mqdg8mkidWoi9q0mtGtldq7pcO5sOG5neG9o8C/wtfBr+bLs8LCxcXFysrL
+zcfJy8zN0sTN1crU2tLS1NTW2dvb3dbZ29bSy8rc5MXb5d3e4dTe5MTl6szj6snn
+69Tr79jk6dru8dXs8Nrw8ezZxvDfy/Lm0ePj5evr7Obo6uru8Ozz9O33+OXz9fP0
+9fX5+/7+/vb3+PDv7yH5BAAAAAAALAAAAABJAF0AAAj+APsJHEiwoMGDCBMqXIgw
+W716+/zVs2ePHsSH9fzdw4cRn8WHHPnZq/evHsd7D+lJ/LcPIr+UD1tGtLiv26tz
+Ju39o1iS48Bt3FCdoleKlStXrVqZ2oSKXqpURk+xsmYKFipUrf6lKiU12yirp1Cd
+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
+
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=top100.gif
+Content-Type: image/gif; name=top100.gif
+Content-Location: http://old.osp.ru/top100.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhWAAfALMAAAIC/xMT/yMj/zMz/0VF/2Nj/3Nz/4OD/4+P/6Oj/7Oz/7+/
+/9bW/+np//Pz//39/yH5BAAAAAAALAAAAABYAB8AAAT/EMhJq7046833+2AojmRp
+nmhaSk/ivnAsz3Rt20hBCAEQCIQCgvZg3Y7IJPJA6GEChIOsCHgortisdsvter/c
+gqAjKGipj4V6zW673/C4vK0odCjmNXphT6gDBQMDaoJrAwAIawpNPnYUCIhqAEKR
+kIOFCZNtjncTBXosfwQLBgELhaeDCwo+o2oCAgqrCggEiAiQiQuTuQtjlwMKUG0G
+nRYGamgMDAcAwgUMgsvSDAUBxQvMzsvcdsuZBi6TmQkHAdIDsATc32MAByIABg8N
+dgQgkAACCQzKy+emGDQpYG3Av0/yqgFgt8wbg0x4yAU4gK4HP3acgCR4QIDAAI73
+/wbc6/jAETR/DCBBayjoXEp9AwIEeKmAYbFvAC7Ky5QumkFB1mouW+BkAjwJR6sY
+GBngQTMfC9A0aEAKwIKpWBsI0irAgIE+DH68mFpsKrmpOyUk0DqAbQNYDKY+pZA0
+qdN7cRm4eye1ga0DWbFKQ4QVUAOBEto2KNuAlQK0BlgRmLp1a9jJ9SzURbP0wdIK
+BdA4GE26tOnTqFOrXj36UIWkHwvME8nRwkcWKnLr1l3UKBVE9OzVrtCUhbHjyCl8
+SI4BDfPndxo86P28eBXo2DX0c01h8q7JD/KBzzfh9nUKyOocT8TJ6qkNlypsbA9g
+MoNdDcx5BpC/aTFPzk2AQP8I/90R1VxVDJfBSBXMQ54E56jB4CoTsiJggBJId0BU
+u0xyACdRWGPAAWNEVY4jH9giwAFM6MNiFEyxSCJee00gYW032iKJBAL0Y9wEKYbW
+TD8fXAaCdPQIwOEHmaR4Dz5PfgBFAAqAYEuVBdq4QIUVTjAPhglG5Vlo+X3wSRr9
+ZOOUiQM+8BFH/SRQpUBM2iJBPwL1EFo0FUjSQAIflQXofgAYtNx5uCFQ5QLwMGDV
+mpBu6FSVCDTFUYr9GPAQFIeWF1UDPQSw0YPuTSJdPgWceuFGP+LGYhpRHihrpFHS
+YykBbV5F528SqDncOoQeNw+drSb46i6pphHprM0AlsZQISkSZgVJvCaYRlEFjJZl
+BwaMZgeY2YV7jAPhcafBAAM68B+44rYrwUkMGFBjBV3hyQm77rZLwEYPpBRIqAMI
+QWQCdv6428EIJ7xbvgwzHAEAOw==
+
+------------TG7FN7EJ8kLFuI7RbGIuBK
+Content-Disposition: inline; filename=buy.htm
+Content-Type: text/html; name=buy.htm
+Content-Location: http://www.osp.ru/shop/buy.js
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>404 - Page not found: Открытые системы</title>
+<style type="text/css">
+
+</style>
+<link href="/style.css" rel="stylesheet" type="text/css">
+<link href="/styles/default.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head><body  bgcolor="#ffffff" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+
+
+
+
+<div class="topbanner">
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_other_top_728";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="728" height="90" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="728" height="90" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_other_top_728?17657" width="728" height="90" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_other_top_728" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_other_top_728" alt="MadBanner" width="728" height="90" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+</div>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+    <td rowspan="2" class="logo"><a href="/index.html">
+<img src="/images/logoosp.gif" alt="Издательство &quot;Открытые системы&quot;" width="166" height="48" border="0"></a>    </td>
+    <td align="right" valign="top">
+      
+<table cellpadding="0" cellspacing="0">
+   <tr>
+      <td nowrap="nowrap">
+         <div class="hd">
+            <a href="/forum/register.html?goto=*L2Vycm9ycy80MDQuaHRtbD9fcj0zMTgwMjExNjA1NjgyOTYuNTc0MTk=^" class="hd">Регистрация</a>
+            &nbsp;&#149;&nbsp;
+            <a href="/forum/adm/edit_fuser.html?goto=*L2Vycm9ycy80MDQuaHRtbD9fcj0zMTgwMjExNjA1NjgyOTYuNTc0MTk=^" class="hd">Настройка</a>
+            &nbsp;&#149;&nbsp;
+            <a href="/forum/index.html" class="hd">Форум</a>
+            <hr>
+         </div>
+      </td>                                         
+   </tr>                                         
+</table>
+
+     </td>
+</tr>
+<tr>
+	<td align="right" valign="bottom">
+           
+
+<form NAME="search_form" METHOD="get" ACTION="/search.html" style="padding: 0 0 0 0; margin: 0 0 0 0;">
+<table cellpadding="0" cellspacing="0">
+    <tr>
+       <td class="search">
+         <span class="searchform">Поиск:&nbsp;</span>
+         <select name="pd" class="inputs">
+            <option value="" selected>Весь сервер
+            <option value="">_______________</option>
+            <option value="285" >Computerworld
+            <option value="91008" >Мир ПК
+            <option value="91023" >Открытые системы
+            <option value="91018" >Windows IT Pro
+            <option value="90998" >LAN
+            <option value="91003" >Сети
+            <option value="91013" >Директор ИС
+         </select>
+         <input NAME="words" SIZE=15 value="" class="inputs">
+         <input TYPE="submit" VALUE="Искать" class="inputs">
+       </td>
+       <td class="search">
+         <a HREF="/advsearch.html" class="advsearch">Расширенный<br>поиск</a>
+       </td>	
+    </tr>
+</table>
+    </form>
+
+	
+	</td>
+</tr>
+</table>
+<script language="javascript">
+IE4 = (document.all) ? 1 : 0;
+NS4 = (document.layers) ? 1 : 0;
+var NS6 = 0;
+if(navigator.appName.indexOf("Netscape") != -1){if (navigator.userAgent.indexOf("Gecko") != -1) {NS6=1}}
+Active = new Array;
+
+function show(id) {
+ hide_all();
+ Active[id]=1;
+ var ix;
+ if (NS4) {
+   ix = document.layers[id];
+   if (ix) ix.visibility = "show";
+ } else {
+  if (IE4) {
+    ix = document.all[id];
+    if (ix) ix.style.visibility = "visible";
+  }
+  if (NS6) {
+    ix=document.getElementById(id);
+    if (ix) ix.style.visibility="visible";
+  }
+ }
+ var coord = getAnchorPosition("a_"+id);
+ if ( ix ) {
+   ix.style.left=coord.x;
+   ix.style.top=coord.y+24;
+ }
+ return false;
+}
+
+function hide_all() {
+  for (id in Active) {
+    hide(id);
+  }
+}
+
+function hide(id) {
+ if (Active[id]==1) {return false}
+ if (NS4) {
+  var ix=document.layers[id];
+  if (ix && ix.visibility != "hide") {
+   ix.visibility = "hide";
+  }
+ }
+ else if (IE4) {
+  var ix=document.all[id];
+  if (ix && ix.style.visibility != "hidden") {
+   ix.style.visibility = "hidden";
+  }
+ }
+ else if (NS6) {
+  var ix=document.getElementById(id);
+  if (ix && ix.style.visibility != "hidden") {
+   ix.style.visibility = "hidden";
+  }
+ }
+}
+
+function keep (id) {
+ Active[id]=1;
+ return false;
+}
+
+function off (id) {
+ Active[id]=0;
+ setTimeout('hide("'+id+'")', 1000);
+ return false;
+}
+
+function getAnchorPosition(anchorname) {
+	// This function will return an Object with x and y properties
+	var useWindow=false;
+	var coordinates=new Object();
+	var x=0,y=0;
+	// Browser capability sniffing
+	var use_gebi=false, use_css=false, use_layers=false;
+	if (document.getElementById) { use_gebi=true; }
+	else if (document.all) { use_css=true; }
+	else if (document.layers) { use_layers=true; }
+	// Logic to find position
+ 	if (use_gebi && document.all) {
+		x=AnchorPosition_getPageOffsetLeft(document.all[anchorname]);
+		y=AnchorPosition_getPageOffsetTop(document.all[anchorname]);
+		}
+	else if (use_gebi) {
+		var o=document.getElementById(anchorname);
+		x=AnchorPosition_getPageOffsetLeft(o);
+		y=AnchorPosition_getPageOffsetTop(o);
+		}
+ 	else if (use_css) {
+		x=AnchorPosition_getPageOffsetLeft(document.all[anchorname]);
+		y=AnchorPosition_getPageOffsetTop(document.all[anchorname]);
+		}
+	else if (use_layers) {
+		var found=0;
+		for (var i=0; i<document.anchors.length; i++) {
+			if (document.anchors[i].name==anchorname) { found=1; break; }
+			}
+		if (found==0) {
+			coordinates.x=0; coordinates.y=0; return coordinates;
+			}
+		x=document.anchors[i].x;
+		y=document.anchors[i].y;
+		}
+	else {
+		coordinates.x=0; coordinates.y=0; return coordinates;
+		}
+	coordinates.x=x;
+	coordinates.y=y;
+	return coordinates;
+	}
+
+// Functions for IE to get position of an object
+function AnchorPosition_getPageOffsetLeft (el) {
+	var ol=el.offsetLeft;
+	while ((el=el.offsetParent) != null) { ol += el.offsetLeft; }
+	return ol;
+	}
+function AnchorPosition_getPageOffsetTop (el) {
+	var ot=el.offsetTop;
+	while((el=el.offsetParent) != null) { ot += el.offsetTop; }
+	return ot;
+	}
+
+</script>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="topmenutop">
+	<table cellpadding="0" cellspacing="0">
+
+	<tr>
+	<td class="topmenug"><a href="/index.html" class="topmenu">Главная</a></td>	
+	<td class="topmenu"><a href="/news.html" class="topmenu">Новости</a></td>	
+	<td class="topmenu"><a href="/issues/285/fresh.html" class="topmenu">Статьи</a></td>	
+	<td class="topmenu"><a href="/info.html" class="topmenu">Информация</a></td>	
+	<td class="topmenu"><a href="/company.html" class="topmenu">Компаниям</a></td>	
+	<td class="topmenu"><a href="/forum/" class="topmenu">Форум</a></td>	
+	<td class="topmenu"><a href="/edition/index.html" class="topmenu">Издания</a></td>	
+	<td class="topmenu"><a href="/subscribe/sform.html" class="topmenu">Подписка</a></td>	
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<table border="0" width=100% cellpadding="0" cellspacing="0">
+<tr>
+  <td class="topmenubot">
+    <table border="0" cellpadding="0" cellspacing="0" class="menu2">
+    <tr>
+      <td 
+        id="a_div_0"
+        onMouseOver="this.className='active'; show('div_0');"
+        onMouseOut="this.className='inactive'; off('div_0')"
+      ><a href="/cw/">Computerworld</a></td>      <td 
+        id="a_div_1"
+        onMouseOver="this.className='active'; show('div_1');"
+        onMouseOut="this.className='inactive'; off('div_1')"
+      ><a href="/nets/">Сети</a></td>      <td 
+        id="a_div_2"
+        onMouseOver="this.className='active'; show('div_2');"
+        onMouseOut="this.className='inactive'; off('div_2')"
+      ><a href="/cio/">Директор ИС</a></td>      <td 
+        id="a_div_3"
+        onMouseOver="this.className='active'; show('div_3');"
+        onMouseOut="this.className='inactive'; off('div_3')"
+      ><a href="/lan/">LAN</a></td>      <td 
+        id="a_div_4"
+        onMouseOver="this.className='active'; show('div_4');"
+        onMouseOut="this.className='inactive'; off('div_4')"
+      ><a href="/win2000/">Windows IT Pro</a></td>      <td 
+        id="a_div_5"
+        onMouseOver="this.className='active'; show('div_5');"
+        onMouseOut="this.className='inactive'; off('div_5')"
+      ><a href="/os/">Открытые системы</a></td>      <td 
+        id="a_div_6"
+        onMouseOver="this.className='active'; show('div_6');"
+        onMouseOut="this.className='inactive'; off('div_6')"
+      ><a href="/pcworld/">Мир ПК</a></td>      <td 
+        id="a_div_7"
+        onMouseOver="this.className='active'; show('div_7');"
+        onMouseOut="this.className='inactive'; off('div_7')"
+      ><a href="http://www.ospint.com">OSP International</a></td>    </tr>
+    </table>
+  </td>
+</tr>
+</table>
+
+
+<div class="grline"><span class="grline">
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_main_textline_top";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="100%" height="20" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="100%" height="20" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_main_textline_top?" width="100%" height="20" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_main_textline_top" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_main_textline_top?" alt="MadBanner" width="100%" height="20" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+</span></div>
+
+
+
+
+
+
+
+<h1 style="text-align: center">Ошибка 404: Page not found</h1>
+<div class="grline"><span class="grline">
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_main_abs-bot_txtline";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="100%" height="20" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="100%" height="20" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_main_abs-bot_txtline?" width="100%" height="20" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_main_textline_top" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_main_abs-bot_txtline?" alt="MadBanner" width="100%" height="20" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+</span></div>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="middle" class="topmenutop"><a href="/text/233590/233596.html" class="hd">Об издательстве</a>&nbsp;&nbsp;&#149;&nbsp;&nbsp;<a href="/text/233590/1323291.html" class="hd">Как нас найти</a>&nbsp;&nbsp;&#149;&nbsp;&nbsp;<a href="/text/233590/233610.html" class="hd">Реклама</a>&nbsp;&nbsp;&#149;&nbsp;&nbsp;<a href="/text/233590/233604.html" class="hd">Контакты</a></td>
+</tr>
+<tr>
+<td align="center" valign="middle" class="copy">
+<div class="copy">
+&nbsp; &nbsp;
+<a href="http://www.osp.ru/" class="edition"><b>Открытые&nbsp;системы:</b></a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/cw" class="edition">Computerworld</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/win2000" class="edition">Windows&nbsp;IT&nbsp;Pro</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/lan" class="edition">LAN</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/nets" class="edition">Сети</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/pcworld" class="edition">Мир&nbsp;ПК</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/os" class="edition">Открытые&nbsp;системы</a> &nbsp; &nbsp;
+<a href="http://old.osp.ru/publish/" class="edition">Publish</a> &nbsp; &nbsp;
+<a href="http://www.osp.ru/cio" class="edition">Директор&nbsp;ИС</a> &nbsp; &nbsp;
+<a href="http://old.osp.ru/doctore/" class="edition">Лечащий&nbsp;врач</a> &nbsp; &nbsp;
+<a href="http://old.osp.ru/flexomag/" class="edition">ФСП</a> &nbsp; &nbsp;
+<br> &nbsp; &nbsp;
+<a href="http://www.aofm.ru" class="edition">Искусcтво&nbsp;управления</a> &nbsp; &nbsp;
+<a href="http://www.whatcar.ru" class="edition">WhatCar?</a> &nbsp; &nbsp;
+<a href="http://old.osp.ru/class/" class="edition">Классный журнал</a> &nbsp; &nbsp;
+<a href="http://stuff.osp.ru/" class="edition">Stuff</a> &nbsp; &nbsp;
+<a href="http://www.ogj.ru" class="edition">Oil&amp;Gas</a> &nbsp; &nbsp;
+
+<br>
+Copyright &copy; 1992-2006. All rights reserved.
+</div>
+</td>
+</tr>
+</table>
+<div class="botbanner" align=center><table width=100% ><tr valign=bottom><td>
+&nbsp;
+</td>
+<td align=center>
+<div align="center">
+<script>
+// <!--
+var osp_login = "osp_main_bottom_728";
+var osp_options = "";
+var osp_random = Math.round(Math.random() * 100000);
+document.write('<iframe src="http://mb.osp.ru/cgi-bin/iframe/'+osp_login+'?'+osp_random +'&'+osp_options+'" width="728" height="90" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/'+osp_login+'?'+osp_random +'" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/'+osp_login+'?'+osp_random +'&'+osp_options+'" alt="MadBanner" width="728" height="90" border=0 ismap></a></iframe>');
+// -->
+</script>
+<noscript>
+<iframe src="http://mb.osp.ru/cgi-bin/iframe/osp_main_bottom_728?69283" width="728" height="90" marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://mb.osp.ru/cgi-bin/href/osp_main_bottom_728" target=_top><img src="http://mb.osp.ru/cgi-bin/banner/osp_main_bottom_728" alt="MadBanner" width="728" height="90" border=0 ismap></a></iframe>
+</noscript>
+</div>
+
+
+</td>
+<td align=right>
+&nbsp;
+</td></tr></table></div>
+</BODY></HTML>
+
+
+------------TG7FN7EJ8kLFuI7RbGIuBK--
