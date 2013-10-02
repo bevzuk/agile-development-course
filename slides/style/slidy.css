@@ -20,7 +20,8 @@ body
   height: 100%;
   color: black;
   background-color: blue;
-  font-family: "Verdana", "Verdana", Verdana, sans-serif;
+  /*font-family: "Verdana", "Verdana", Verdana, sans-serif;*/
+  font-family: "Trebuchet MS", "Trebuchet MS", TrebuchetMS, sans-serif;
   font-size: 14pt;
 }
 
@@ -187,7 +188,11 @@ pre {
 
 li pre { margin-left: 0; }
 
-blockquote { font-style: italic }
+blockquote { 
+ font-size: 120%;
+ font-style: italic;
+ line-height:150%;
+}
 
 img { background-color: transparent }
 

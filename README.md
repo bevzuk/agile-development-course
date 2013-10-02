@@ -10,6 +10,11 @@
  - [Google-группа](<https://groups.google.com/forum/?hl=ru#!forum/agile-development-course>)
  - [Таблица успеваемости](https://docs.google.com/spreadsheet/ccc?key=0AsBBkrQIoSbjdGh5UFhSRVdQZmZhWXJLNjhwV08zU0E&authkey=CNXx0YMC&authkey=CNXx0YMC#gid=7)
  - [Экзаменационные вопросы](https://docs.google.com/spreadsheet/ccc?key=0AsBBkrQIoSbjdDBDS2FTb3B3d3ZlUldJcl9HUmtEaUE&authkey=CKGP8vYB&authkey=CKGP8vYB#gid=0)
+ - Литература:
+   - Мика Мартин, Роберт Мартин "Принципы, паттерны и методики гибкой разработки на языке C#"
+     ([pdf](http://www.books.ru/books/printsipy-patterny-i-metodiki-gibkoi-razrabotki-na-yazyke-c-fail-pdf-864714/?show=1))
+   - Мартин Фаулер, Кент Бек и др. "Рефакторинг: улучшение существующего кода"
+     ([pdf](http://www.books.ru/books/refaktoring-uluchshenie-sushchestvuyushchego-koda-fail-pdf-552092/?show=1))
 
 ## Вопросы
 
