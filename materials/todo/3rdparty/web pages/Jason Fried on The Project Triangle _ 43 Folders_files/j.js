@@ -1,1 +1,0 @@
-document.write('<center><a target=_blank href="http://a.tribalfusion.com/l.click?clickID=aSmwvQ4dnZdSsZbF4P3HpHaqTHfhXbQ61FF91qEnRbQZbTFQ5WWJ2orBsPUByYEMm3Tje5anXoTbIYbU7WHf1mAvBns7nmHrJ2TZbe3tiM46rZamFUJXcf7OtaBZbK&clickURL=http%3a%2f%2fa%2etribalfusion%2ecom"><img src=http://cdn5.tribalfusion.com/media/37536.gif border=0 height=1 width=1 alt="Click Here!"><\/a><\/center>');
