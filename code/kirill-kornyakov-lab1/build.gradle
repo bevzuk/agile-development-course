@@ -1,0 +1,12 @@
+sourceSets {
+    main {
+        java {
+            srcDir 'ru.unn.agile.ComplexNumber.core/src/main'
+        }
+    }
+    test {
+        java {
+            srcDir 'ru.unn.agile.ComplexNumber.core/src/main'
+        }
+    }
+}
