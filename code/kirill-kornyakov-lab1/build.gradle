@@ -6,7 +6,7 @@ sourceSets {
     }
     test {
         java {
-            srcDir 'ru.unn.agile.ComplexNumber.core/src/main'
+            srcDir 'ru.unn.agile.ComplexNumber.core/src/test'
         }
     }
 }

@@ -9,11 +9,11 @@ public class ComplexNumberTest
 {
 	public final double delta = 0.001;
 
-//	@Test
-//	public void failingTest()
-//	{
-//		fail();
-//	}
+	// @Test
+	// public void failingTest()
+	// {
+	// 	fail();
+	// }
 
 	@Test
 	public void canCreateComplexNumberWithInitialValues()
