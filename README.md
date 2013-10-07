@@ -8,7 +8,9 @@
 
 ## Ресурсы
 
- - [Google-группа](<https://groups.google.com/forum/?hl=ru#!forum/agile-development-course>)
+ - [Google-группа](<https://groups.google.com/forum/?hl=ru#!forum/agile-development-course>) - 
+   просьба по всем вопросам обращаться сюда.
+ - [Результаты тестирования](https://travis-ci.org/UNN-VMK-Software/agile-development-course)
  - [Таблица успеваемости](https://docs.google.com/spreadsheet/ccc?key=0AsBBkrQIoSbjdGh5UFhSRVdQZmZhWXJLNjhwV08zU0E&authkey=CNXx0YMC&authkey=CNXx0YMC#gid=7)
  - [Экзаменационные вопросы](https://docs.google.com/spreadsheet/ccc?key=0AsBBkrQIoSbjdDBDS2FTb3B3d3ZlUldJcl9HUmtEaUE&authkey=CKGP8vYB&authkey=CKGP8vYB#gid=0)
  - Литература:
@@ -20,6 +22,8 @@
 ## Вопросы
 
 ### Введение в Agile
+
+2, 3, 4
 
   1. Какие факторы повлияли на содержание первых методологий разработки.
   1. Достоинства и недостатки каскадной модели.
@@ -39,6 +43,8 @@
   5. Примеры плохих комментариев, почему они считаются code smell.
 
 ### Рефакторинг
+
+1, 3, 4
 
   1. Определение рефакторинга и его цели.
   1. Техника безопасности.
