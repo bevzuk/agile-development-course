@@ -1,0 +1,12 @@
+sourceSets {
+    main {
+        java {
+            srcDir 'lab01-tdd-tree/src/main'
+        }
+    }
+    test {
+        java {
+            srcDir 'lab01-tdd-tree/src/test'
+        }
+    }
+}
