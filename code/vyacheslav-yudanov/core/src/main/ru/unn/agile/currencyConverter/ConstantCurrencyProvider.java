@@ -17,6 +17,15 @@ public class ConstantCurrencyProvider implements ICurrencyProvider {
     }
 
     public enum Indexes{
-        USD, EUR, INR, CNY, RUB
+        USD(0), EUR(1), INR(2), CNY(3), RUB(4);
+
+        private final int value;
+
+        private Indexes(int index) {
+            value = index;
+        }
+        public int toInt() {
+            return value;
+        }
     }
 }

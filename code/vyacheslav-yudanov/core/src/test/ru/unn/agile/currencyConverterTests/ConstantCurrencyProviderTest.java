@@ -26,7 +26,7 @@ public class ConstantCurrencyProviderTest {
     }
 
     @Test
-    public void actualCurrencyListIsAllCurrencyDifferent(){
+    public void actualCurrencyListHasDifferentCurrencies(){
         Currency[] currencies = provider.getActualCurrencyCourse();
         for(int i = 0; i < currencies.length; ++i){
             for(int j = 0; j < currencies.length; ++j){
