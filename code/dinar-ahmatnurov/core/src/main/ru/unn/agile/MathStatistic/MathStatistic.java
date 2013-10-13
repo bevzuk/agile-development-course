@@ -5,7 +5,7 @@ import static java.lang.Math.pow;
 public class MathStatistic {
 
     public static float calcExpectedValue(float[] inputData) {
-        if(inputData.length == 0    )
+        if(inputData.length == 0)
             throw new IllegalArgumentException();
         float result = 0;
         for (float item: inputData) {
@@ -20,8 +20,6 @@ public class MathStatistic {
             throw new IllegalArgumentException();
         return calcMoment(inputData,2);
     }
-
-
 
     public static float calcThirdCentralMoment(float[] inputData) {
         if(inputData.length == 0)

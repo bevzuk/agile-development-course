@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 
 public class MathStatisticTest {
     private MathStatistic mathStatistic;
+    private double eps = 1e-5;
     private float[] tinyInputData = {0.0f};
     private float[] mediumInputData = {0.0f, 0.0f, 0.1f, 0.2f, 1.3f, 1.4f, 1.3f, 1.5f, 2.0f, 2.0f, 2.0f, 2.3f, 2.5f};
     private float[] bigInputData  = {0.0f, 0.0f, 0.1f, 0.2f, 1.3f, 1.4f, 1.3f, 1.5f, 2.0f, 2.0f, 2.0f, 2.3f, 2.5f, 2.6f, 3.1f, 4.2f, 4.5f, 5.1f, 5.1f};
@@ -41,87 +42,87 @@ public class MathStatisticTest {
     }
 
     @Test
-    public void testExpectedValueOnTinyData() {
+    public void isExpectedValueCorrectOnTinyData() {
         float result;
         result =   mathStatistic.calcExpectedValue(tinyInputData);
-        assertEquals(result, 0, 1e-5);
+        assertEquals(0, result, eps);
     }
 
     @Test
-    public void testExpectedValueOnMediumData() {
+    public void isExpectedValueCorrectOnMediumData() {
         float result;
         result =   mathStatistic.calcExpectedValue(mediumInputData);
-        assertEquals(result, 1.27692, 1e-5);
+        assertEquals(1.27692, result, eps);
     }
 
     @Test
-    public void testExpectedValueOnBigData() {
+    public void isExpectedValueCorrectOnBigData() {
         float result;
         result =   mathStatistic.calcExpectedValue(bigInputData);
-        assertEquals(result, 2.16842, 1e-5);
+        assertEquals(2.16842, result, eps);
     }
 
     @Test
-    public void testVarianceValueOnTinyData() {
+    public void isVarianceValueCorrectOnTinyData() {
         float result;
         result =   mathStatistic.calcVariance(tinyInputData);
-        assertEquals(result, 0, 1e-5);
+        assertEquals(0, result, eps);
     }
 
     @Test
-    public void testVarianceValueOnMediumData() {
+    public void isVarianceValueCorrectOnMediumData() {
         float result;
         result =   mathStatistic.calcVariance(mediumInputData);
-        assertEquals(result, 0.76793, 1e-5);
+        assertEquals(0.76793, result, eps);
     }
 
     @Test
-    public void testVarianceValueOnBigData() {
+    public void isVarianceValueCorrectOnBigData() {
         float result;
         result =   mathStatistic.calcVariance(bigInputData);
-        assertEquals(result, 2.53269, 1e-5);
+        assertEquals(2.53269, result, eps);
     }
 
     @Test
-    public void testThirdCentralMomentValueOnTinyData() {
+    public void isThirdCentralMomentValueCorrectOnTinyData() {
         float result;
         result =   mathStatistic.calcThirdCentralMoment(tinyInputData);
-        assertEquals(result, 0, 1e-5);
+        assertEquals(0, result, eps);
     }
 
     @Test
-    public void testThirdCentralMomentValueOnMediumData() {
+    public void isThirdCentralMomentValueCorrectOnMediumData() {
         float result;
         result =   mathStatistic.calcThirdCentralMoment(mediumInputData);
-        assertEquals(result, -0.23043, 1e-5);
+        assertEquals(-0.23043, result, eps);
     }
 
     @Test
-    public void testThirdCentralMomentValueOnBigData() {
+    public void isThirdCentralMomentValueCorrectOnBigData() {
         float result;
         result =   mathStatistic.calcThirdCentralMoment(bigInputData);
-        assertEquals(result, 1.75955, 1e-5);
+        assertEquals(1.75955, result, eps);
     }
 
     @Test
-    public void testFourthCentralMomentValueOnTinyData() {
+    public void isFourthCentralMomentValueCorrectOnTinyData() {
         float result;
         result =   mathStatistic.calcFourthCentralMoment(tinyInputData);
-        assertEquals(result, 0, 1e-5);
+        assertEquals( 0, result, eps);
     }
 
     @Test
-    public void testFourthCentralMomentValueOnMediumData() {
+    public void isFourthCentralMomentValueCorrectOnMediumData() {
         float result;
         result =   mathStatistic.calcFourthCentralMoment(mediumInputData);
-        assertEquals(result, 0.97977, 1e-5);
+        assertEquals(0.97977, result, eps);
     }
 
     @Test
-    public void testFourthCentralMomentValueOnBigData() {
+    public void isFourthCentralMomentValueCorrectOnBigData() {
         float result;
         result =   mathStatistic.calcFourthCentralMoment(bigInputData);
-        assertEquals(result, 14.43848, 1e-5);
+        assertEquals(14.43848, result, eps);
     }
 }
 
