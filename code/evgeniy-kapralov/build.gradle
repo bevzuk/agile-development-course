@@ -1,12 +1,12 @@
 sourceSets {
     main {
         java {
-            srcDir 'lab01-tdd-tree/src/main'
+            srcDir 'tree/src/main'
         }
     }
     test {
         java {
-            srcDir 'lab01-tdd-tree/src/test'
+            srcDir 'tree/src/test'
         }
     }
 }
