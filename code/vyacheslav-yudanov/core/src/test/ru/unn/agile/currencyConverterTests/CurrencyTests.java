@@ -9,27 +9,34 @@ import static ru.unn.agile.currencyConverter.ConstantCurrencyProvider.*;
 import static ru.unn.agile.currencyConverterTests.TestConstants.doubleEpsilon;
 
 public class CurrencyTests {
-    Currency[] currencies;
+    Currency[] actual_currencies;
 
     @Before
     public void init(){
         ICurrencyProvider provider = new ConstantCurrencyProvider();
-        currencies = provider.getActualCurrencyCourse();
+        actual_currencies = provider.getActualCurrencyCourse();
     }
 
     @Test
     public void currencyIsEqualCompareSameCurrenciesTest(){
-        Assert.assertTrue(currencies[Indexes.RUB.toInt()].isEqual(currencies[Indexes.RUB.toInt()]));
+        Currency rub = actual_currencies[Indexes.RUB.toInt()];
+
+        Assert.assertTrue(rub.isEqual(rub));
     }
 
     @Test
     public void currencyIsEqualCompareDifferentCurrenciesTest(){
-        Assert.assertFalse(currencies[Indexes.RUB.toInt()].isEqual(currencies[Indexes.USD.toInt()]));
+        Currency rub = actual_currencies[Indexes.RUB.toInt()];
+        Currency usd = actual_currencies[Indexes.USD.toInt()];
+
+        Assert.assertFalse(rub.isEqual(usd));
     }
 
     @Test
     public void currencyIsEqualFalseOnNullArgumentTest(){
-        Assert.assertFalse(currencies[Indexes.RUB.toInt()].isEqual(null));
+        Currency rub = actual_currencies[Indexes.RUB.toInt()];
+
+        Assert.assertFalse(rub.isEqual(null));
     }
 
     @Test
@@ -47,6 +54,7 @@ public class CurrencyTests {
     public void currencyConstructingThrowsExceptionOnNullCharCodeTest(){
         try {
             Currency usd = new Currency(840, null, "Доллар США", 1, 32.2133);
+
             Assert.fail("Exception wasn't throwed.");
         }
         catch (IllegalArgumentException ex){

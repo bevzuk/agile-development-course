@@ -25,7 +25,7 @@ public class MoneyTests {
 
         cash.convertToCurrency(usd);
 
-        Assert.assertTrue(cash.getCurrency().isEqual(usd));
+        Assert.assertTrue(cash.isInCurrency(usd));
         Assert.assertEquals(1.0, cash.getMoneyAmount(), doubleEpsilon);
     }
 
@@ -37,7 +37,7 @@ public class MoneyTests {
 
         cash.convertToCurrency(cny);
 
-        Assert.assertTrue(cash.getCurrency().isEqual(cny));
+        Assert.assertTrue(cash.isInCurrency(cny));
         Assert.assertEquals(10.0, cash.getMoneyAmount(), doubleEpsilon);
     }
 
@@ -49,7 +49,7 @@ public class MoneyTests {
 
         cash.convertToCurrency(inr);
 
-        Assert.assertTrue(cash.getCurrency().isEqual(inr));
+        Assert.assertTrue(cash.isInCurrency(inr));
         double right_answer = 10 * (inr.nominal/inr.value) * (eur.value/eur.nominal);
         Assert.assertEquals(right_answer, cash.getMoneyAmount(), doubleEpsilon);
     }
@@ -61,8 +61,36 @@ public class MoneyTests {
 
         cash.convertToCurrency(inr);
 
-        Assert.assertTrue(cash.getCurrency().isEqual(inr));
+        Assert.assertTrue(cash.isInCurrency(inr));
         double right_answer = 10 * (inr.nominal/inr.value) * (inr.value/inr.nominal);
         Assert.assertEquals(right_answer, cash.getMoneyAmount(), doubleEpsilon);
+    }
+
+    @Test
+    public void currencyIsEqualCompareSameCurrenciesTest(){
+        Currency rub = actual_currencies[Indexes.RUB.toInt()];
+
+        Money cash = new Money(rub, 1);
+
+        Assert.assertTrue(cash.isInCurrency(rub));
+    }
+
+    @Test
+    public void currencyIsEqualCompareDifferentCurrenciesTest(){
+        Currency rub = actual_currencies[Indexes.RUB.toInt()];
+        Currency usd = actual_currencies[Indexes.USD.toInt()];
+
+        Money cash = new Money(rub, 1);
+
+        Assert.assertFalse(cash.isInCurrency(usd));
+    }
+
+    @Test
+    public void currencyIsEqualFalseOnNullArgumentTest(){
+        Currency rub = actual_currencies[Indexes.RUB.toInt()];
+
+        Money cash = new Money(rub, 1);
+
+        Assert.assertFalse(cash.isInCurrency(null));
     }
 }

@@ -20,7 +20,7 @@ public class Currency {
         this.value = value;
     }
 
-    public boolean isEqual(Currency compareCurrency){
+    public final boolean isEqual(Currency compareCurrency){
         if(compareCurrency == null){
             return false;
         }

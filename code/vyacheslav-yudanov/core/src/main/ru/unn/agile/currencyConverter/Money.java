@@ -9,7 +9,7 @@ public class Money {
         this.moneyAmount = moneyAmount;
     }
 
-    public Currency getCurrency(){
+    public final Currency getCurrency(){
         return currency;
     }
 
@@ -17,7 +17,7 @@ public class Money {
         this.currency = newCurrency;
     }
 
-    public double getMoneyAmount(){
+    public final double getMoneyAmount(){
         return moneyAmount;
     }
 
@@ -29,5 +29,9 @@ public class Money {
         double new_money_count = getMoneyAmount() * (newCurrency.nominal/newCurrency.value) * (currency.value/currency.nominal);
         setMoneyAmount(new_money_count);
         setCurrency(newCurrency);
+    }
+
+    public final boolean isInCurrency(Currency checkCurrency) {
+        return currency.isEqual(checkCurrency);
     }
 }
