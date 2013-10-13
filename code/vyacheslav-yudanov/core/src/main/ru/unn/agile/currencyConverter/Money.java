@@ -2,11 +2,11 @@ package ru.unn.agile.currencyConverter;
 
 public class Money {
     private Currency currency;
-    private double moneyCount;
+    private double moneyAmount;
 
-    public Money(Currency currency, double moneyCount){
+    public Money(Currency currency, double moneyAmount){
         this.currency = currency;
-        this.moneyCount = moneyCount;
+        this.moneyAmount = moneyAmount;
     }
 
     public Currency getCurrency(){
@@ -17,17 +17,17 @@ public class Money {
         this.currency = newCurrency;
     }
 
-    public double getMoneyCount(){
-        return moneyCount;
+    public double getMoneyAmount(){
+        return moneyAmount;
     }
 
-    public void setMoneyCount(double moneyCount){
-        this.moneyCount = moneyCount;
+    public void setMoneyAmount(double moneyAmount){
+        this.moneyAmount = moneyAmount;
     }
 
-    public void convertToCurrency(Currency new_currency){
-        double new_money_count = getMoneyCount() * (new_currency.nominal/new_currency.value) * (currency.value/currency.nominal);
-        setMoneyCount(new_money_count);
-        setCurrency(new_currency);
+    public void convertToCurrency(Currency newCurrency){
+        double new_money_count = getMoneyAmount() * (newCurrency.nominal/newCurrency.value) * (currency.value/currency.nominal);
+        setMoneyAmount(new_money_count);
+        setCurrency(newCurrency);
     }
 }
