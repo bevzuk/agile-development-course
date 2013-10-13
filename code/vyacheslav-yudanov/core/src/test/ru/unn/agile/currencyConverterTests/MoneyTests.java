@@ -6,9 +6,9 @@ import org.junit.Assert;
 import ru.unn.agile.currencyConverter.*;
 
 import static ru.unn.agile.currencyConverter.ConstantCurrencyProvider.*;
+import static ru.unn.agile.currencyConverterTests.TestConstants.doubleEpsilon;
 
 public class MoneyTests {
-    private final double epsilon = 0.00001;
     private Currency[] actual_currencies;
 
     @Before
@@ -26,7 +26,7 @@ public class MoneyTests {
         cash.convertToCurrency(usd);
 
         Assert.assertTrue(cash.getCurrency().isEqual(usd));
-        Assert.assertEquals(1.0, cash.getMoneyAmount(), epsilon);
+        Assert.assertEquals(1.0, cash.getMoneyAmount(), doubleEpsilon);
     }
 
     @Test
@@ -38,7 +38,7 @@ public class MoneyTests {
         cash.convertToCurrency(cny);
 
         Assert.assertTrue(cash.getCurrency().isEqual(cny));
-        Assert.assertEquals(10.0, cash.getMoneyAmount(), epsilon);
+        Assert.assertEquals(10.0, cash.getMoneyAmount(), doubleEpsilon);
     }
 
     @Test
@@ -51,7 +51,7 @@ public class MoneyTests {
 
         Assert.assertTrue(cash.getCurrency().isEqual(inr));
         double right_answer = 10 * (inr.nominal/inr.value) * (eur.value/eur.nominal);
-        Assert.assertEquals(right_answer, cash.getMoneyAmount(), epsilon);
+        Assert.assertEquals(right_answer, cash.getMoneyAmount(), doubleEpsilon);
     }
 
     @Test
@@ -63,6 +63,6 @@ public class MoneyTests {
 
         Assert.assertTrue(cash.getCurrency().isEqual(inr));
         double right_answer = 10 * (inr.nominal/inr.value) * (inr.value/inr.nominal);
-        Assert.assertEquals(right_answer, cash.getMoneyAmount(), epsilon);
+        Assert.assertEquals(right_answer, cash.getMoneyAmount(), doubleEpsilon);
     }
 }

@@ -9,6 +9,10 @@ public class Currency {
     public final double value;
 
     public Currency(int numCode, String charCode, String name, int nominal, double value){
+        if(charCode == null){
+            throw new IllegalArgumentException("Currency's charCode can't be null.");
+        }
+
         this.numCode = numCode;
         this.charCode = charCode;
         this.name = name;
