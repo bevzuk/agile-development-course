@@ -8,8 +8,8 @@ public class Currency {
     public final int nominal;
     public final double value;
 
-    public Currency(int numCode, String charCode, String name, int nominal, double value){
-        ConstructorArgumentChecks(charCode, nominal, value);
+    public Currency(final int numCode, final String charCode, final String name, final int nominal, final double value){
+        constructorArgumentChecks(charCode, nominal, value);
 
         this.numCode = numCode;
         this.charCode = charCode;
@@ -18,7 +18,7 @@ public class Currency {
         this.value = value;
     }
 
-    private final void ConstructorArgumentChecks(String charCode, int nominal, double value){
+    private void constructorArgumentChecks(final String charCode, final int nominal, final double value){
         if(charCode == null){
             throw new IllegalArgumentException("Currency's charCode can't be null.");
         }
@@ -33,10 +33,8 @@ public class Currency {
     }
 
     public final boolean isEqual(Currency compareCurrency){
-        if(compareCurrency == null){
-            return false;
-        }
-
-        return this.numCode == compareCurrency.numCode && this.charCode.equals(compareCurrency.charCode);
+        return compareCurrency != null
+               && this.numCode == compareCurrency.numCode
+               && this.charCode.equals(compareCurrency.charCode);
     }
 }

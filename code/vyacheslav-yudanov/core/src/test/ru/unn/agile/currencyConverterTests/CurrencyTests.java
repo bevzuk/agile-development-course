@@ -53,7 +53,7 @@ public class CurrencyTests {
     @Test
     public void currencyConstructingThrowsExceptionOnNullCharCodeTest(){
         try {
-            Currency usd = new Currency(840, null, "Доллар США", 1, 32.2133);
+            new Currency(840, null, "Доллар США", 1, 32.2133);
 
             Assert.fail("Exception wasn't throwed.");
         }
@@ -68,7 +68,7 @@ public class CurrencyTests {
     @Test
     public void currencyConstructingThrowsExceptionOnNullNominalTest(){
         try {
-            Currency usd = new Currency(840, "USD", "Доллар США", 0, 32.2133);
+            new Currency(840, "USD", "Доллар США", 0, 32.2133);
 
             Assert.fail("Exception wasn't throwed.");
         }
@@ -83,7 +83,7 @@ public class CurrencyTests {
     @Test
     public void currencyConstructingThrowsExceptionOnNegativeNominalTest(){
         try {
-            Currency usd = new Currency(840, "USD", "Доллар США", -1, 32.2133);
+            new Currency(840, "USD", "Доллар США", -1, 32.2133);
 
             Assert.fail("Exception wasn't throwed.");
         }
@@ -98,7 +98,7 @@ public class CurrencyTests {
     @Test
     public void currencyConstructingThrowsExceptionOnNullValueTest(){
         try {
-            Currency usd = new Currency(840, "USD", "Доллар США", 1, 0);
+            new Currency(840, "USD", "Доллар США", 1, 0);
 
             Assert.fail("Exception wasn't throwed.");
         }
@@ -113,7 +113,7 @@ public class CurrencyTests {
     @Test
     public void currencyConstructingThrowsExceptionOnNegativeValueTest(){
         try {
-            Currency usd = new Currency(840, "USD", "Доллар США", 1, -1);
+            new Currency(840, "USD", "Доллар США", 1, -1);
 
             Assert.fail("Exception wasn't throwed.");
         }

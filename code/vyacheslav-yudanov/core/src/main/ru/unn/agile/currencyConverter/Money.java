@@ -31,12 +31,12 @@ public class Money {
     }
 
     public void convertToCurrency(Currency newCurrency){
-        double new_money_count = getMoneyAmount() * (newCurrency.nominal/newCurrency.value) * (currency.value/currency.nominal);
-        setMoneyAmount(new_money_count);
+        double newMoneyCount = getMoneyAmount() * (newCurrency.nominal/newCurrency.value) * (currency.value/currency.nominal);
+        setMoneyAmount(newMoneyCount);
         setCurrency(newCurrency);
     }
 
-    public final boolean isInCurrency(Currency checkCurrency) {
+    public final boolean isInCurrency(final Currency checkCurrency) {
         return currency.isEqual(checkCurrency);
     }
 }
