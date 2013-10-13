@@ -65,4 +65,64 @@ public class CurrencyTests {
         }
     }
 
+    @Test
+    public void currencyConstructingThrowsExceptionOnNullNominalTest(){
+        try {
+            Currency usd = new Currency(840, "USD", "Доллар США", 0, 32.2133);
+
+            Assert.fail("Exception wasn't throwed.");
+        }
+        catch (IllegalArgumentException ex){
+            Assert.assertEquals("Nominal must be positive integer.", ex.getMessage());
+        }
+        catch (Exception e){
+            Assert.fail("Invalid exception type");
+        }
+    }
+
+    @Test
+    public void currencyConstructingThrowsExceptionOnNegativeNominalTest(){
+        try {
+            Currency usd = new Currency(840, "USD", "Доллар США", -1, 32.2133);
+
+            Assert.fail("Exception wasn't throwed.");
+        }
+        catch (IllegalArgumentException ex){
+            Assert.assertEquals("Nominal must be positive integer.", ex.getMessage());
+        }
+        catch (Exception e){
+            Assert.fail("Invalid exception type");
+        }
+    }
+
+    @Test
+    public void currencyConstructingThrowsExceptionOnNullValueTest(){
+        try {
+            Currency usd = new Currency(840, "USD", "Доллар США", 1, 0);
+
+            Assert.fail("Exception wasn't throwed.");
+        }
+        catch (IllegalArgumentException ex){
+            Assert.assertEquals("Value must be positive integer.", ex.getMessage());
+        }
+        catch (Exception e){
+            Assert.fail("Invalid exception type");
+        }
+    }
+
+    @Test
+    public void currencyConstructingThrowsExceptionOnNegativeValueTest(){
+        try {
+            Currency usd = new Currency(840, "USD", "Доллар США", 1, -1);
+
+            Assert.fail("Exception wasn't throwed.");
+        }
+        catch (IllegalArgumentException ex){
+            Assert.assertEquals("Value must be positive integer.", ex.getMessage());
+        }
+        catch (Exception e){
+            Assert.fail("Invalid exception type");
+        }
+    }
+
 }
