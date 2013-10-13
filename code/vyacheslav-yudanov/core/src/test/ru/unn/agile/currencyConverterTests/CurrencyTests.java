@@ -55,7 +55,7 @@ public class CurrencyTests {
         try {
             new Currency(840, null, "Доллар США", 1, 32.2133);
 
-            Assert.fail("Exception wasn't throwed.");
+            Assert.fail("Exception wasn't threw.");
         }
         catch (IllegalArgumentException ex){
             Assert.assertEquals("Currency's charCode can't be null.", ex.getMessage());
@@ -70,7 +70,7 @@ public class CurrencyTests {
         try {
             new Currency(840, "USD", "Доллар США", 0, 32.2133);
 
-            Assert.fail("Exception wasn't throwed.");
+            Assert.fail("Exception wasn't threw.");
         }
         catch (IllegalArgumentException ex){
             Assert.assertEquals("Nominal must be positive integer.", ex.getMessage());
@@ -85,7 +85,7 @@ public class CurrencyTests {
         try {
             new Currency(840, "USD", "Доллар США", -1, 32.2133);
 
-            Assert.fail("Exception wasn't throwed.");
+            Assert.fail("Exception wasn't threw.");
         }
         catch (IllegalArgumentException ex){
             Assert.assertEquals("Nominal must be positive integer.", ex.getMessage());
@@ -100,7 +100,7 @@ public class CurrencyTests {
         try {
             new Currency(840, "USD", "Доллар США", 1, 0);
 
-            Assert.fail("Exception wasn't throwed.");
+            Assert.fail("Exception wasn't threw.");
         }
         catch (IllegalArgumentException ex){
             Assert.assertEquals("Value must be positive integer.", ex.getMessage());
@@ -115,7 +115,7 @@ public class CurrencyTests {
         try {
             new Currency(840, "USD", "Доллар США", 1, -1);
 
-            Assert.fail("Exception wasn't throwed.");
+            Assert.fail("Exception wasn't threw.");
         }
         catch (IllegalArgumentException ex){
             Assert.assertEquals("Value must be positive integer.", ex.getMessage());
