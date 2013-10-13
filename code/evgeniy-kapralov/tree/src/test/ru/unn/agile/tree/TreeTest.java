@@ -13,6 +13,16 @@ public class TreeTest {
     }
 
     @Test
+    public void treeIsNotEqualToNull() {
+        assertEquals(false, tree.equals(null));
+    }
+
+    @Test
+    public void treeIsNotEqualToNotTree() {
+        assertEquals(false, tree.equals(new Integer(5)));
+    }
+
+    @Test
     public void treeIsEqualToItself() {
         assertEquals(tree, tree);
     }
@@ -29,9 +39,8 @@ public class TreeTest {
 
     @Test
     public void insertLessThanRootKeyDeepOne() {
-        int key = 5;
-        tree.insert(key);
-        assertEquals(new Tree(key), tree.getLeft());
+        tree.insert(5);
+        assertEquals(new Tree(5), tree.getLeft());
     }
 
     @Test
@@ -43,9 +52,8 @@ public class TreeTest {
 
     @Test
     public void insertMoreThanRootKeyDeepOne() {
-        int key = 15;
-        tree.insert(key);
-        assertEquals(new Tree(key), tree.getRight());
+        tree.insert(15);
+        assertEquals(new Tree(15), tree.getRight());
     }
 
     @Test
