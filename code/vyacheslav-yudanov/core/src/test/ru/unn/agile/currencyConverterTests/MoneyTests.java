@@ -168,4 +168,34 @@ public class MoneyTests {
         }
     }
 
+    @Test
+    public void moneyConstructorThrowsExceptionOnNullCurrencyTest(){
+        try {
+            new Money(null, 1);
+
+            Assert.fail("Exception wasn't throwed.");
+        }
+        catch (IllegalArgumentException ex){
+            Assert.assertEquals("Currency can't be null.", ex.getMessage());
+        }
+        catch (Exception e){
+            Assert.fail("Invalid exception type");
+        }
+    }
+
+    @Test
+    public void moneyConstructorThrowsExceptionOnNegativeMoneyAmountTest(){
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
+        try {
+            new Money(rub, -1);
+
+            Assert.fail("Exception wasn't throwed.");
+        }
+        catch (IllegalArgumentException ex){
+            Assert.assertEquals("MoneyAmount must be non negative integer.", ex.getMessage());
+        }
+        catch (Exception e){
+            Assert.fail("Invalid exception type");
+        }
+    }
 }

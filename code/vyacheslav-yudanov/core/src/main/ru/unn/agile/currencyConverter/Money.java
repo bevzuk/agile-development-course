@@ -5,8 +5,8 @@ public class Money {
     private double moneyAmount;
 
     public Money(Currency currency, double moneyAmount){
-        this.currency = currency;
-        this.moneyAmount = moneyAmount;
+        setCurrency(currency);
+        setMoneyAmount(moneyAmount);
     }
 
     public final Currency getCurrency(){
@@ -14,6 +14,10 @@ public class Money {
     }
 
     private void setCurrency(Currency newCurrency){
+        if(newCurrency == null){
+            throw new IllegalArgumentException("Currency can't be null.");
+        }
+
         this.currency = newCurrency;
     }
 
