@@ -1,8 +1,7 @@
-package ru.unn.agile.Queue.core;
+package ru.unn.agile.queue;
 
 import org.junit.Before;
 import org.junit.Test;
-import ru.unn.agile.Queue.Queue;
 
 import static org.junit.Assert.*;
 

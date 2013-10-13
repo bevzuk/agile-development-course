@@ -1,4 +1,4 @@
-package ru.unn.agile.Queue;
+package ru.unn.agile.queue;
 
 public class Queue {
 
