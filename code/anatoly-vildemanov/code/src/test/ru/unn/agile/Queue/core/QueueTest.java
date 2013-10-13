@@ -22,21 +22,21 @@ public class QueueTest {
     }
 
     @Test
-    public void pushElement()
+    public void isPushElement()
     {
         queue.push(2);
         assertEquals(false, queue.isEmpty());
     }
 
     @Test
-    public void pushManyElements()
+    public void isPushManyElements()
     {
         fillUpQueue(12);
         assertEquals(false, queue.isEmpty());
     }
 
     @Test
-    public void fullTank()
+    public void isFullTank()
     {
         fillUpQueue(7);
         assertEquals(false, queue.isFull());
@@ -65,7 +65,7 @@ public class QueueTest {
     }
 
     @Test
-    public void popPushPopHeadElement()
+    public void pushPopPushElement()
     {
         queue.push(3);
         queue.pop();
