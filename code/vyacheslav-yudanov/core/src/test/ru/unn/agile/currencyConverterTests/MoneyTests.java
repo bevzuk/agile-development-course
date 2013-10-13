@@ -67,7 +67,7 @@ public class MoneyTests {
     }
 
     @Test
-    public void currencyIsEqualCompareSameCurrenciesTest(){
+    public void moneyIsInCurrencySameCurrencyTest(){
         Currency rub = actual_currencies[Indexes.RUB.toInt()];
 
         Money cash = new Money(rub, 1);
@@ -76,7 +76,7 @@ public class MoneyTests {
     }
 
     @Test
-    public void currencyIsEqualCompareDifferentCurrenciesTest(){
+    public void moneyIsInCurrencyDifferentCurrenciesTest(){
         Currency rub = actual_currencies[Indexes.RUB.toInt()];
         Currency usd = actual_currencies[Indexes.USD.toInt()];
 
@@ -86,11 +86,12 @@ public class MoneyTests {
     }
 
     @Test
-    public void currencyIsEqualFalseOnNullArgumentTest(){
+    public void moneyIsInCurrencyNullArgumentTest(){
         Currency rub = actual_currencies[Indexes.RUB.toInt()];
 
         Money cash = new Money(rub, 1);
 
         Assert.assertFalse(cash.isInCurrency(null));
     }
+
 }
