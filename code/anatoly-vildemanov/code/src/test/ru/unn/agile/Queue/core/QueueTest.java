@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import ru.unn.agile.Queue.Queue;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class QueueTest {
 
@@ -22,24 +22,24 @@ public class QueueTest {
     }
 
     @Test
-    public void isPushElement()
+    public void isEmptyAfterPush()
     {
         queue.push(2);
-        assertEquals(false, queue.isEmpty());
+        assertFalse(queue.isEmpty());
     }
 
     @Test
     public void isPushManyElements()
     {
         fillUpQueue(12);
-        assertEquals(false, queue.isEmpty());
+        assertFalse(queue.isEmpty());
     }
 
     @Test
     public void isFullTank()
     {
         fillUpQueue(7);
-        assertEquals(false, queue.isFull());
+        assertFalse(queue.isFull());
     }
 
     @Test
@@ -61,7 +61,7 @@ public class QueueTest {
     {
         queue.push(3);
         queue.pop();
-        assertEquals(true, queue.isEmpty());
+        assertTrue(queue.isEmpty());
     }
 
     @Test
@@ -93,6 +93,23 @@ public class QueueTest {
         }
         fillUpQueue(7);
         assertEquals(0, queue.pop());
+    }
+
+
+    @Test
+    public void morePopThenPush()
+    {
+        try
+        {
+            queue.push(2);
+            queue.pop();
+            queue.pop();
+            fail();
+        }
+        catch (Exception e)
+        {
+            assertEquals("queue is empty",e.getMessage());
+        }
     }
 
     private void fillUpQueue(int countOfElement)

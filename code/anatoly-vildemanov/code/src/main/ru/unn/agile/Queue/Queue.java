@@ -37,6 +37,10 @@ public class Queue {
 
     public int pop()
     {
+       if(isEmpty())
+       {
+           throw new RuntimeException("queue is empty");
+       }
        count--;
        int res = queue[head];
        head = (head + 1) % MAX_LEN;
