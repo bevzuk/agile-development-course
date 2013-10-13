@@ -1,0 +1,12 @@
+sourceSets {
+    main {
+        java {
+            srcDir 'tree/src/main'
+        }
+    }
+    test {
+        java {
+            srcDir 'tree/src/test'
+        }
+    }
+}
