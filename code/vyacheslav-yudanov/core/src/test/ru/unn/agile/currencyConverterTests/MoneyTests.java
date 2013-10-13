@@ -65,6 +65,25 @@ public class MoneyTests {
     }
 
     @Test
+    public void isConversionToNullCurrencyThrowsExceptionCorrect(){
+        Currency inr = actualCurrencies[Indexes.INR.toInt()];
+        Money cash = new Money(inr, 10);
+
+
+        try {
+            cash.convertToCurrency(null);
+
+            Assert.fail("Exception wasn't throwed.");
+        }
+        catch (IllegalArgumentException ex){
+            Assert.assertEquals("Currency for converting can't be null.", ex.getMessage());
+        }
+        catch (Exception e){
+            Assert.fail("Invalid exception type");
+        }
+    }
+
+    @Test
     public void moneyIsInCurrencySameCurrencyTest(){
         Currency rub = actualCurrencies[Indexes.RUB.toInt()];
 

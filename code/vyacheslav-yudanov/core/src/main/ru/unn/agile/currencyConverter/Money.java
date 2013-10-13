@@ -31,6 +31,10 @@ public class Money {
     }
 
     public void convertToCurrency(Currency newCurrency){
+        if(newCurrency == null){
+            throw new IllegalArgumentException("Currency for converting can't be null.");
+        }
+
         double newMoneyCount = getMoneyAmount() * (newCurrency.nominal/newCurrency.value) * (currency.value/currency.nominal);
         setMoneyAmount(newMoneyCount);
         setCurrency(newCurrency);
