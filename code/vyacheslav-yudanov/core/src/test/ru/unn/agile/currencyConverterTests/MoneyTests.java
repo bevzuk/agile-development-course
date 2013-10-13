@@ -60,10 +60,8 @@ public class MoneyTests {
         Money cash = new Money(inr, 10);
 
         cash.convertToCurrency(inr);
-
         Assert.assertTrue(cash.isInCurrency(inr));
-        double right_answer = 10 * (inr.nominal/inr.value) * (inr.value/inr.nominal);
-        Assert.assertEquals(right_answer, cash.getMoneyAmount(), doubleEpsilon);
+        Assert.assertEquals(10, cash.getMoneyAmount(), doubleEpsilon);
     }
 
     @Test
