@@ -17,6 +17,10 @@ public class Currency {
     }
 
     public boolean isEqual(Currency compareCurrency){
+        if(compareCurrency == null){
+            return false;
+        }
+
         return this.numCode == compareCurrency.numCode && this.charCode.equals(compareCurrency.charCode);
     }
 }
