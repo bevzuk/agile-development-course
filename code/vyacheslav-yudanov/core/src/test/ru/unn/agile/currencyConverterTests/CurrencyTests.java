@@ -9,32 +9,32 @@ import static ru.unn.agile.currencyConverter.ConstantCurrencyProvider.*;
 import static ru.unn.agile.currencyConverterTests.TestConstants.doubleEpsilon;
 
 public class CurrencyTests {
-    Currency[] actual_currencies;
+    Currency[] actualCurrencies;
 
     @Before
     public void init(){
         ICurrencyProvider provider = new ConstantCurrencyProvider();
-        actual_currencies = provider.getActualCurrencyCourse();
+        actualCurrencies = provider.getActualCurrencyCourse();
     }
 
     @Test
     public void currencyIsEqualCompareSameCurrenciesTest(){
-        Currency rub = actual_currencies[Indexes.RUB.toInt()];
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
 
         Assert.assertTrue(rub.isEqual(rub));
     }
 
     @Test
     public void currencyIsEqualCompareDifferentCurrenciesTest(){
-        Currency rub = actual_currencies[Indexes.RUB.toInt()];
-        Currency usd = actual_currencies[Indexes.USD.toInt()];
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
+        Currency usd = actualCurrencies[Indexes.USD.toInt()];
 
         Assert.assertFalse(rub.isEqual(usd));
     }
 
     @Test
     public void currencyIsEqualFalseOnNullArgumentTest(){
-        Currency rub = actual_currencies[Indexes.RUB.toInt()];
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
 
         Assert.assertFalse(rub.isEqual(null));
     }

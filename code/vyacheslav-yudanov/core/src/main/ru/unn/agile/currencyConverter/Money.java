@@ -22,7 +22,12 @@ public class Money {
     }
 
     public void setMoneyAmount(double moneyAmount){
-        this.moneyAmount = moneyAmount;
+        if(moneyAmount >= 0){
+            this.moneyAmount = moneyAmount;
+        }
+        else {
+            throw new IllegalArgumentException("MoneyAmount must be non negative integer.");
+        }
     }
 
     public void convertToCurrency(Currency newCurrency){

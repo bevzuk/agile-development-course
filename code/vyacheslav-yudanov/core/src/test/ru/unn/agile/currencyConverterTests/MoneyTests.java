@@ -9,18 +9,18 @@ import static ru.unn.agile.currencyConverter.ConstantCurrencyProvider.*;
 import static ru.unn.agile.currencyConverterTests.TestConstants.doubleEpsilon;
 
 public class MoneyTests {
-    private Currency[] actual_currencies;
+    private Currency[] actualCurrencies;
 
     @Before
     public void init(){
         ICurrencyProvider provider = new ConstantCurrencyProvider();
-        actual_currencies = provider.getActualCurrencyCourse();
+        actualCurrencies = provider.getActualCurrencyCourse();
     }
 
     @Test
     public void isConversionRubToUsdCorrect(){
-        Currency rub = actual_currencies[Indexes.RUB.toInt()];
-        Currency usd = actual_currencies[Indexes.USD.toInt()];
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
+        Currency usd = actualCurrencies[Indexes.USD.toInt()];
         Money cash = new Money(rub, 32.2133);
 
         cash.convertToCurrency(usd);
@@ -31,8 +31,8 @@ public class MoneyTests {
 
     @Test
     public void isConversionRubToCnyCorrect(){
-        Currency rub = actual_currencies[Indexes.RUB.toInt()];
-        Currency cny = actual_currencies[Indexes.CNY.toInt()];
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
+        Currency cny = actualCurrencies[Indexes.CNY.toInt()];
         Money cash = new Money(rub, 52.6499);
 
         cash.convertToCurrency(cny);
@@ -43,8 +43,8 @@ public class MoneyTests {
 
     @Test
     public void isConversionEurToInrCorrect(){
-        Currency eur = actual_currencies[Indexes.EUR.toInt()];
-        Currency inr = actual_currencies[Indexes.INR.toInt()];
+        Currency eur = actualCurrencies[Indexes.EUR.toInt()];
+        Currency inr = actualCurrencies[Indexes.INR.toInt()];
         Money cash = new Money(eur, 10);
 
         cash.convertToCurrency(inr);
@@ -56,7 +56,7 @@ public class MoneyTests {
 
     @Test
     public void isConversionInrToInrCorrect(){
-        Currency inr = actual_currencies[Indexes.INR.toInt()];
+        Currency inr = actualCurrencies[Indexes.INR.toInt()];
         Money cash = new Money(inr, 10);
 
         cash.convertToCurrency(inr);
@@ -68,7 +68,7 @@ public class MoneyTests {
 
     @Test
     public void moneyIsInCurrencySameCurrencyTest(){
-        Currency rub = actual_currencies[Indexes.RUB.toInt()];
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
 
         Money cash = new Money(rub, 1);
 
@@ -77,8 +77,8 @@ public class MoneyTests {
 
     @Test
     public void moneyIsInCurrencyDifferentCurrenciesTest(){
-        Currency rub = actual_currencies[Indexes.RUB.toInt()];
-        Currency usd = actual_currencies[Indexes.USD.toInt()];
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
+        Currency usd = actualCurrencies[Indexes.USD.toInt()];
 
         Money cash = new Money(rub, 1);
 
@@ -87,11 +87,68 @@ public class MoneyTests {
 
     @Test
     public void moneyIsInCurrencyNullArgumentTest(){
-        Currency rub = actual_currencies[Indexes.RUB.toInt()];
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
 
         Money cash = new Money(rub, 1);
 
         Assert.assertFalse(cash.isInCurrency(null));
+    }
+
+    @Test
+    public void moneyGetCurrencyWorksCorrectTest(){
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
+
+        Money cash = new Money(rub, 1);
+
+        Assert.assertTrue(cash.getCurrency().isEqual(rub));
+    }
+
+    @Test
+    public void moneyGetMoneyAmountWorksCorrectTest(){
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
+
+        Money cash = new Money(rub, 1);
+
+        Assert.assertEquals(1, cash.getMoneyAmount(), doubleEpsilon);
+    }
+
+    @Test
+    public void moneySetMoneyAmountWorksCorrectTest(){
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
+
+        Money cash = new Money(rub, 1);
+        cash.setMoneyAmount(3.14);
+
+        Assert.assertEquals(3.14, cash.getMoneyAmount(), doubleEpsilon);
+    }
+
+    @Test
+    public void moneySetMoneyAmountWorksWithZeroCorrectTest(){
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
+
+        Money cash = new Money(rub, 1);
+        cash.setMoneyAmount(0);
+
+        Assert.assertEquals(0, cash.getMoneyAmount(), doubleEpsilon);
+    }
+
+    @Test
+    public void moneySetMoneyAmountThrowsExceptionOnNegativeValueTest(){
+        Currency rub = actualCurrencies[Indexes.RUB.toInt()];
+
+        Money cash = new Money(rub, 1);
+
+        try {
+            cash.setMoneyAmount(-1);
+
+            Assert.fail("Exception wasn't throwed.");
+        }
+        catch (IllegalArgumentException ex){
+            Assert.assertEquals("MoneyAmount must be non negative integer.", ex.getMessage());
+        }
+        catch (Exception e){
+            Assert.fail("Invalid exception type");
+        }
     }
 
 }
