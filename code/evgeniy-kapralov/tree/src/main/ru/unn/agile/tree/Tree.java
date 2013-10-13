@@ -1,12 +1,5 @@
 package ru.unn.agile.tree;
 
-/**
- * Created with IntelliJ IDEA.
- * User: the_b_000
- * Date: 12.10.13
- * Time: 20:24
- * To change this template use File | Settings | File Templates.
- */
 public class Tree {
     private Tree left;
     private Tree right;

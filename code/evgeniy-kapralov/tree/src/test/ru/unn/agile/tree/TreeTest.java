@@ -1,13 +1,5 @@
 package ru.unn.agile.tree;
 
-/**
- * Created with IntelliJ IDEA.
- * User: the_b_000
- * Date: 12.10.13
- * Time: 20:13
- * To change this template use File | Settings | File Templates.
- */
-
 import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
