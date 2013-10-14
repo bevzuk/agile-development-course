@@ -1,0 +1,12 @@
+sourceSets {
+    main {
+        java {
+            srcDir 'queue/src/main'
+        }
+    }
+    test {
+        java {
+            srcDir 'queue/src/test'
+        }
+    }
+}
