@@ -8,6 +8,15 @@ public class IntersectionComputer {
     }
 
     public Point compute(Plain plain, Line line) {
-        throw new RuntimeException("Null plain passed");
+        if (plain == null && line != null) {
+            throw new RuntimeException("Null plain passed");
+        }
+        if (plain != null && line == null) {
+            throw new RuntimeException("Null line passed");
+        }
+        if (plain == null && line == null) {
+            throw new RuntimeException("Null plain and line passed");
+        }
+        return null;
     }
 }
