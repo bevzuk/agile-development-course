@@ -1,7 +1,5 @@
 package ru.unn.agile.geometry;
 
-
-
 public class IntersectionComputer {
     public IntersectionComputer() {
 
@@ -18,18 +16,23 @@ public class IntersectionComputer {
             throw new RuntimeException("Null plain and line passed");
         }
 
-        Point linePlainPointsDiff = line.getPoint().minus(plain.getPoint());
-        double distance = plain.getNormal().scalarMultiply(linePlainPointsDiff);
+        Point linePlainPointsDiff = plain.getPoint().minus(line.getPoint());
+        double linePointOrthToPlain = plain.getNormal().scalarMultiply(linePlainPointsDiff);
 
-        if (Math.abs(plain.getNormal().scalarMultiply(line.getDirection())) < Point.ACCURACY) {
-            if (Math.abs(distance) < Point.ACCURACY) {
+        if (isLineParallelPlain(plain, line)) {
+            if (Math.abs(linePointOrthToPlain) < Point.ACCURACY) {
                 return line.getPoint();
             } else {
                 return null;
             }
         } else {
-            return plain.getPoint();
+            double onLineProjection = linePointOrthToPlain / (plain.getNormal().scalarMultiply(line.getDirection()));
+            return line.getPoint().plus(line.getDirection().multiply(onLineProjection));
         }
 
+    }
+
+    public boolean isLineParallelPlain(Plain plain, Line line) {
+        return Math.abs(plain.getNormal().scalarMultiply(line.getDirection())) < Point.ACCURACY;
     }
 }

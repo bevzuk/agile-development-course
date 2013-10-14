@@ -1,15 +1,13 @@
 package ru.unn.agile.geometry;
 
 import org.junit.Test;
-import org.junit.Before;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public class TestPoint {
     @Test
-    public void scalarMultZeroPoint()
-    {
+    public void scalarMultZeroPoint() {
         Point p1 = new Point(0, 0, 0);
         Point p2 = new Point(1, 2, 3);
 
@@ -19,8 +17,7 @@ public class TestPoint {
     }
 
     @Test
-    public void scalarMultNormal()
-    {
+    public void scalarMultNormal() {
         Point p1 = new Point(4, 5, 6);
         Point p2 = new Point(1, 2, 3);
 
@@ -30,13 +27,32 @@ public class TestPoint {
     }
 
     @Test
-    public void minusNormal()
-    {
+    public void minusNormal() {
         Point p1 = new Point(4, 5, 6);
         Point p2 = new Point(1, 2, 3);
 
         Point result = p1.minus(p2);
 
         assertEquals(result, new Point(3, 3, 3));
+    }
+
+    @Test
+    public void plusNormal() {
+        Point p1 = new Point(4, 5, 6);
+        Point p2 = new Point(1, 2, 3);
+
+        Point result = p1.plus(p2);
+
+        assertEquals(result, new Point(5, 7, 9));
+    }
+
+    @Test
+    public void multyDouble() {
+        Point p1 = new Point(4, 5, 6);
+        double val = 3.0;
+
+        Point result = p1.multiply(val);
+
+        assertEquals(result, new Point(12, 15, 18));
     }
 }

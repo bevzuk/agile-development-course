@@ -10,8 +10,7 @@ public class WhenPlainAndLineIntersection {
     IntersectionComputer intersectionComputer;
 
     @Before
-    public void setUp()
-    {
+    public void setUp() {
         intersectionComputer = new IntersectionComputer();
     }
 
@@ -88,5 +87,15 @@ public class WhenPlainAndLineIntersection {
         Point result = intersectionComputer.compute(plain, line);
 
         assertEquals(result, new Point(1, 2, 3));
+    }
+
+    @Test
+    public void linePlainOxyCrossXyz() {
+        Plain plain = new Plain(new Point(1, 2, 0), new Point(0, 0, 1));
+        Line line = new Line(new Point(1, 1, 1), new Point(Math.cbrt(1.0/3.0), Math.cbrt(1.0/3.0), Math.cbrt(1.0/3.0)));
+
+        Point result = intersectionComputer.compute(plain, line);
+
+        assertEquals(result, new Point(0, 0, 0));
     }
 }

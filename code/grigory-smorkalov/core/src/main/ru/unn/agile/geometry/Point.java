@@ -7,8 +7,7 @@ public class Point {
 
     public static double ACCURACY = 1E-10;
 
-    public Point(double x, double y, double z)
-    {
+    public Point(double x, double y, double z) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -62,5 +61,18 @@ public class Point {
         result.z = z - rhs.z;
 
         return result;
+    }
+
+    public Point plus(Point rhs) {
+        Point result = new Point(0, 0, 0);
+        result.x = x + rhs.x;
+        result.y = y + rhs.y;
+        result.z = z + rhs.z;
+
+        return result;
+    }
+
+    public Point multiply(double val) {
+        return new Point(x * val, y * val, z * val);
     }
 }
