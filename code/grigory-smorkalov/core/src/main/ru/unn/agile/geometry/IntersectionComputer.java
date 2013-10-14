@@ -17,6 +17,12 @@ public class IntersectionComputer {
         if (plain == null && line == null) {
             throw new RuntimeException("Null plain and line passed");
         }
-        return null;
+
+        if (Math.abs(plain.getNormal().scalarMultiply(line.getDirection())) < Point.ACCURACY) {
+            return null;
+        } else {
+            return plain.getPoint();
+        }
+
     }
 }

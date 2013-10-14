@@ -5,11 +5,31 @@ public class Point {
     private double y;
     private double z;
 
+    public static double ACCURACY = 1E-10;
+
     public Point(double x, double y, double z)
     {
         this.x = x;
         this.y = y;
         this.z = z;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null)
+            return false;
+        if (obj == this)
+            return true;
+        if (!(obj instanceof Point))
+            return false;
+
+        Point rhs = (Point) obj;
+        return (Math.abs(rhs.getX() - x) < ACCURACY) && (Math.abs(rhs.getY() - y) < ACCURACY) && (Math.abs(rhs.getZ() - z) < ACCURACY);
+    }
+
+    public double scalarMultiply(Point rhs)
+    {
+        return x*rhs.x + y*rhs.y + z*rhs.z;
     }
 
     public double getX() {
