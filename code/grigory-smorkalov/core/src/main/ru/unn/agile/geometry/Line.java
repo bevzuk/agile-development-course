@@ -1,11 +1,27 @@
 package ru.unn.agile.geometry;
 
-/**
- * Created with IntelliJ IDEA.
- * User: geser
- * Date: 14.10.13
- * Time: 14:49
- * To change this template use File | Settings | File Templates.
- */
 public class Line {
+    private Point point;
+    private Point direction;
+
+    public Line(Point point, Point direction) {
+        this.point = point;
+        this.direction = direction;
+    }
+
+    public Point getDirection() {
+        return direction;
+    }
+
+    public void setDirection(Point direction) {
+        this.direction = direction;
+    }
+
+    public Point getPoint() {
+        return point;
+    }
+
+    public void setPoint(Point point) {
+        this.point = point;
+    }
 }

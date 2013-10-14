@@ -1,16 +1,24 @@
 package ru.unn.agile.geometry;
 
 import org.junit.Test;
+import org.junit.Before;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public class WhenPlainAndLineIntersection {
+    IntersectionComputer intersectionComputer;
+
+    @Before
+    public void setUp()
+    {
+        intersectionComputer = new IntersectionComputer();
+    }
+
     @Test
     public void nullPlainPassed() {
         Plain plain = null;
-        Line line = new Line();
-        IntersectionComputer intersectionComputer = new IntersectionComputer();
+        Line line = new Line(new Point(0, 0, 0), new Point(0, 0, 1));
         try {
             intersectionComputer.compute(plain, line);
             fail("Exception expected");
@@ -24,9 +32,8 @@ public class WhenPlainAndLineIntersection {
 
     @Test
     public void nullLinePassed() {
-        Plain plain = new Plain();
+        Plain plain = new Plain(new Point(0, 0, 0), new Point(0, 0, 1));
         Line line = null;
-        IntersectionComputer intersectionComputer = new IntersectionComputer();
         try {
             intersectionComputer.compute(plain, line);
             fail("Exception expected");
@@ -42,7 +49,6 @@ public class WhenPlainAndLineIntersection {
     public void nullArgsPassed() {
         Plain plain = null;
         Line line = null;
-        IntersectionComputer intersectionComputer = new IntersectionComputer();
         try {
             intersectionComputer.compute(plain, line);
             fail("Exception expected");
