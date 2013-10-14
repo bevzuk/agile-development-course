@@ -7,7 +7,7 @@ import static org.junit.Assert.fail;
 
 public class TestPoint {
     @Test
-    public void scalarMultZeroPoint() {
+    public void scalarMultiplyZeroPoint() {
         Point p1 = new Point(0, 0, 0);
         Point p2 = new Point(1, 2, 3);
 
@@ -17,7 +17,7 @@ public class TestPoint {
     }
 
     @Test
-    public void scalarMultNormal() {
+    public void scalarMultiplyNormal() {
         Point p1 = new Point(4, 5, 6);
         Point p2 = new Point(1, 2, 3);
 
@@ -47,7 +47,7 @@ public class TestPoint {
     }
 
     @Test
-    public void multyDouble() {
+    public void multiplyDouble() {
         Point p1 = new Point(4, 5, 6);
         double val = 3.0;
 

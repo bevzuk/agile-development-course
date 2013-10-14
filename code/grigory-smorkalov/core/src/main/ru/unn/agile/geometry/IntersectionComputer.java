@@ -17,22 +17,21 @@ public class IntersectionComputer {
         }
 
         Point linePlainPointsDiff = plain.getPoint().minus(line.getPoint());
-        double linePointOrthToPlain = plain.getNormal().scalarMultiply(linePlainPointsDiff);
+        double linePointOrtToPlain = plain.getNormal().scalarMultiply(linePlainPointsDiff);
 
-        if (isLineParallelPlain(plain, line)) {
-            if (Math.abs(linePointOrthToPlain) < Point.ACCURACY) {
+        if (areLineAndPlainParallel(plain, line)) {
+            if (Math.abs(linePointOrtToPlain) < Point.ACCURACY) {
                 return line.getPoint();
             } else {
                 return null;
             }
         } else {
-            double onLineProjection = linePointOrthToPlain / (plain.getNormal().scalarMultiply(line.getDirection()));
-            return line.getPoint().plus(line.getDirection().multiply(onLineProjection));
+            double linePointToIntersectionDistance = linePointOrtToPlain / (plain.getNormal().scalarMultiply(line.getDirection()));
+            return line.getPoint().plus(line.getDirection().multiply(linePointToIntersectionDistance));
         }
-
     }
 
-    public boolean isLineParallelPlain(Plain plain, Line line) {
+    public boolean areLineAndPlainParallel(Plain plain, Line line) {
         return Math.abs(plain.getNormal().scalarMultiply(line.getDirection())) < Point.ACCURACY;
     }
 }

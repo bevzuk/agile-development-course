@@ -70,7 +70,7 @@ public class WhenPlainAndLineIntersection {
     }
 
     @Test
-    public void lineOrthPlain() {
+    public void lineOrtPlain() {
         Plain plain = new Plain(new Point(1, 2, 3), new Point(0, 0, 1));
         Line line = new Line(new Point(1, 2, 3), new Point(0, 0, 1));
 
