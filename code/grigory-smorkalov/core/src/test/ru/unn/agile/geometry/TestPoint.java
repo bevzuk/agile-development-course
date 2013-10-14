@@ -28,4 +28,15 @@ public class TestPoint {
 
         assertEquals(result, 32.0, Point.ACCURACY);
     }
+
+    @Test
+    public void minusNormal()
+    {
+        Point p1 = new Point(4, 5, 6);
+        Point p2 = new Point(1, 2, 3);
+
+        Point result = p1.minus(p2);
+
+        assertEquals(result, new Point(3, 3, 3));
+    }
 }

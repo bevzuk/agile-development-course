@@ -27,8 +27,7 @@ public class Point {
         return (Math.abs(rhs.getX() - x) < ACCURACY) && (Math.abs(rhs.getY() - y) < ACCURACY) && (Math.abs(rhs.getZ() - z) < ACCURACY);
     }
 
-    public double scalarMultiply(Point rhs)
-    {
+    public double scalarMultiply(Point rhs) {
         return x*rhs.x + y*rhs.y + z*rhs.z;
     }
 
@@ -54,5 +53,14 @@ public class Point {
 
     public void setZ(double z) {
         this.z = z;
+    }
+
+    public Point minus(Point rhs) {
+        Point result = new Point(0, 0, 0);
+        result.x = x - rhs.x;
+        result.y = y - rhs.y;
+        result.z = z - rhs.z;
+
+        return result;
     }
 }

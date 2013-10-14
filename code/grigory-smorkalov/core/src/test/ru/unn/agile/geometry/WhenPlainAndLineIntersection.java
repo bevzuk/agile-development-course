@@ -59,4 +59,34 @@ public class WhenPlainAndLineIntersection {
             fail("Unexpected exception: " + e.toString());
         }
     }
+
+    @Test
+    public void lineParallelPlain() {
+        Plain plain = new Plain(new Point(0, 0, 0), new Point(0, 0, 1));
+        Line line = new Line(new Point(0, 0, 1), new Point(0, 1, 0));
+
+        Point result = intersectionComputer.compute(plain, line);
+
+        assertEquals(result, null);
+    }
+
+    @Test
+    public void lineOrthPlain() {
+        Plain plain = new Plain(new Point(1, 2, 3), new Point(0, 0, 1));
+        Line line = new Line(new Point(1, 2, 3), new Point(0, 0, 1));
+
+        Point result = intersectionComputer.compute(plain, line);
+
+        assertEquals(result, new Point(1, 2, 3));
+    }
+
+    @Test
+    public void plainIncludeLine() {
+        Plain plain = new Plain(new Point(1, 2, 3), new Point(0, 0, 1));
+        Line line = new Line(new Point(1, 2, 3), new Point(0, 1, 0));
+
+        Point result = intersectionComputer.compute(plain, line);
+
+        assertEquals(result, new Point(1, 2, 3));
+    }
 }
