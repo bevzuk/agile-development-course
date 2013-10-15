@@ -306,8 +306,6 @@ public class BitArray {
         return result;
     }
 
-    //TODO correct all braces
-
     /**
      * Return count of bit in current instance.
      */
