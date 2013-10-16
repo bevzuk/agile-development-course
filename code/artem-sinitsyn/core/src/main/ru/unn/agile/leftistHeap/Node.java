@@ -5,7 +5,6 @@ public class Node {
     private int rank;
     private Node leftChild;
     private Node rightChild;
-    private Node parent;
 
     public Pair getData() {
         return data;
@@ -42,27 +41,15 @@ public class Node {
         this.rightChild = rightChild;
     }
 
-    public Node getParent() {
-        return parent;
-    }
-
-    public void setParent(Node parent) {
-        this.parent = parent;
-    }
-
     public Node() {
         setData(new Pair());
         setRank(1);
         setLeftChild(null);
         setRightChild(null);
-        setParent(null);
     }
 
-    public Node(Pair data, int rank, Node leftChild, Node rightChild, Node parent) {
+    public Node(Pair data) {
+        this();
         setData(data);
-        setRank(rank);
-        setLeftChild(leftChild);
-        setRightChild(rightChild);
-        setParent(parent);
     }
 }
