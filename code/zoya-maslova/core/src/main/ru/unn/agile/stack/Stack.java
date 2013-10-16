@@ -1,20 +1,22 @@
 package ru.unn.agile.stack;
 
-public class Stack {
-
+public class Stack
+{
     private int[] stack;
     private int topPointer;
     private final int SIZE_OF_STACK = 10;
 
-    Stack(){
+    Stack()
+    {
         stack = new int[SIZE_OF_STACK];
         topPointer = -1;
-    };
+    }
 
     public boolean IsEmpty()
     {
         return (topPointer == -1);
     }
+
     public void Push(String elements)
     {
         if (elements == "")
@@ -23,7 +25,14 @@ public class Stack {
         String[] tokens = ParseStringToElements(elements);
 
         for (String token: tokens)
-            PushOneElement(token);
+            try
+            {
+                PushOneElement(token);
+            }
+            catch (Exception e)
+            {
+                throw new RuntimeException("Stack is overflow");
+            }
     }
 
     public String Top()
@@ -42,8 +51,7 @@ public class Stack {
 
     private void PushOneElement(String element)
     {
-        if (GetSize()!= topPointer)
-            stack[++topPointer] = Integer.parseInt(element);
+        stack[++topPointer] = Integer.parseInt(element);
     }
 
     private String[] ParseStringToElements(String string)
@@ -55,8 +63,4 @@ public class Stack {
     {
         return SIZE_OF_STACK;
     }
-
-
-
-
 }
