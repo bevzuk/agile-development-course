@@ -9,44 +9,42 @@ public class TemperatureConverterTests {
     private Converter temperatureConverter;
 
     @Test
-    public void canCreateCustomScale() {
-        try {
-            Scale dummyScale = new Scale("Dummy", 2, 3);
+    public void canConvertFromCelsiusToFahrenheit() {
+        Converter converter = new Converter(AvailableScales.Celsius,
+                AvailableScales.Fahrenheit);
 
-            Assert.assertEquals("Dummy", dummyScale.getName());
-            Assert.assertEquals(9.0, dummyScale.scaleForward(3));
-            Assert.assertEquals(3.0, dummyScale.scaleBackward(9));
-        }
-        catch (Exception e)
-        {
-           assert false;
-        }
+        double result = converter.leftToRight(36.5);
+        Assert.assertEquals(97.7, result);
     }
 
     @Test
-    public void nullScaleNameExceptionThrown() {
-        try{
-            Scale dummyScale = new Scale(null, 3 , 4);
+    public void converterScaleIsNullExceptionThrown() {
+        try {
+            Converter converter = new Converter(null, AvailableScales.Rankine);
             assert false;
         }
         catch (IllegalArgumentException e) {
-            Assert.assertEquals(e.getMessage(), "Scale name cannot be null");
+            Assert.assertEquals(e.getMessage(), "Scale cannot be null");
         }
     }
 
     @Test
-    public void canGetExistentScale() {
-        Scale scale = ScaleProvider.get(AvailableScales.Celsius);
-        Assert.assertNotNull(scale);
-        Assert.assertEquals("Celsius", scale.getName());
+    public void canCreateTemperature() {
+        Temperature t = new Temperature(36.6, AvailableScales.Celsius);
+
+        Assert.assertNotNull(t);
+        Assert.assertEquals("36.6 C", t.toString());
     }
 
     @Test
-    public void canConvertFromCelsiusToFahrenheit() {
-        Converter converter = new Converter(ScaleProvider.get(AvailableScales.Celsius),
-                ScaleProvider.get(AvailableScales.Fahrenheit));
+    public void temperatureScaleIsNullExceptionThrown() {
+        try {
+            Temperature t = new Temperature(36.6, null);
+            assert false;
+        }
+        catch (IllegalArgumentException e) {
+            Assert.assertEquals(e.getMessage(), "Scale cannot be null");
+        }
 
-        double result = converter.leftToRight(36.5);
-        Assert.assertEquals(90.5, result);
     }
 }
