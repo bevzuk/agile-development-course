@@ -6,19 +6,15 @@ public class Fraction {
     private int m_denominator;
 
     Fraction(int numerator, int denominator) {
+        if (denominator == 0) {
+            throw new IllegalArgumentException("Argument 'denominator' can not be zero!");
+        }
+
         m_numerator = numerator;
         m_denominator = denominator;
 
-        checkDenominatorZero();
         checkDenominatorNegative();
         reduce();
-    }
-
-    private void checkDenominatorZero() {
-        if (m_denominator == 0) {
-            m_numerator = 0;
-            m_denominator = 1;
-        }
     }
 
     private void checkDenominatorNegative() {

@@ -22,11 +22,9 @@ public class FractionCalculatorTest {
         assertEquals(3, fraction.getDenominator());
     }
 
-    @Test
+    @Test (expected=IllegalArgumentException.class)
     public void canDenominatorBeZero() {
         Fraction fraction = new Fraction(5, 0);
-        assertEquals(0, fraction.getNumerator());
-        assertEquals(1, fraction.getDenominator());
     }
 
     @Test
@@ -170,13 +168,10 @@ public class FractionCalculatorTest {
         assertEquals(3 * 5, result.getDenominator());
     }
 
-    @Test
+    @Test (expected=IllegalArgumentException.class)
     public void canDivideZeroFraction() {
-        Fraction first = new Fraction(0, 0);
-        Fraction second = new Fraction(0, 0);
+        Fraction first = new Fraction(3, 5);
+        Fraction second = new Fraction(0, 1);
         Fraction result = first.divide(second);
-
-        assertEquals(0, result.getNumerator());
-        assertEquals(1, result.getDenominator());
     }
 }
