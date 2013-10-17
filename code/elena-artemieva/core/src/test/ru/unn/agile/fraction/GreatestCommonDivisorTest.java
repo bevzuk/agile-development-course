@@ -6,14 +6,12 @@ import static org.junit.Assert.assertEquals;
 public class GreatestCommonDivisorTest {
 
     @Test
-    public void CanCalculateReduceFraction()
-    {
+    public void CanCalculateReduceFraction() {
         assertEquals(8, GreatestCommonDivisor.calculate(16, 24));
     }
 
     @Test
-    public void CanCalculateNoReduceFraction()
-    {
+    public void CanCalculateNoReduceFraction() {
         assertEquals(1, GreatestCommonDivisor.calculate(11, 17));
     }
 }

@@ -10,15 +10,13 @@ import static org.junit.Assert.assertEquals;
 public class FractionCalculatorTest {
 
     @Test
-     public void canCreateFractionWithInitialValues() {
-
+    public void canCreateFractionWithInitialValues() {
         Fraction fraction = new Fraction(0, 1);
         assertNotNull(fraction);
     }
 
     @Test
     public void canSetInitialValue() {
-
         Fraction fraction = new Fraction(1, 3);
         assertEquals(1, fraction.getNumerator());
         assertEquals(3, fraction.getDenominator());
@@ -26,7 +24,6 @@ public class FractionCalculatorTest {
 
     @Test
     public void canDenominatorBeZero() {
-
         Fraction fraction = new Fraction(5, 0);
         assertEquals(0, fraction.getNumerator());
         assertEquals(1, fraction.getDenominator());
@@ -34,7 +31,6 @@ public class FractionCalculatorTest {
 
     @Test
     public void canDenominatorBeNegative() {
-
         Fraction fraction = new Fraction(5, -7);
         assertEquals(-5, fraction.getNumerator());
         assertEquals(7, fraction.getDenominator());
@@ -42,7 +38,6 @@ public class FractionCalculatorTest {
 
     @Test
     public void canNumeratorAndDenominatorBeNegative() {
-
         Fraction fraction = new Fraction(-5, -7);
         assertEquals(5, fraction.getNumerator());
         assertEquals(7, fraction.getDenominator());
@@ -50,7 +45,6 @@ public class FractionCalculatorTest {
 
     @Test
     public void canReduce() {
-
         Fraction fraction = new Fraction(18, 24);
         assertEquals(3, fraction.getNumerator());
         assertEquals(4, fraction.getDenominator());
@@ -58,7 +52,6 @@ public class FractionCalculatorTest {
 
     @Test
     public void canParseFraction() {
-
         Fraction fraction = Fraction.parse("3/8");
         assertEquals(3, fraction.getNumerator());
         assertEquals(8, fraction.getDenominator());
@@ -66,7 +59,6 @@ public class FractionCalculatorTest {
 
     @Test
     public void canParseInteger() {
-
         Fraction fraction = Fraction.parse("5");
         assertEquals(5, fraction.getNumerator());
         assertEquals(1, fraction.getDenominator());
@@ -74,26 +66,22 @@ public class FractionCalculatorTest {
 
     @Test
     public void canTryParseNoFraction() {
-
         assertFalse(Fraction.tryParse("string"));
     }
 
     @Test
     public void canTryParseFraction() {
-
         assertTrue(Fraction.tryParse("7/8"));
     }
 
     @Test
     public void canConvertToString() {
-
         Fraction fraction = new Fraction(5, 6);
         assertEquals("5/6", fraction.toString());
     }
 
     @Test
-    public void canAdd() {
-
+    public void canAddPositiveFraction() {
         Fraction first = new Fraction(2, 5);
         Fraction second = new Fraction(3, 10);
         Fraction result = first.add(second);
@@ -103,8 +91,17 @@ public class FractionCalculatorTest {
     }
 
     @Test
-    public void canSubtract() {
+    public void canAddNegativeFraction() {
+        Fraction first = new Fraction(-5, 13);
+        Fraction second = new Fraction(-7, 11);
+        Fraction result = first.add(second);
 
+        assertEquals(- 5 * 11 - 7 * 13, result.getNumerator());
+        assertEquals(13 * 11, result.getDenominator());
+    }
+
+    @Test
+    public void canSubtractPositiveFraction() {
         Fraction first = new Fraction(2,7);
         Fraction second = new Fraction(3,8);
         Fraction result = first.subtract(second);
@@ -114,8 +111,17 @@ public class FractionCalculatorTest {
     }
 
     @Test
-    public void canMultiply() {
+    public void canSubtractNegativeFraction() {
+        Fraction first = new Fraction(-2,7);
+        Fraction second = new Fraction(-3,8);
+        Fraction result = first.subtract(second);
 
+        assertEquals(- 2 * 8 + 3 * 7, result.getNumerator());
+        assertEquals(7 * 8, result.getDenominator());
+    }
+
+    @Test
+    public void canMultiplyPositiveFraction() {
         Fraction first = new Fraction(5, 6);
         Fraction second = new Fraction(5, 7);
         Fraction result = first.multiply(second);
@@ -125,13 +131,52 @@ public class FractionCalculatorTest {
     }
 
     @Test
-    public void canDivide() {
+    public void canMultiplyNegativeFraction() {
+        Fraction first = new Fraction(-19, 33);
+        Fraction second = new Fraction(-2, 7);
+        Fraction result = first.multiply(second);
 
+        assertEquals(19 * 2, result.getNumerator());
+        assertEquals(33 * 7, result.getDenominator());
+    }
+
+    @Test
+    public void canMultiplyZeroFraction() {
+        Fraction first = new Fraction(0, 33);
+        Fraction second = new Fraction(-2, 7);
+        Fraction result = first.multiply(second);
+
+        assertEquals(0, result.getNumerator());
+        assertEquals(1, result.getDenominator());
+    }
+
+    @Test
+    public void canDividePositiveFraction() {
         Fraction first = new Fraction(3, 8);
         Fraction second = new Fraction(5, 9);
         Fraction result = first.divide(second);
 
         assertEquals(3 * 9, result.getNumerator());
         assertEquals(5 * 8, result.getDenominator());
+    }
+
+    @Test
+    public void canDivideNegativeFraction() {
+        Fraction first = new Fraction(-1, 3);
+        Fraction second = new Fraction(5, 14);
+        Fraction result = first.divide(second);
+
+        assertEquals(- 1 * 14, result.getNumerator());
+        assertEquals(3 * 5, result.getDenominator());
+    }
+
+    @Test
+    public void canDivideZeroFraction() {
+        Fraction first = new Fraction(0, 0);
+        Fraction second = new Fraction(0, 0);
+        Fraction result = first.divide(second);
+
+        assertEquals(0, result.getNumerator());
+        assertEquals(1, result.getDenominator());
     }
 }
