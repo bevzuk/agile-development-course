@@ -1,19 +1,22 @@
 package ru.unn.agile.temperatureConverter;
 
 public class Converter {
-    private Scale scaleFrom;
-    private Scale scaleTo;
+    private AvailableScales scaleFrom;
+    private AvailableScales scaleTo;
 
-    public Converter(Scale scaleFrom, Scale scaleTo) {
+    public Converter(AvailableScales scaleFrom, AvailableScales scaleTo) {
+        if(scaleFrom == null || scaleTo == null)
+            throw new IllegalArgumentException("Scale cannot be null");
+
         this.scaleFrom = scaleFrom;
         this.scaleTo = scaleTo;
     }
 
     public double leftToRight(double value) {
-        return scaleTo.scaleForward(scaleFrom.scaleBackward(value));
+        return scaleTo.scaleTo(scaleFrom.scaleFrom(value));
     }
 
     public double rightToLeft(double value) {
-        return scaleFrom.scaleForward(scaleTo.scaleBackward(value));
+        return scaleFrom.scaleFrom(scaleTo.scaleTo(value));
     }
 }
