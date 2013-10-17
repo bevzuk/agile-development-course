@@ -2,14 +2,6 @@ package ru.unn.agile.temperatureConverter;
 
 import java.util.Locale;
 
-/**
- * Created with IntelliJ IDEA.
- * User: zak
- * Date: 16.10.13
- * Time: 22:45
- * To change this template use File | Settings | File Templates.
- */
-
 public enum AvailableScales {
     Celsius("Celsius", "C", 9.0 / 5.0, 32),
     Fahrenheit("Fahrenheit", "F", 9.0 / 5.0, 32),

@@ -1,12 +1,5 @@
 package ru.unn.agile.temperatureConverter;
 
-/**
- * Created with IntelliJ IDEA.
- * User: zak
- * Date: 17.10.13
- * Time: 22:58
- * To change this template use File | Settings | File Templates.
- */
 public class Temperature {
     private double current;
     private AvailableScales scale;
@@ -17,6 +10,10 @@ public class Temperature {
             throw new IllegalArgumentException("Scale cannot be null");
         this.scale = scale;
         this.current = current;
+    }
+
+    public double getCurrent() {
+        return current;
     }
 
     public AvailableScales getScale() {
