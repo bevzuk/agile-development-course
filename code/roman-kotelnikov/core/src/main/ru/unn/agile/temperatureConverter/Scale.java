@@ -9,13 +9,16 @@ package ru.unn.agile.temperatureConverter;
  */
 public class Scale {
     private String name;
-    private double _scale;
-    private double _shift;
+    private double multiplier;
+    private double shift;
 
-    public Scale(String name, double scale, double shift) {
+    public Scale(String name, double multiplier, double shift) throws IllegalArgumentException {
+        if(name == null)
+            throw new IllegalArgumentException("Scale name cannot be null");
+
         this.name = name;
-        this._scale = scale;
-        this._shift = shift;
+        this.multiplier = multiplier;
+        this.shift = shift;
     }
 
     public String getName() {
@@ -23,10 +26,10 @@ public class Scale {
     }
 
     public double scaleForward(double value) {
-        return _scale*value + _shift;
+        return multiplier *value + shift;
     }
 
     public double scaleBackward(double value) {
-        return (value - _shift) / _scale;
+        return (value - shift) / multiplier;
     }
 }

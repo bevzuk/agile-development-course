@@ -7,10 +7,7 @@ package ru.unn.agile.temperatureConverter;
  * Time: 22:45
  * To change this template use File | Settings | File Templates.
  */
-public enum ScaleFormat {
-    Celsius, Fahrenheit, Kelvin,  Newton, Rankine, Delisle, Reaumur, Romer;
 
-//    public String getName(int index) {
-//
-//    }
-}
+
+public enum AvailableScales {
+    Celsius, Fahrenheit, Kelvin,  Newton, Rankine, Delisle, Reaumur, Romer };
