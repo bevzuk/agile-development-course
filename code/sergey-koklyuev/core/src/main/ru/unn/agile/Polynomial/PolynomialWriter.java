@@ -2,8 +2,7 @@ package ru.unn.agile.Polynomial;
 
 import java.util.Arrays;
 
-public class PolynomialWriter {
-
+class PolynomialWriter {
 
     public String writeTerm(Term term) {
         if (term.coefficient == 0)

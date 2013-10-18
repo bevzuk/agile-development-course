@@ -2,7 +2,7 @@ package ru.unn.agile.Polynomial;
 
 import java.util.ArrayList;
 
-public class PolynomialParser {
+class PolynomialParser {
     public Term parseTerm(String input) {
         Term term = new Term(0, 0);
 

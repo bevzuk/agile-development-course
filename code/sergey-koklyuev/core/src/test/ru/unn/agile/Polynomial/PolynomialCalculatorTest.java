@@ -19,22 +19,22 @@ public class PolynomialCalculatorTest {
     }
 
     @Test
-    public void PolynomialAndEmptyStringGivesTheSamePolynomial() {
+    public void polynomialAndEmptyStringGivesTheSamePolynomial() {
         assertEquals("2x + 1", calculator.add("2x + 1", ""));
     }
 
     @Test
-    public void EmptyStringAndPolynomialGivesTheSamePolynomial() {
+    public void emptyStringAndPolynomialGivesTheSamePolynomial() {
         assertEquals("2x + 1", calculator.add("", "2x + 1"));
     }
 
     @Test
-    public void TwoPolynomialsGivesSum() {
+    public void twoPolynomialsGivesSum() {
         assertEquals("6x + 3", calculator.add("2x + 2", "4x + 1"));
     }
 
     @Test
-    public void TwoBigPolynomialGivesSum() {
+    public void twoBigPolynomialGivesSum() {
         assertEquals("8x^2 + 4x + 1", calculator.add("4x^2 + 2x + 1", "4x^2 + 2x"));
     }
 
@@ -51,6 +51,21 @@ public class PolynomialCalculatorTest {
     @Test
     public void multiplyPolynomialAndEmptyStringGivesEmptyString() {
         assertEquals("", calculator.mul("x + 3", ""));
+    }
+
+    @Test
+    public void sumIncorrectPolynomialsGivesErrorMessage() {
+        assertEquals("Incorrect polynomials format", calculator.add("x^2 + qqq", "x^x+"));
+    }
+
+    @Test
+    public void mulIncorrectPolynomialsGivesErrorMessage() {
+        assertEquals("Incorrect polynomials format", calculator.mul("^3", "7"));
+    }
+
+    @Test
+    public void subIncorrectPolynomialGivesErrorMessage() {
+        assertEquals("Incorrect polynomials format", calculator.sub("++x+^5&3 34 1", "0x + 0x^0"));
     }
 
 }
