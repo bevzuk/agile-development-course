@@ -14,4 +14,19 @@ public class GreatestCommonDivisorTest {
     public void CanCalculateNoReduceFraction() {
         assertEquals(1, GreatestCommonDivisor.calculate(11, 17));
     }
+
+    @Test
+    public void CanFirstArgumentBeZero() {
+        assertEquals(32, GreatestCommonDivisor.calculate(0, 32));
+    }
+
+    @Test
+    public void CanSecondArgumentBeZero() {
+        assertEquals(57, GreatestCommonDivisor.calculate(57, 0));
+    }
+
+    @Test
+    public void CanBothArgumentsBeZero() {
+        assertEquals(1, GreatestCommonDivisor.calculate(0, 0));
+    }
 }

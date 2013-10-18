@@ -6,9 +6,8 @@ public class Fraction {
     private int m_denominator;
 
     Fraction(int numerator, int denominator) {
-        if (denominator == 0) {
+        if (denominator == 0)
             throw new IllegalArgumentException("Argument 'denominator' can not be zero!");
-        }
 
         m_numerator = numerator;
         m_denominator = denominator;
@@ -32,16 +31,32 @@ public class Fraction {
     }
 
     public static Fraction parse(String input) {
-        String[] part = input.split("/");
+        if (input == null || input.isEmpty())
+            throwFractionParseException();
 
-        int numerator = Integer.parseInt(part[0]);
+        int numerator = 0;
         int denominator = 1;
 
-        if (part.length > 1) {
-            denominator = Integer.parseInt(part[1]);
+        String[] parts = input.split("/");
+
+        if (parts.length == 0 || parts.length > 2)
+            throwFractionParseException();
+
+        try {
+            numerator = Integer.parseInt(parts[0].trim());
+
+            if (parts.length > 1)
+                denominator = Integer.parseInt(parts[1].trim());
+        }
+        catch (Exception e) {
+            throwFractionParseException();
         }
 
         return new Fraction(numerator, denominator);
+    }
+
+    private static void throwFractionParseException() {
+        throw new IllegalArgumentException("Failed parse input string!");
     }
 
     public static Boolean tryParse(String input) {
@@ -49,7 +64,7 @@ public class Fraction {
             parse(input);
             return true;
         }
-        catch(Exception e) {
+        catch (Exception e) {
             return false;
         }
     }
@@ -79,6 +94,9 @@ public class Fraction {
     }
 
     public String toString() {
+        if (getDenominator() == 1)
+            return String.format("%d", getNumerator());
+
         return String.format("%d/%d", getNumerator(), getDenominator());
     }
 }

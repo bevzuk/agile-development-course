@@ -12,12 +12,14 @@ public class FractionCalculatorTest {
     @Test
     public void canCreateFractionWithInitialValues() {
         Fraction fraction = new Fraction(0, 1);
+
         assertNotNull(fraction);
     }
 
     @Test
     public void canSetInitialValue() {
         Fraction fraction = new Fraction(1, 3);
+
         assertEquals(1, fraction.getNumerator());
         assertEquals(3, fraction.getDenominator());
     }
@@ -30,6 +32,7 @@ public class FractionCalculatorTest {
     @Test
     public void canDenominatorBeNegative() {
         Fraction fraction = new Fraction(5, -7);
+
         assertEquals(-5, fraction.getNumerator());
         assertEquals(7, fraction.getDenominator());
     }
@@ -37,6 +40,7 @@ public class FractionCalculatorTest {
     @Test
     public void canNumeratorAndDenominatorBeNegative() {
         Fraction fraction = new Fraction(-5, -7);
+
         assertEquals(5, fraction.getNumerator());
         assertEquals(7, fraction.getDenominator());
     }
@@ -44,38 +48,149 @@ public class FractionCalculatorTest {
     @Test
     public void canReduce() {
         Fraction fraction = new Fraction(18, 24);
+
         assertEquals(3, fraction.getNumerator());
         assertEquals(4, fraction.getDenominator());
     }
 
     @Test
-    public void canParseFraction() {
+    public void canParsePositiveFraction() {
         Fraction fraction = Fraction.parse("3/8");
+
         assertEquals(3, fraction.getNumerator());
         assertEquals(8, fraction.getDenominator());
     }
 
     @Test
-    public void canParseInteger() {
+    public void canParseNegativeFraction() {
+        Fraction fraction = Fraction.parse("-3/6");
+
+        assertEquals(-1, fraction.getNumerator());
+        assertEquals(2, fraction.getDenominator());
+    }
+
+    @Test
+    public void canParseFractionWithNegativeDenominator() {
+        Fraction fraction = Fraction.parse("8/-2");
+
+        assertEquals(-4, fraction.getNumerator());
+        assertEquals(1, fraction.getDenominator());
+    }
+
+    @Test
+    public void canParseFractionWithNegativeNumeratorAndDenominator() {
+        Fraction fraction = Fraction.parse("-2/-4");
+
+        assertEquals(1, fraction.getNumerator());
+        assertEquals(2, fraction.getDenominator());
+    }
+
+    @Test
+    public void canParseFractionWithWhiteSpaces() {
+        Fraction fraction = Fraction.parse("  17  /  36  ");
+
+        assertEquals(17, fraction.getNumerator());
+        assertEquals(36, fraction.getDenominator());
+    }
+
+    @Test (expected=IllegalArgumentException.class)
+    public void canParseFractionWithZeroDenominator() {
+        Fraction fraction = Fraction.parse("2/0");
+    }
+
+    @Test
+    public void canParsePositiveInteger() {
         Fraction fraction = Fraction.parse("5");
+
         assertEquals(5, fraction.getNumerator());
         assertEquals(1, fraction.getDenominator());
     }
 
     @Test
-    public void canTryParseNoFraction() {
-        assertFalse(Fraction.tryParse("string"));
+    public void canParseNegativeInteger() {
+        Fraction fraction = Fraction.parse("-1");
+
+        assertEquals(-1, fraction.getNumerator());
+        assertEquals(1, fraction.getDenominator());
+    }
+
+    @Test (expected=IllegalArgumentException.class)
+    public void canParseNullString() {
+        Fraction fraction = Fraction.parse(null);
+    }
+
+    @Test (expected=IllegalArgumentException.class)
+    public void canParseEmptyString() {
+        Fraction fraction = Fraction.parse("");
+    }
+
+    @Test (expected=IllegalArgumentException.class)
+    public void canParseWhiteSpaceString() {
+        Fraction fraction = Fraction.parse(" ");
+    }
+
+    @Test (expected=IllegalArgumentException.class)
+    public void canParseStringWithoutFraction() {
+        Fraction fraction = Fraction.parse("text");
+    }
+
+    @Test (expected=IllegalArgumentException.class)
+    public void canParseFractionWithoutNumbers() {
+        Fraction fraction = Fraction.parse("text/text");
+    }
+
+    @Test (expected=IllegalArgumentException.class)
+    public void canParseIllegalFraction() {
+        Fraction fraction = Fraction.parse("3/4/5");
     }
 
     @Test
-    public void canTryParseFraction() {
+    public void canTryParseNormalFraction() {
         assertTrue(Fraction.tryParse("7/8"));
     }
 
     @Test
-    public void canConvertToString() {
+    public void canTryParseNullString() {
+        assertFalse(Fraction.tryParse(null));
+    }
+
+    @Test
+    public void canTryParseEmptyString() {
+        assertFalse(Fraction.tryParse(""));
+    }
+
+    @Test
+    public void canTryParseWhiteSpaceString() {
+        assertFalse(Fraction.tryParse(" "));
+    }
+
+    @Test
+    public void canTryParseStringWithoutFraction() {
+        assertFalse(Fraction.tryParse("text"));
+    }
+
+    @Test
+    public void canTryParseFractionWithoutNumbers() {
+        assertFalse(Fraction.tryParse("text/text"));
+    }
+
+    @Test
+    public void canTryParseIllegalFraction() {
+        assertFalse(Fraction.tryParse("3/4/5"));
+    }
+
+    @Test
+    public void canConvertNormalFractionToString() {
         Fraction fraction = new Fraction(5, 6);
+
         assertEquals("5/6", fraction.toString());
+    }
+
+    @Test
+    public void canConvertIntegerFractionToString() {
+        Fraction fraction = new Fraction(8, 1);
+
+        assertEquals("8", fraction.toString());
     }
 
     @Test
