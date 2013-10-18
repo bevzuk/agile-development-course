@@ -16,88 +16,55 @@ public class ConverterOfLenghtTest {
     }
 
     @Test
-    public void isCorrectSetValueFromMeter(){
-        assertEquals(24.67, converterOfLenght.setValueFromMeter(24.67), eps);
+    public void isCorrectConvertRodToKilometer(){
+        assertEquals(0.050292, converterOfLenght.convertLenght("rod", "kilometer", 10), eps);
     }
 
     @Test
-    public void isCorrectSetValueFromKilometer() {
-        assertEquals(24670, converterOfLenght.setValueFromKilometer(24.67), eps);
+    public void isCorrectConvertMileToChain(){
+        assertEquals(800, converterOfLenght.convertLenght("mile", "chain", 10), eps);
     }
 
     @Test
-    public void isCorrectSetValueFromInch() {
-        assertEquals(0.626618, converterOfLenght.setValueFromInch(24.67), eps);
+    public void isCorrectConvertDecimeterToYard(){
+        assertEquals(1.093613298, converterOfLenght.convertLenght("decimeter", "yard", 10), eps);
     }
 
     @Test (expected = IllegalArgumentException.class)
-    public void throwsOnNegativeInputValueInSetFromMeter() {
-        converterOfLenght.setValueFromMeter(-10);
+    public void throwsOnOverflowInConvertMileToMillimeter(){
+        converterOfLenght.convertLenght("mile", "millimeter", Double.MAX_VALUE);
     }
 
     @Test (expected = IllegalArgumentException.class)
-    public void throwsOnBigInputValueInSetFromMeter() {
-        converterOfLenght.setValueFromMeter(Double.MAX_VALUE);
+    public void throwsOnOverflowInConvertKilometerToDecimeter(){
+        converterOfLenght.convertLenght("kilometer", "decimeter", Double.MAX_VALUE);
     }
 
     @Test (expected = IllegalArgumentException.class)
-    public void throwsOnNegativeInputValueInSetFromKilometer() {
-        converterOfLenght.setValueFromKilometer(-10);
+    public void throwsOnOverflowInConvertChainToYard(){
+        converterOfLenght.convertLenght("chain", "yard", Double.MAX_VALUE);
     }
 
     @Test (expected = IllegalArgumentException.class)
-    public void throwsOnBigInputValueInSetFromKilometer() {
-        converterOfLenght.setValueFromKilometer(Double.MAX_VALUE);
+    public void throwsOnOverflowExponentInConvert(){
+        converterOfLenght.convertLenght("millimeter", "mile", Double.MIN_NORMAL);
     }
 
     @Test (expected = IllegalArgumentException.class)
-    public void throwsOnNegativeInputValueInSetFromInch() {
-        converterOfLenght.setValueFromInch(-10);
+    public void throwsOnIllegalInputUnitInConvertLenght(){
+        String inputUnit = "parrot";
+        converterOfLenght.convertLenght(inputUnit, "meter", 10);
     }
 
     @Test (expected = IllegalArgumentException.class)
-    public void throwsOnBigInputValueInSetFromInch() {
-        converterOfLenght.setValueFromInch(Double.MAX_VALUE / converterOfLenght.factorInchToMeter);
-    }
-
-
-    @Test
-    public void isCorrectConvertToMeterSmallValue(){
-        converterOfLenght.setValueFromMeter(2.34e-12);
-        assertEquals(2.34e-12, converterOfLenght.convertToMeter(), eps);
-    }
-
-    @Test
-    public void isCorrectConvertToKilometerSmallValue(){
-        converterOfLenght.setValueFromKilometer(2.34e-12);
-        assertEquals(2.34e-12, converterOfLenght.convertToKilometer(), eps);
-    }
-
-    @Test
-    public void isCorrectConvertToInchSmallValue(){
-        converterOfLenght.setValueFromInch(2.34e-12);
-        assertEquals(2.34e-12, converterOfLenght.convertToInch(), eps);
+    public void throwsOnIllegalOutputUnitInConvertLenght(){
+        String outputUnit = "parrot";
+        converterOfLenght.convertLenght("chain", outputUnit, 10);
     }
 
     @Test (expected = IllegalArgumentException.class)
-    public void throwsOnNegativeInputValueInConvertToMeter() {
-        converterOfLenght.convertToMeter();
-    }
-
-    @Test (expected = IllegalArgumentException.class)
-    public void throwsOnNegativeInputValueInConvertToKilometer() {
-        converterOfLenght.convertToKilometer();
-    }
-
-    @Test (expected = IllegalArgumentException.class)
-    public void throwsOnNegativeInputValueInConvertToInch() {
-        converterOfLenght.convertToInch();
-    }
-
-    @Test (expected = IllegalArgumentException.class)
-    public void throwsOnBigValueInConvertToInch() {
-        converterOfLenght.setValueFromMeter(Double.MAX_VALUE - eps);
-        converterOfLenght.convertToInch();
+    public void throwsOnNegativeInputValueInConvertLenght(){
+        converterOfLenght.convertLenght("meter", "kilometer", -10);
     }
 
 }
