@@ -135,10 +135,4 @@ public class TestDeque {
         deque.pushFront(666);
         assertEquals(666, deque.popBack());
     }
-
-    @Test
-    public void ddd(){
-        fillCompletelyFromFront();
-    }
-
 }
