@@ -7,7 +7,7 @@ public class Converter {
         if (scale == null)
             throw new IllegalArgumentException("Scale cannot be null");
 
-        double inputInCelsium = from.getScale().scaleFrom(from.getCurrent());
-        return new Temperature(scale.scaleTo(inputInCelsium), scale);
+        double inputInCelsius = from.getScale().scaleFrom(from.getCurrent());
+        return new Temperature(scale.scaleTo(inputInCelsius), scale);
     }
 }
