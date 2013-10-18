@@ -1,0 +1,12 @@
+sourceSets {
+    main {
+        java {
+            srcDir 'deque/src/main'
+        }
+    }
+    test {
+        java {
+            srcDir 'deque/src/test'
+        }
+    }
+}
