@@ -161,124 +161,122 @@ public class WhenCalculateCredit
 		}
 	}
 
-    @Test
-    public void correctData1WorksProperlyInGetAnnuityMonthPaymentMethod()
-    {
-        CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(120000).monthsCount(12).percent(24).build();
-        assertDoubles(11347.15, creditCalculator.getAnnuityMonthPayment());
-    }
+	@Test
+	public void correctData1WorksProperlyInGetAnnuityMonthPaymentMethod()
+	{
+		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(120000).monthsCount(12).percent(24).build();
+		assertDoubles(11347.15, creditCalculator.getAnnuityMonthPayment());
+	}
 
-    @Test
-    public void correctData2WorksProperlyInGetAnnuityMonthPaymentMethod()
-    {
+	@Test
+	public void correctData2WorksProperlyInGetAnnuityMonthPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(100000).monthsCount(36).percent(10).build();
-        assertDoubles(3226.72, creditCalculator.getAnnuityMonthPayment());
-    }
+		assertDoubles(3226.72, creditCalculator.getAnnuityMonthPayment());
+	}
 
-    @Test
-    public void correctData3WorksProperlyInGetAnnuityMonthPaymentMethod()
-    {
+	@Test
+	public void correctData3WorksProperlyInGetAnnuityMonthPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(400000).monthsCount(11).percent(7).build();
-        assertDoubles(37648.70, creditCalculator.getAnnuityMonthPayment());
-    }
+		assertDoubles(37648.70, creditCalculator.getAnnuityMonthPayment());
+	}
 
-    @Test
-    public void correctData1WorksProperlyInGetDifferentiatedMonthPaymentMethod()
-    {
+	@Test
+	public void correctData1WorksProperlyInGetDifferentiatedMonthPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(120000).monthsCount(12).percent(24).build();
-        assertDoubles(11600.00, creditCalculator.getDifferentiatedMonthPayment(5));
-    }
+		assertDoubles(11600.00, creditCalculator.getDifferentiatedMonthPayment(5));
+	}
 
-    @Test
-    public void correctData2WorksProperlyInGetDifferentiatedMonthPaymentMethod()
-    {
+	@Test
+	public void correctData2WorksProperlyInGetDifferentiatedMonthPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(140000).monthsCount(17).percent(18.5).build();
-        assertDoubles(8616.18 , creditCalculator.getDifferentiatedMonthPayment(15));
-    }
+		assertDoubles(8616.18 , creditCalculator.getDifferentiatedMonthPayment(15));
+	}
 
-    @Test
-    public void correctData3WorksProperlyInGetDifferentiatedMonthPaymentMethod()
-    {
+	@Test
+	public void correctData3WorksProperlyInGetDifferentiatedMonthPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(170000).monthsCount(6).percent(5).build();
-        assertDoubles(28805.56, creditCalculator.getDifferentiatedMonthPayment(3));
-    }
+		assertDoubles(28805.56, creditCalculator.getDifferentiatedMonthPayment(3));
+	}
 
-    @Test
-    public void incorrectMonthNumberArgument1InGetDifferentiatedMonthPaymentThrowException()
-    {
-        try
-        {
+	@Test
+	public void incorrectMonthNumberArgument1InGetDifferentiatedMonthPaymentThrowException()
+	{
+		try
+		{
 			CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(180000).monthsCount(24).percent(16).build();
-            creditCalculator.getDifferentiatedMonthPayment(0);
-            fail();
-        }
-        catch (IllegalArgumentException ex)
-        {
-            assertEquals("monthNumber argument value exception", ex.getMessage());
-        }
-    }
+			creditCalculator.getDifferentiatedMonthPayment(0);
+			fail();
+		}
+		catch (IllegalArgumentException ex)
+		{
+			assertEquals("monthNumber argument value exception", ex.getMessage());
+		}
+	}
 
-    @Test
-    public void incorrectMonthNumberArgument2InGetDifferentiatedMonthPaymentThrowException()
-    {
-        try
-        {
+	@Test
+	public void incorrectMonthNumberArgument2InGetDifferentiatedMonthPaymentThrowException()
+	{
+		try
+		{
 			CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(160000).monthsCount(24).percent(11).build();
-            creditCalculator.getDifferentiatedMonthPayment(24+1);
-            fail();
-        }
-        catch (IllegalArgumentException ex)
-        {
-            assertEquals("monthNumber argument value exception", ex.getMessage());
-        }
-    }
+			creditCalculator.getDifferentiatedMonthPayment(24+1);
+			fail();
+		}
+		catch (IllegalArgumentException ex)
+		{
+			assertEquals("monthNumber argument value exception", ex.getMessage());
+		}
+	}
 
-    @Test
-    public void correctData1WorksProperlyInGetAnnuityTotalPaymentMethod()
-    {
+	@Test
+	public void correctData1WorksProperlyInGetAnnuityTotalPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(120000).monthsCount(12).percent(24).build();
-        assertDoubles(136165.82, creditCalculator.getAnnuityTotalPayment());
-    }
+		assertDoubles(136165.82, creditCalculator.getAnnuityTotalPayment());
+	}
 
-    @Test
-    public void correctData2WorksProperlyInGetAnnuityTotalPaymentMethod()
-    {
+	@Test
+	public void correctData2WorksProperlyInGetAnnuityTotalPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(180000).monthsCount(18).percent(10).build();
-        assertDoubles(194584.94, creditCalculator.getAnnuityTotalPayment());
-    }
+		assertDoubles(194584.94, creditCalculator.getAnnuityTotalPayment());
+	}
 
-    @Test
-    public void correctData3WorksProperlyInGetAnnuityTotalPaymentMethod()
-    {
+	@Test
+	public void correctData3WorksProperlyInGetAnnuityTotalPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(35000).monthsCount(10).percent(15).build();
-        assertDoubles(37451.08, creditCalculator.getAnnuityTotalPayment());
-    }
+		assertDoubles(37451.08, creditCalculator.getAnnuityTotalPayment());
+	}
 
-    @Test
-    public void correctData1WorksProperlyInGetDifferentiatedTotalPaymentMethod()
-    {
+	@Test
+	public void correctData1WorksProperlyInGetDifferentiatedTotalPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(180000).monthsCount(18).percent(10).build();
-        assertDoubles(194250.00, creditCalculator.getDifferentiatedTotalPayment());
-    }
+		assertDoubles(194250.00, creditCalculator.getDifferentiatedTotalPayment());
+	}
 
-    @Test
-    public void correctData2WorksProperlyInGetDifferentiatedTotalPaymentMethod()
-    {
+	@Test
+	public void correctData2WorksProperlyInGetDifferentiatedTotalPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(200000).monthsCount(6).percent(5).build();
-        assertDoubles(202916.67, creditCalculator.getDifferentiatedTotalPayment());
-    }
+		assertDoubles(202916.67, creditCalculator.getDifferentiatedTotalPayment());
+	}
 
-    @Test
-    public void correctData3WorksProperlyInGetDifferentiatedTotalPaymentMethod()
-    {
+	@Test
+	public void correctData3WorksProperlyInGetDifferentiatedTotalPaymentMethod()
+	{
 		CreditCalculator creditCalculator = new CreditCalculator.Builder().amount(150000).monthsCount(9).percent(15).build();
-        assertDoubles(159375.00, creditCalculator.getDifferentiatedTotalPayment());
-    }
+		assertDoubles(159375.00, creditCalculator.getDifferentiatedTotalPayment());
+	}
 
-
-
-    private void assertDoubles(double expected, double input)
-    {
-        assertEquals(expected, input, 1.0);
-    }
+	private void assertDoubles(double expected, double input)
+	{
+		assertEquals(expected, input, 1.0);
+	}
 }

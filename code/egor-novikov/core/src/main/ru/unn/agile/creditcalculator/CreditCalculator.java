@@ -6,11 +6,11 @@ public class CreditCalculator
 
 	private final int HUNDRED = 100;
 
-    private double amount;
+	private double amount;
 
-    private int monthsCount;
+	private int monthsCount;
 
-    private double percent;
+	private double percent;
 
 	public double getAmount()
 	{
@@ -113,45 +113,45 @@ public class CreditCalculator
 		}
 	}
 
-    public CreditCalculator(Builder builder)
-    {
-        this.amount = builder.amount;
-        this.monthsCount = builder.monthsCount;
-        this.percent = builder.percent;
-    }
+	public CreditCalculator(Builder builder)
+	{
+		this.amount = builder.amount;
+		this.monthsCount = builder.monthsCount;
+		this.percent = builder.percent;
+	}
 
-    private void checkMonthNumber(int monthNumber)
-    {
-        if (monthNumber <= 0 || monthNumber > getMonthsCount())
-            throw new IllegalArgumentException("monthNumber argument value exception");
-    }
+	private void checkMonthNumber(int monthNumber)
+	{
+		if (monthNumber <= 0 || monthNumber > getMonthsCount())
+			throw new IllegalArgumentException("monthNumber argument value exception");
+	}
 
-    public double getAnnuityMonthPayment()
-    {
-        double interestRateCoefficient = getPercent() / (MONTH_PER_YEAR * HUNDRED);
-        double annuityCoefficient = interestRateCoefficient*Math.pow(1 + interestRateCoefficient, getMonthsCount())
-                                        /(Math.pow(1 + interestRateCoefficient, getMonthsCount()) - 1);
-        return annuityCoefficient * getAmount();
-    }
+	public double getAnnuityMonthPayment()
+	{
+		double interestRateCoefficient = getPercent() / (MONTH_PER_YEAR * HUNDRED);
+		double annuityCoefficient = interestRateCoefficient*Math.pow(1 + interestRateCoefficient, getMonthsCount())
+										/(Math.pow(1 + interestRateCoefficient, getMonthsCount()) - 1);
+		return annuityCoefficient * getAmount();
+	}
 
-    public double getDifferentiatedMonthPayment(int monthNumber)
-    {
-        checkMonthNumber(monthNumber);
-        double monthlyPrincipalPayment = getAmount() / getMonthsCount();
-        return monthlyPrincipalPayment + (getAmount() - monthlyPrincipalPayment*(monthNumber-1)) * getPercent()
-																						/ (MONTH_PER_YEAR * HUNDRED);
-    }
+	public double getDifferentiatedMonthPayment(int monthNumber)
+	{
+		checkMonthNumber(monthNumber);
+		double monthlyPrincipalPayment = getAmount() / getMonthsCount();
+		return monthlyPrincipalPayment + (getAmount() - monthlyPrincipalPayment*(monthNumber-1)) * getPercent()
+																					/ (MONTH_PER_YEAR * HUNDRED);
+	}
 
-    public double getAnnuityTotalPayment()
-    {
-        return getMonthsCount() * getAnnuityMonthPayment();
-    }
+	public double getAnnuityTotalPayment()
+	{
+		return getMonthsCount() * getAnnuityMonthPayment();
+	}
 
-    public double getDifferentiatedTotalPayment()
-    {
-        double result = 0.0;
-        for (int i=1; i<getMonthsCount()+1; i++)
-            result += getDifferentiatedMonthPayment(i);
-        return result;
-    }
+	public double getDifferentiatedTotalPayment()
+	{
+		double result = 0.0;
+		for (int i=1; i<getMonthsCount()+1; i++)
+			result += getDifferentiatedMonthPayment(i);
+		return result;
+	}
 }
