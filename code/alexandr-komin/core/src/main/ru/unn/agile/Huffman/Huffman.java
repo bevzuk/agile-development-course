@@ -5,6 +5,30 @@ import java.util.PriorityQueue;
 
 public class Huffman {
 
+    private static class Node implements Comparable<Node>  {
+        public  char symbol;
+        public int freq;
+        public Node leftChild, rightChild;
+
+        Node(char symbol, int freq, Node leftChild, Node rightChild){
+            if((leftChild==null&& rightChild != null)||(leftChild != null&& rightChild == null)){
+                throw new RuntimeException("Node can't have one child");
+            }
+            this.symbol = symbol;
+            this.freq=freq;
+            this.leftChild =leftChild;
+            this.rightChild = rightChild;
+        }
+
+        public boolean isLeaf() {
+            return (leftChild == null && rightChild == null);
+        }
+
+        public int compareTo(Node node) {
+            return this.freq - node.freq;
+        }
+    }
+
     private static Node rootTree;
     private static int sizeArray = 65536;
 
@@ -33,6 +57,8 @@ public class Huffman {
             throw new RuntimeException("Empty string are not allowed for expand");
         }
         char[] inputTextChars = inputText.toCharArray();
+
+        checkString(inputTextChars);
 
         return formOutputTextExpand(inputTextChars);
     }
@@ -102,6 +128,13 @@ public class Huffman {
         }
         else {
             arrCodes[node.symbol] = code;
+        }
+    }
+
+    private static void checkString(char[] inputTextChars){
+        for (int i=0; i<inputTextChars.length; i++){
+            if(inputTextChars[i]!='0'&&inputTextChars[i]!='1')
+                throw new RuntimeException("Input string for expand contains incorrect symbol");
         }
     }
 }

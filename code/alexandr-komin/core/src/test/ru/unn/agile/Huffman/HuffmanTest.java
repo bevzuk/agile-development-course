@@ -7,7 +7,7 @@ import org.junit.Test;
 public class HuffmanTest {
 
     @Test
-    public void emptyInputStringForCompressAreNotAllowed(){
+    public void emptyInputStringForCompressNotAllowed(){
         try{
             Huffman.compress("");
             fail("Runtime exception was expected");
@@ -21,7 +21,27 @@ public class HuffmanTest {
     }
 
     @Test
-    public void emptyInputStringForExpandAreNotAllowed(){
+    public void outputStringAfterCompressCanContainsOnlyOneAndZero(){
+        String outputText=Huffman.compress("Example");
+        boolean correctString=true;
+        char[] outputTextChars = outputText.toCharArray();
+        for (int i=0; i<outputTextChars.length; i++){
+            if(outputTextChars[i]!='0'&&outputTextChars[i]!='1'){
+                correctString=false;
+                break;
+            }
+        }
+        assertEquals(true,correctString);
+    }
+
+    @Test
+    public void outputStringAfterCompressIsNotEmpty(){
+        String outputText=Huffman.compress("Example");
+        assertEquals(false,outputText.isEmpty());
+    }
+
+    @Test
+    public void emptyInputStringForExpandNotAllowed(){
         try{
             Huffman.expand("");
             fail("Runtime exception was expected");
@@ -35,9 +55,17 @@ public class HuffmanTest {
     }
 
     @Test
-    public void outputStringAfterCompressIsNotEmpty(){
-        String outputText=Huffman.compress("Example");
-        assertEquals(false,outputText.isEmpty());
+    public void inputStringWithIncorrectSymbolForExpandAreNotAllowed(){
+        try{
+            Huffman.expand("120010");
+            fail("Runtime exception was expected");
+        }
+        catch(RuntimeException e){
+            assertEquals("Input string for expand contains incorrect symbol",e.getMessage());
+        }
+        catch (Exception e){
+            fail("Unexpected exception: " + e.toString());
+        }
     }
 
     @Test
