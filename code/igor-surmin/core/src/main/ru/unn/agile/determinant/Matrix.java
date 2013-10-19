@@ -6,8 +6,7 @@ public class Matrix {
     private double[] data;
     public static double EPS = 1e-6;
 
-    public Matrix(int n)
-    {
+    public Matrix(int n) {
         if (n <= 0)
             throw new IllegalArgumentException("Wrong matrix size");
         this.n = n;
@@ -16,27 +15,23 @@ public class Matrix {
             data[i] = 0.0;
     }
 
-    public int getSize()
-    {
+    public int getSize() {
         return n;
     }
 
-    public double getItem(int i, int j)
-    {
+    public double getItem(int i, int j) {
         if (i < 0 || i >= n || j < 0 || j > n)
             throw new IndexOutOfBoundsException("Item out of bounds");
          return data[i * n + j];
     }
 
-    public  void setItem(int i, int j, double val)
-    {
+    public  void setItem(int i, int j, double val) {
         if (i < 0 || i >= n || j < 0 || j > n)
             throw new IndexOutOfBoundsException("Item out of bounds");
         data[i * n + j] = val;
     }
 
-    public double getNorm()
-    {
+    public double getNorm() {
         double norm = 0;
         for (int i = 0; i < n * n; i++)
             norm += data[i] * data[i];
@@ -44,8 +39,7 @@ public class Matrix {
     }
 
     @Override
-    public boolean equals(Object obj)
-    {
+    public boolean equals(Object obj) {
         if (obj == null)
             return false;
         if (obj == this)
@@ -61,16 +55,14 @@ public class Matrix {
         return (Math.sqrt(diff) < EPS);
     }
 
-    public Matrix multiply(Matrix b)
-    {
+    public Matrix multiply(Matrix b) {
         if (b == null)
             throw new NullPointerException("Matrix is not created");
         if ( n != b.n)
             throw new ArithmeticException("Cannot multiply matrices with different size");
         Matrix res = new Matrix(b.n);
         for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++)
-            {
+            for (int j = 0; j < n; j++) {
                 double s = 0;
                 for (int k = 0; k < n; k++)
                     s += getItem(i, k) * b.getItem(k, j);
@@ -79,8 +71,7 @@ public class Matrix {
         return res;
     }
 
-    public boolean isLowerTriangular()
-    {
+    public boolean isLowerTriangular() {
         for (int i = 0; i < n; i++)
             for (int j = i + 1; j < n; j++)
                 if (Math.abs(getItem(i, j)) > EPS)
@@ -88,8 +79,7 @@ public class Matrix {
         return true;
     }
 
-    public boolean isUpperTriangular()
-    {
+    public boolean isUpperTriangular() {
         for (int i = 0; i < n; i++)
             for (int j = 0; j < i; j++)
                 if (Math.abs(getItem(i, j)) > EPS)

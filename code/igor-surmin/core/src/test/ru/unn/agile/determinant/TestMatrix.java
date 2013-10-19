@@ -10,27 +10,23 @@ public class TestMatrix {
     @Rule
     public ExpectedException exception = ExpectedException.none();
 
-    public void createZeroMatrixTest()
-    {
+    public void createZeroMatrixTest() {
         Matrix a = new Matrix(3);
         assertEquals (a.getNorm(), 0, Matrix.EPS);
     }
 
     @Test (expected = IllegalArgumentException.class)
-    public void createZeroSizeMatrixTest()
-    {
+    public void createZeroSizeMatrixTest() {
         Matrix a = new Matrix(0);
     }
 
     @Test (expected = IllegalArgumentException.class)
-    public void createNegativeSizeMatrixTest()
-    {
+    public void createNegativeSizeMatrixTest() {
         Matrix a = new Matrix(-3);
     }
 
     @Test
-    public void SetItemTest()
-    {
+    public void SetItemTest() {
        Matrix a = new Matrix(3);
        double val = 10.0;
        a.setItem(2, 1, val);
@@ -38,8 +34,7 @@ public class TestMatrix {
     }
 
     @Test
-    public void SetBoundaryValueTest()
-    {
+    public void SetBoundaryValueTest() {
         Matrix a = new Matrix(3);
         double val = 10.0;
         a.setItem(2, 2, val);
@@ -47,23 +42,20 @@ public class TestMatrix {
     }
 
     @Test (expected = IndexOutOfBoundsException.class)
-    public void SetOutOfRangeItemTest()
-    {
+    public void SetOutOfRangeItemTest() {
         Matrix a = new Matrix(3);
         double val = 10.0;
         a.setItem(3, 2, val);
     }
 
     @Test (expected = IndexOutOfBoundsException.class)
-    public void GetOutOfRangeItemTest()
-    {
+    public void GetOutOfRangeItemTest() {
         Matrix a = new Matrix(3);
         a.getItem(3, 2);
     }
 
     @Test
-    public void GetNormOfIdentityTest()
-    {
+    public void GetNormOfIdentityTest() {
         Matrix a = new Matrix(3);
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 3; j++)
@@ -72,8 +64,7 @@ public class TestMatrix {
     }
 
     @Test
-    public void GetNormTest()
-    {
+    public void GetNormTest() {
         Matrix a = new Matrix(2);
         a.setItem(0, 0, 2.0);
         a.setItem(0, 1, 1.0);
@@ -83,39 +74,34 @@ public class TestMatrix {
     }
 
     @Test
-    public void MatrixEqualsNullMatrixTest()
-    {
+    public void MatrixEqualsNullMatrixTest() {
         Matrix A = new Matrix(3);
         Matrix B = null;
         assert (!A.equals(B));
     }
 
     @Test
-    public void MatrixEqualsSelfTest()
-    {
+    public void MatrixEqualsSelfTest() {
         Matrix A = new Matrix(3);
         assert (A.equals(A));
     }
 
     @Test
-    public void MatrixEqualsToNonMatrixTest()
-    {
+    public void MatrixEqualsToNonMatrixTest() {
         Matrix A = new Matrix(3);
         Object B = new Object();
         assert (!A.equals(B));
     }
 
     @Test
-    public void DifferentMatricesAreEqual()
-    {
+    public void DifferentMatricesAreEqual() {
         Matrix A = new Matrix(2);
         Matrix B = new Matrix(3);
         assert (!A.equals(B));
     }
 
     @Test
-    public void MatrixEqualsToSimilar()
-    {
+    public void MatrixEqualsToSimilar() {
         Matrix A = new Matrix(2);
         A.setItem(0, 0, 1.0);
         A.setItem(1, 1, 2.0);
@@ -126,8 +112,7 @@ public class TestMatrix {
     }
 
     @Test
-    public void MatrixMultiplicationTest()
-    {
+    public void MatrixMultiplicationTest() {
         Matrix A = new Matrix(2);
         A.setItem(0, 0, 1.0);
         A.setItem(0, 1, 4.0);
@@ -151,16 +136,14 @@ public class TestMatrix {
     }
 
     @Test
-    public void DifferentSizeMatrixMultiplicationTest()
-    {
+    public void DifferentSizeMatrixMultiplicationTest() {
         Matrix A = new Matrix(2);
         Matrix B = new Matrix(3);
         assert (!A.equals(B));
     }
 
     @Test
-    public void IsMatrixUpperTriangularPositive()
-    {
+    public void IsMatrixUpperTriangularPositive() {
        Matrix A = new Matrix(3);
        A.setItem(0, 0, 1.0);
        A.setItem(1, 1, 3.0);
@@ -169,8 +152,7 @@ public class TestMatrix {
     }
 
     @Test
-    public void IsMatrixUpperTriangularNegative()
-    {
+    public void IsMatrixUpperTriangularNegative() {
         Matrix A = new Matrix(3);
         A.setItem(0, 0, 1.0);
         A.setItem(1, 1, 3.0);
@@ -179,8 +161,7 @@ public class TestMatrix {
     }
 
     @Test
-    public void IsMatrixLowerTriangularPositive()
-    {
+    public void IsMatrixLowerTriangularPositive() {
         Matrix A = new Matrix(3);
         A.setItem(0, 0, 1.0);
         A.setItem(1, 1, 3.0);
@@ -189,8 +170,7 @@ public class TestMatrix {
     }
 
     @Test
-    public void IsMatrixLowerTriangularNegative()
-    {
+    public void IsMatrixLowerTriangularNegative() {
         Matrix A = new Matrix(3);
         A.setItem(0, 0, 1.0);
         A.setItem(1, 1, 3.0);

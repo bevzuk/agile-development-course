@@ -6,8 +6,7 @@ import org.junit.Test;
 public class TestLUDecomposition {
 
     @Test
-    public void TestLUDecomposition3x3()
-    {
+    public void TestLUDecomposition3x3() {
         Matrix A = new Matrix(3);
         A.setItem(0, 0, 10);
         A.setItem(0, 1, -7);
@@ -25,8 +24,7 @@ public class TestLUDecomposition {
     }
 
     @Test(expected = NullPointerException.class)
-    public void TestLUDecompositionNullMatrix()
-    {
+    public void TestLUDecompositionNullMatrix() {
         Matrix A = null;
         LUDecomposition lu = new LUDecomposition(A);
     }
