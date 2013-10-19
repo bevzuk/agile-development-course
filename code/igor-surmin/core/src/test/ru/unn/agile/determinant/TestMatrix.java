@@ -60,4 +60,25 @@ public class TestMatrix {
         Matrix a = new Matrix(3);
         a.getItem(3, 2);
     }
+
+    @Test
+    public void GetNormOfIdentityTest()
+    {
+        Matrix a = new Matrix(3);
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 3; j++)
+                a.setItem(i, j, 1.0);
+        assertEquals(a.getNorm(), (double)3, Matrix.EPS);
+    }
+
+    @Test
+    public void GetNormTest()
+    {
+        Matrix a = new Matrix(2);
+        a.setItem(0, 0, 2.0);
+        a.setItem(0, 1, 1.0);
+        a.setItem(1, 0, -5.0);
+        a.setItem(1, 1, 3.0);
+        assertEquals(a.getNorm(), Math.sqrt(39.0), Matrix.EPS);
+    }
 }
