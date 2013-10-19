@@ -21,13 +21,13 @@ public class Matrix {
 
     public double getItem(int i, int j) {
         if (i < 0 || i >= n || j < 0 || j > n)
-            throw new IndexOutOfBoundsException("Item out of bounds");
+            throw new IndexOutOfBoundsException("Item is out of bounds");
          return data[i * n + j];
     }
 
     public  void setItem(int i, int j, double val) {
         if (i < 0 || i >= n || j < 0 || j > n)
-            throw new IndexOutOfBoundsException("Item out of bounds");
+            throw new IndexOutOfBoundsException("Item is out of bounds");
         data[i * n + j] = val;
     }
 
@@ -59,7 +59,7 @@ public class Matrix {
         if (b == null)
             throw new NullPointerException("Matrix is not created");
         if ( n != b.n)
-            throw new ArithmeticException("Cannot multiply matrices with different size");
+            throw new ArithmeticException("Cannot multiply matrices of different sizes");
         Matrix res = new Matrix(b.n);
         for (int i = 0; i < n; i++)
             for (int j = 0; j < n; j++) {
