@@ -15,16 +15,8 @@ public enum AvailableScales {
     AvailableScales(String name, String suffix, double multiplier, double shift) {
         this.name = name;
         this.suffix = suffix;
-        this.multiplier = multiplier;
-        this.shift = shift;
-    }
-
-    public double scaleTo(double value) {
-        return multiplier * value + shift;
-    }
-
-    public double scaleFrom(double value) {
-        return (value - shift) / multiplier;
+        this.Multiplier = multiplier;
+        this.Shift = shift;
     }
 
     @Override
@@ -39,6 +31,6 @@ public enum AvailableScales {
     private String name;
     private String suffix;
 
-    private double multiplier;
-    private double shift;
+    public final double Multiplier;
+    public final double Shift;
 }
