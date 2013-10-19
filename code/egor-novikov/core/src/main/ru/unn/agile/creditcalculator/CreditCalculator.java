@@ -129,8 +129,7 @@ public class CreditCalculator
 	public double getAnnuityMonthPayment()
 	{
 		double interestRateCoefficient = getPercent() / (MONTH_PER_YEAR * HUNDRED);
-		double annuityCoefficient = interestRateCoefficient*Math.pow(1 + interestRateCoefficient, getMonthsCount())
-										/(Math.pow(1 + interestRateCoefficient, getMonthsCount()) - 1);
+		double annuityCoefficient = interestRateCoefficient*Math.pow(1 + interestRateCoefficient, getMonthsCount()) / (Math.pow(1 + interestRateCoefficient, getMonthsCount()) - 1);
 		return annuityCoefficient * getAmount();
 	}
 
@@ -138,8 +137,7 @@ public class CreditCalculator
 	{
 		checkMonthNumber(monthNumber);
 		double monthlyPrincipalPayment = getAmount() / getMonthsCount();
-		return monthlyPrincipalPayment + (getAmount() - monthlyPrincipalPayment*(monthNumber-1)) * getPercent()
-																					/ (MONTH_PER_YEAR * HUNDRED);
+		return monthlyPrincipalPayment + (getAmount() - monthlyPrincipalPayment*(monthNumber-1)) * getPercent() / (MONTH_PER_YEAR * HUNDRED);
 	}
 
 	public double getAnnuityTotalPayment()
