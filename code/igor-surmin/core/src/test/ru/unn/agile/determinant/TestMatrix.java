@@ -150,11 +150,51 @@ public class TestMatrix {
         assert (C.equals(res));
     }
 
-    @Test(expected = ArithmeticException.class)
-    public void NullMatrixMultiplicationTest()
+    @Test
+    public void DifferentSizeMatrixMultiplicationTest()
     {
         Matrix A = new Matrix(2);
-        Matrix B = null;
-        A.equals(B);
+        Matrix B = new Matrix(3);
+        assert (!A.equals(B));
+    }
+
+    @Test
+    public void IsMatrixUpperTriangularPositive()
+    {
+       Matrix A = new Matrix(3);
+       A.setItem(0, 0, 1.0);
+       A.setItem(1, 1, 3.0);
+       A.setItem(1, 2, 5.0);
+       assert (A.isUpperTriangular());
+    }
+
+    @Test
+    public void IsMatrixUpperTriangularNegative()
+    {
+        Matrix A = new Matrix(3);
+        A.setItem(0, 0, 1.0);
+        A.setItem(1, 1, 3.0);
+        A.setItem(2, 1, 5.0);
+        assert (!A.isUpperTriangular());
+    }
+
+    @Test
+    public void IsMatrixLowerTriangularPositive()
+    {
+        Matrix A = new Matrix(3);
+        A.setItem(0, 0, 1.0);
+        A.setItem(1, 1, 3.0);
+        A.setItem(2, 1, 5.0);
+        assert (A.isLowerTriangular());
+    }
+
+    @Test
+    public void IsMatrixLowerTriangularNegative()
+    {
+        Matrix A = new Matrix(3);
+        A.setItem(0, 0, 1.0);
+        A.setItem(1, 1, 3.0);
+        A.setItem(1, 2, 5.0);
+        assert (!A.isLowerTriangular());
     }
 }

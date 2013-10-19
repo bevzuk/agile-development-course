@@ -78,4 +78,22 @@ public class Matrix {
             }
         return res;
     }
+
+    public boolean isLowerTriangular()
+    {
+        for (int i = 0; i < n; i++)
+            for (int j = i + 1; j < n; j++)
+                if (Math.abs(getItem(i, j)) > EPS)
+                    return false;
+        return true;
+    }
+
+    public boolean isUpperTriangular()
+    {
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < i; j++)
+                if (Math.abs(getItem(i, j)) > EPS)
+                    return false;
+        return true;
+    }
 }
