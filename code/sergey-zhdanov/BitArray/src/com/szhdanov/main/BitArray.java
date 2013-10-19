@@ -2,10 +2,6 @@ package com.szhdanov.main;
 
 import java.util.ArrayList;
 
-/**
- * Created with IntelliJ IDEA.
- * User: sergey zhdanov
- */
 public class BitArray {
     /**
      * Получение доступа к произвольному элементу по индексу
@@ -90,7 +86,7 @@ public class BitArray {
         for (int i = 0; i < array.length; ++i) {
             result.intValues.add(new Integer(array[i]));
         }
-        result.size = array.length * NUM_OF_BIT + 1;
+        result.size = array.length * NUM_OF_BIT;
         return result;
     }
 
