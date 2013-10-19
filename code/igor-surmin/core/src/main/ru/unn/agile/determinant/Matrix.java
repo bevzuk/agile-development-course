@@ -60,4 +60,22 @@ public class Matrix {
             diff += (data[i] - b.data[i]) * (data[i] - b.data[i]);
         return (Math.sqrt(diff) < EPS);
     }
+
+    public Matrix multiply(Matrix b)
+    {
+        if (b == null)
+            throw new NullPointerException("Matrix is not created");
+        if ( n != b.n)
+            throw new ArithmeticException("Cannot multiply matrices with different size");
+        Matrix res = new Matrix(b.n);
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+            {
+                double s = 0;
+                for (int k = 0; k < n; k++)
+                    s += getItem(i, k) * b.getItem(k, j);
+                res.setItem(i, j, s);
+            }
+        return res;
+    }
 }

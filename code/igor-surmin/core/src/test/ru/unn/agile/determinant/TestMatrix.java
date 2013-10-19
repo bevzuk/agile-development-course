@@ -79,7 +79,7 @@ public class TestMatrix {
         a.setItem(0, 1, 1.0);
         a.setItem(1, 0, -5.0);
         a.setItem(1, 1, 3.0);
-        assertEquals(a.getNorm(), Math.sqrt(39.0), Matrix.EPS);
+        assertEquals (a.getNorm(), Math.sqrt(39.0), Matrix.EPS);
     }
 
     @Test
@@ -87,14 +87,14 @@ public class TestMatrix {
     {
         Matrix A = new Matrix(3);
         Matrix B = null;
-        assert(!A.equals(B));
+        assert (!A.equals(B));
     }
 
     @Test
     public void MatrixEqualsSelfTest()
     {
         Matrix A = new Matrix(3);
-        assert(A.equals(A));
+        assert (A.equals(A));
     }
 
     @Test
@@ -102,7 +102,7 @@ public class TestMatrix {
     {
         Matrix A = new Matrix(3);
         Object B = new Object();
-        assert(!A.equals(B));
+        assert (!A.equals(B));
     }
 
     @Test
@@ -110,18 +110,51 @@ public class TestMatrix {
     {
         Matrix A = new Matrix(2);
         Matrix B = new Matrix(3);
-        assert(!A.equals(B));
+        assert (!A.equals(B));
     }
 
     @Test
     public void MatrixEqualsToSimilar()
     {
         Matrix A = new Matrix(2);
-        A.setItem(0, 0, 1);
-        A.setItem(1, 1, 2);
+        A.setItem(0, 0, 1.0);
+        A.setItem(1, 1, 2.0);
         Matrix B = new Matrix(2);
-        B.setItem(0, 0, 1 + 1e-7);
-        B.setItem(1, 1, 2 + 1e-7);
-        assert(A.equals(B));
+        B.setItem(0, 0, 1.0 + 1e-7);
+        B.setItem(1, 1, 2.0 + 1e-7);
+        assert (A.equals(B));
+    }
+
+    @Test
+    public void MatrixMultiplicationTest()
+    {
+        Matrix A = new Matrix(2);
+        A.setItem(0, 0, 1.0);
+        A.setItem(0, 1, 4.0);
+        A.setItem(1, 0, 2.0);
+        A.setItem(1, 1, -1.0);
+
+        Matrix B = new Matrix(2);
+        B.setItem(0, 0, 2.0);
+        B.setItem(0, 1, 3.0);
+        B.setItem(1, 0, -2.0);
+        B.setItem(1, 1, 5.0);
+        Matrix C = A.multiply(B);
+
+        Matrix res = new Matrix(2);
+        res.setItem(0, 0, -6.0);
+        res.setItem(0, 1, 23);
+        res.setItem(1, 0, 6);
+        res.setItem(1, 1, 1);
+
+        assert (C.equals(res));
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void NullMatrixMultiplicationTest()
+    {
+        Matrix A = new Matrix(2);
+        Matrix B = null;
+        A.equals(B);
     }
 }
