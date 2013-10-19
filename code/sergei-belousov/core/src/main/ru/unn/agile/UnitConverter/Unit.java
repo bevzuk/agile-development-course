@@ -9,10 +9,6 @@ public class Unit {
         setValue(value);
     }
 
-    public void MultiplyByScalar(Double scalar){
-        value *= scalar;
-    }
-
     public Unit(Unit obj){
         setType(obj.getType());
         setValue(obj.getValue());

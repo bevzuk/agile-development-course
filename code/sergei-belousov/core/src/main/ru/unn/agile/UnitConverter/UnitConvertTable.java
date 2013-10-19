@@ -3,10 +3,10 @@ package ru.unn.agile.UnitConverter;
 import java.util.HashMap;
 
 public class UnitConvertTable {
-    private HashMap<UnitKey, Unit> weightConvertTable;
+    private HashMap<UnitKey, Double> weightConvertTable;
 
     public UnitConvertTable() {
-        weightConvertTable = new HashMap<UnitKey, Unit>();
+        weightConvertTable = new HashMap<UnitKey, Double>();
     }
 
     public boolean isEmpty() {
@@ -14,11 +14,11 @@ public class UnitConvertTable {
     }
 
     public void addPair(UnitKey pair, double factor) {
-        weightConvertTable.put(pair, new Unit(pair.getTo(), factor));
-        weightConvertTable.put(pair.reverse(), new Unit(pair.getFrom(), 1. / factor));
+        weightConvertTable.put(pair, new Double(factor));
+        weightConvertTable.put(pair.reverse(), new Double(1. / factor));
     }
 
-    public Unit getFactor(UnitKey pair) throws UnitConvertTableException {
+    public double getFactor(UnitKey pair) throws UnitConvertTableException {
         if(!weightConvertTable.containsKey(pair)) {
             throw new UnitConvertTableException("key not found.");
         }

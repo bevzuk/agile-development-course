@@ -41,7 +41,7 @@ public class UnitConverterTest {
     {
         try {
             String formatString = from + "-" + to;
-            assertEquals(expected, unitConverter.convert(formatString, new Unit(to, value)).getValue(), epsilon);
+            assertEquals(expected, unitConverter.convert(formatString, value).getValue(), epsilon);
         } catch (UnitConvertTableException e) {
             System.out.println(e.getMessage());
             fail("catch exception");

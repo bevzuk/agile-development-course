@@ -37,7 +37,7 @@ public class WeightConverter {
         }
     }
 
-    public Unit convert(String fromToFormatString, Unit value) throws UnitConvertTableException{
+    public Unit convert(String fromToFormatString, double value) throws UnitConvertTableException{
         try{
             return weightConverter.convert(fromToFormatString, value);
         }catch(UnitConvertTableException e){

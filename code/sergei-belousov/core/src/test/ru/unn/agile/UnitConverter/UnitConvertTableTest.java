@@ -26,7 +26,7 @@ public class UnitConvertTableTest {
         UnitConvertTable unitConvertTable = new UnitConvertTable();
         unitConvertTable.addPair(new UnitKey("kg", "g"), 1000.);
         try {
-            assertEquals(1000., unitConvertTable.getFactor(new UnitKey("kg", "g")).getValue(), epsilon);
+            assertEquals(1000., unitConvertTable.getFactor(new UnitKey("kg", "g")), epsilon);
         } catch(UnitConvertTableException e){
             System.out.println("key not found.");
         }
@@ -37,7 +37,7 @@ public class UnitConvertTableTest {
         UnitConvertTable unitConvertTable = new UnitConvertTable();
         unitConvertTable.addPair(new UnitKey("kg", "g"), 1000.);
         try {
-            assertEquals(0.001, unitConvertTable.getFactor(new UnitKey("g", "kg")).getValue(), epsilon);
+            assertEquals(0.001, unitConvertTable.getFactor(new UnitKey("g", "kg")), epsilon);
         } catch(UnitConvertTableException e){
             System.out.println("key not found.");
         }

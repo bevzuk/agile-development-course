@@ -23,7 +23,7 @@ public class UnitConverter {
         return new UnitKey(tokens[0], tokens[1]);
     }
 
-    private Unit getFactor(String fromToFormatString) throws UnitConvertTableException {
+    private double getFactor(String fromToFormatString) throws UnitConvertTableException {
         if(fromToFormatString.equals("")) {
             throw new UnitConvertTableException("format string empty.");
         }
@@ -35,16 +35,19 @@ public class UnitConverter {
         }
     }
 
-    public Unit convert(String fromToFormatString, Unit value) throws UnitConvertTableException {
+    public Unit convert(String fromToFormatString, double value) throws UnitConvertTableException {
         try {
-            Unit result = getFactor(fromToFormatString);
-            if(!result.isEqualType(value)){
-                throw new UnitConvertTableException("can not be converted, since the goal is not as expected.");
-            }
-            else{
-                result.MultiplyByScalar(value.getValue());
-                return result;
-            }
+            return getConvertedUnit(fromToFormatString, value);
+        } catch (UnitConvertTableException e){
+            throw e;
+        }
+    }
+
+    private Unit getConvertedUnit(String fromToFormatString, double value) throws UnitConvertTableException{
+        try {
+            String targetType = getKeyFromString(fromToFormatString).getTo();
+            double targetValue = getFactor(fromToFormatString) * value;
+            return new Unit(targetType, targetValue);
         } catch (UnitConvertTableException e){
             throw e;
         }

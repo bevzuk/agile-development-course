@@ -19,7 +19,7 @@ public class WeightConverterTest {
     public void setup() {
         weightConverter = new WeightConverter();
         try {
-            weightConverter.loadTable("C:\\DevTools\\work\\unn\\agile-development-course\\code\\sergei-belousov\\core\\resources\\table.txt");
+            weightConverter.loadTable("table.txt");
         } catch(IOException e) {
             System.out.println("can't open file");
             fail();
@@ -33,32 +33,31 @@ public class WeightConverterTest {
 
     @Test
     public void InOneKilogramThousandGrams() {
-        assertConvertReturns(1000., "kg", "g", 1.);
+        assertConvertReturns(1000., "kg-g", 1.);
     }
 
     @Test
     public void InOneKilogramFiveThousandCarats() {
-        assertConvertReturns(5000., "kg", "ct", 1.);
+        assertConvertReturns(5000., "kg-ct", 1.);
     }
 
     @Test
     public void InOneGramOneThousandthKilogram() {
-        assertConvertReturns(0.001, "g", "kg", 1.);
+        assertConvertReturns(0.001, "g-kg", 1.);
     }
 
     @Test
     public void InOneKilogramTwoPointTwoHundredAndFivePound() {
-        assertConvertReturns(2.205, "kg", "lb", 1.);
+        assertConvertReturns(2.205, "kg-lb", 1.);
     }
 
-    private void assertConvertReturns(double expected, String from, String to, double value)
+    private void assertConvertReturns(double expected, String fromToFormatString, double value)
     {
         try {
-            String formatString = from + "-" + to;
-            assertEquals(expected, weightConverter.convert(formatString, new Unit(to, value)).getValue(), epsilon);
+            assertEquals(expected, weightConverter.convert(fromToFormatString, value).getValue(), epsilon);
         } catch (UnitConvertTableException e) {
             System.out.println(e.getMessage());
-            fail("catch exception");
+            fail();
         }
     }
 }
