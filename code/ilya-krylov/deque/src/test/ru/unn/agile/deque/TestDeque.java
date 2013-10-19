@@ -1,8 +1,6 @@
 package ru.unn.agile.deque;
-
 import org.junit.Before;
 import org.junit.Test;
-import ru.unn.agile.deque.Deque;
 
 import static org.junit.Assert.*;
 
@@ -32,20 +30,20 @@ public class TestDeque {
     }
 
     @Test
-    public void isEmptyWhenPushBackNewElement(){
+    public void isNotEmptyWhenPushBackNewElement(){
         deque.pushBack(10);
-        assertEquals(false, deque.isEmpty());
+        assertFalse(deque.isEmpty());
     }
 
     @Test
     public void isNotFullWhenCreate(){
-        assertEquals(true, !deque.isFull());
+        assertFalse(deque.isFull());
     }
 
     @Test
     public void isFullWhenAmountOfElementsEqualsToMaximum(){
         fillCompletelyFromBack();
-        assertEquals(true, deque.isFull());
+        assertTrue(deque.isFull());
     }
 
     @Test
@@ -67,9 +65,9 @@ public class TestDeque {
     }
 
     @Test
-    public void isEmptyWhenPushFrontNewElement(){
+    public void isNotEmptyWhenPushFrontNewElement(){
         deque.pushFront(10);
-        assertEquals(false, deque.isEmpty());
+        assertFalse(deque.isEmpty());
     }
 
     @Test
@@ -134,5 +132,57 @@ public class TestDeque {
     public void arePushedFrontAndPoppedBackEqualInEmptyDeque(){
         deque.pushFront(666);
         assertEquals(666, deque.popBack());
+    }
+
+    @Test
+    public void isFrontElementCorrectWhenPushedBackTwoAndPoppedFrontOneElement(){
+        deque.pushBack(1);
+        deque.pushBack(2);
+        deque.popFront();
+        assertEquals(2, deque.getFront());
+    }
+
+    @Test
+    public void isBackElementCorrectWhenPushedBackTwoAndPoppedFrontOneElement(){
+        deque.pushBack(1);
+        deque.pushBack(2);
+        deque.popFront();
+        assertEquals(2, deque.getBack());
+    }
+
+    @Test
+    public void isFrontElementCorrectWhenPushedFrontTwoAndPoppedBackOneElement(){
+        deque.pushFront(1);
+        deque.pushFront(2);
+        deque.popFront();
+        assertEquals(1, deque.getFront());
+    }
+
+    @Test
+    public void isBackElementCorrectWhenPushedFrontTwoAndPoppedBackOneElement(){
+        deque.pushFront(1);
+        deque.pushFront(2);
+        deque.popBack();
+        assertEquals(2, deque.getBack());
+    }
+
+    @Test
+    public void isCorrectMiddleElementWhenPushedFrontTwoAndPushedBackOneElement(){
+        deque.pushFront(1);
+        deque.pushFront(2);
+        deque.pushBack(3);
+        deque.popFront();
+        deque.popBack();
+        assertEquals(1, deque.getBack());
+    }
+
+    @Test
+    public void isCorrectMiddleElementWhenPushedFrontOneAndPushedBackTwoElements(){
+        deque.pushFront(1);
+        deque.pushBack(2);
+        deque.pushBack(3);
+        deque.popFront();
+        deque.popBack();
+        assertEquals(2, deque.getBack());
     }
 }
