@@ -16,6 +16,20 @@ public class Matrix {
             data[i] = 0.0;
     }
 
+    public double getItem(int i, int j)
+    {
+        if (i < 0 || i >= n || j < 0 || j > n)
+            throw new IndexOutOfBoundsException("Item out of bounds");
+         return data[i * n + j];
+    }
+
+    public  void setItem(int i, int j, double val)
+    {
+        if (i < 0 || i >= n || j < 0 || j > n)
+            throw new IndexOutOfBoundsException("Item out of bounds");
+        data[i * n + j] = val;
+    }
+
     public double getNorm()
     {
         double norm = 0;
