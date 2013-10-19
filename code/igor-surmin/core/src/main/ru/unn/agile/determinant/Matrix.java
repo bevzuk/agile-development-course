@@ -8,6 +8,8 @@ public class Matrix {
 
     public Matrix(int n)
     {
+        if (n <= 0)
+            throw new IllegalArgumentException("Wrong matrix size");
         this.n = n;
         data = new double[n * n];
         for (int i = 0; i < n * n; i++)
