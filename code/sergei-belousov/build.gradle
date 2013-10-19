@@ -3,10 +3,16 @@ sourceSets {
         java {
             srcDir 'core/src/main'
         }
+		resources {
+            srcDir 'core/resources'
+        }    
     }
     test {
         java {
             srcDir 'core/src/test'
+        }
+		resources {
+            srcDir 'core/resources'
         }
     }
 }
