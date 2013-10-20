@@ -1,90 +1,73 @@
 package ru.unn.agile.dichotomy;
 
-//import org.junit.Before;
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
-//import static org.junit.Assert.fail;
+import org.junit.Before;
 
-public class WhenCalculateDichotomy {
+public class WhenCalculateDichotomy{
 
-	public Dichotomy solver;
+	private Dichotomy solver;
+	private DichotomyParametr parametr;
+	private DichotomyParametrBuildDirector dichotomyParametrBuildDirector;
 	
-	@Test(expected=IllegalArgumentException.class)
-	public void throwExceptionIfAMoreB()
-	{
-		float a = 3; 
-		float b = 2;
-		float sigma = 0.5F;
-		float eps = 0.01F;
-		IFunction function = new FunctionLnOfXplusOne();
-		
-		solver = new Dichotomy(a,b,sigma,eps,function);
+	@Before
+	public void SetUp(){
+		dichotomyParametrBuildDirector = new DichotomyParametrBuildDirector();
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
-	public void throwExceptionIfSigmaIsNegative()
-	{
-		float a = 1; 
-		float b = 2;
-		float sigma = -0.5F;
-		float eps = 0.01F;
-		IFunction function = new FunctionLnOfXplusOne();
+	public void throwExceptionIfAMoreB(){
+		DichotomyParametrBuilder dichotomyParametrBuilder = new DichotomyParametrBuilderWithWrongAB();
+		dichotomyParametrBuildDirector.constructDichotomyParametr(dichotomyParametrBuilder);
+		parametr = dichotomyParametrBuilder.getDichotomyParametr();
 		
-		solver = new Dichotomy(a,b,sigma,eps,function);
+		solver = new Dichotomy(parametr);
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
-	public void throwExceptionIfEpsIsNegative()
-	{
-		float a = 1; 
-		float b = 2;
-		float sigma = 0.5F;
-		float eps = -0.01F;
-		IFunction function = new FunctionLnOfXplusOne();
+	public void throwExceptionIfSigmaIsNegative(){
+		DichotomyParametrBuilder dichotomyParametrBuilder = new DichotomyParametrBuilderWithNegativeSigma();
+		dichotomyParametrBuildDirector.constructDichotomyParametr(dichotomyParametrBuilder);
+		parametr = dichotomyParametrBuilder.getDichotomyParametr();
 		
-		solver = new Dichotomy(a,b,sigma,eps,function);
+		solver = new Dichotomy(parametr);
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void throwExceptionIfEpsIsNegative(){
+		DichotomyParametrBuilder dichotomyParametrBuilder = new DichotomyParametrBuilderWithNegativeEps();
+		dichotomyParametrBuildDirector.constructDichotomyParametr(dichotomyParametrBuilder);
+		parametr = dichotomyParametrBuilder.getDichotomyParametr();
+		
+		solver = new Dichotomy(parametr);
 	}	
 	
 	@Test(expected=IllegalArgumentException.class)
-	public void throwExceptionIfSigmaIsBig()
-	{
-		float a = 1; 
-		float b = 2;
-		float sigma = 0.5F;
-		float eps = 10;
-		IFunction function = new FunctionLnOfXplusOne();
+	public void throwExceptionIfSigmaIsBig(){
+		DichotomyParametrBuilder dichotomyParametrBuilder = new DichotomyParametrBuilderWithBigSigma();
+		dichotomyParametrBuildDirector.constructDichotomyParametr(dichotomyParametrBuilder);
+		parametr = dichotomyParametrBuilder.getDichotomyParametr();
 		
-		solver = new Dichotomy(a,b,sigma,eps,function);
+		solver = new Dichotomy(parametr);
 	}	
 	
 	@Test
-	public void getMinusOneIfFunctionIsSqrXminusOne()
-	{
-		float a = -1; 
-		float b = 2;
-		float sigma = 0.5F;
-		float eps = 0.01F;
-		IFunction function = new FunctionSqrXminusOne();
+	public void getMinusOneIfFunctionIsSqrXminusOne(){
+		parametr = new DichotomyParametr(-1, 2, 0.5F, 0.01F, new FunctionSqrXminusOne());
+		solver = new Dichotomy(parametr);
 		
-		solver = new Dichotomy(a,b,sigma,eps,function);
 		float result = solver.findMinimum();
-		
+
 		assertEquals(-1,result,0.1);
 	}
 
 	@Test
-	public void getZeroIfFunctionIsLnOfXplusOne()
-	{
-		float a = 0; 
-		float b = 1;
-		float sigma = 0.4F;
-		float eps = 0.0001F;
-		IFunction function = new FunctionLnOfXplusOne();
+	public void getZeroIfFunctionIsLnOfXplusOne(){
+		parametr = new DichotomyParametr(0, 1, 0.4F, 0.001F, new FunctionLnOfXplusOne());
+		solver = new Dichotomy(parametr);
 		
-		solver = new Dichotomy(a,b,sigma,eps,function);
 		float result = solver.findMinimum();
-		
+
 		assertEquals(0,result,0.1);
 	}
 }
