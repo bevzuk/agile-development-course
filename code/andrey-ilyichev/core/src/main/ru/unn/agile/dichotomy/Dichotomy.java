@@ -1,4 +1,5 @@
 package ru.unn.agile.dichotomy;
+
 public class Dichotomy {
 	private float a;
 	private float b;
@@ -6,30 +7,69 @@ public class Dichotomy {
 	private float eps;
 	private IFunction function;
 	
-	public Dichotomy(DichotomyParametr parametr) throws IllegalArgumentException{
-		if (parametr.getA()>parametr.getB())
+	public static class Builder{
+		private float a;
+		private float b;
+		private float sigma;
+		private float eps;
+		private IFunction function;
+		
+		public Builder a(float a){
+			this.a = a;
+			return this;
+		}
+		
+		public Builder b(float b){
+			this.b = b;
+			return this;
+		}
+		
+		public Builder eps(float eps){
+			this.eps = eps;
+			return this;
+		}
+		
+		public Builder sigma(float sigma){
+			this.sigma = sigma;
+			return this;
+		}
+		
+		public Builder function(IFunction function){
+			this.function = function;
+			return this;
+		}
+		
+		public Dichotomy build(){
+			return new Dichotomy(this);
+		}
+
+	}
+	
+	public Dichotomy(Builder builder)
+	{
+		if (builder.a>builder.b)
 		{
 			throw new IllegalArgumentException("A more than B");
 		}
-		this.a = parametr.getA();
-		this.b = parametr.getB();		
+		this.a = builder.a;
+		this.b = builder.b;		
 		
-		if ((parametr.getSigma()<=0)||(parametr.getSigma()>=(parametr.getB()-parametr.getA())/2))
+		if ((builder.sigma<=0)||(builder.sigma>=(builder.b-builder.a)/2))
 		{
 			throw new IllegalArgumentException("Sigma is incorrect");
 		}
-		this.sigma = parametr.getSigma();
+		this.sigma = builder.sigma;
 		
-		if (parametr.getEps() < 0)
+		if (builder.eps <= 0)
 		{
 			throw new IllegalArgumentException("Eps is negative");
 		}
 
-		this.eps = parametr.getEps();
+		this.eps = builder.eps;
 		
-		this.function = parametr.getFunction();
+		this.function = builder.function;
 	}
-	
+
 	private float getCurrentSigma(float a, float b){
 		float ratio = this.sigma / (this.b - this.a);
 		return (b-a)*ratio;

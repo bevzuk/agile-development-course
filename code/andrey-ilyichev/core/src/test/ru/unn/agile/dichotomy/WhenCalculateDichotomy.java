@@ -2,59 +2,40 @@ package ru.unn.agile.dichotomy;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import org.junit.Before;
+import static org.junit.Assert.fail;
 
 public class WhenCalculateDichotomy{
 
 	private Dichotomy solver;
-	private DichotomyParametr parametr;
-	private DichotomyParametrBuildDirector dichotomyParametrBuildDirector;
-	
-	@Before
-	public void SetUp(){
-		dichotomyParametrBuildDirector = new DichotomyParametrBuildDirector();
-	}
-	
-	@Test(expected=IllegalArgumentException.class)
+
+	@Test
 	public void throwExceptionIfAMoreB(){
-		DichotomyParametrBuilder dichotomyParametrBuilder = new DichotomyParametrBuilderWithWrongAB();
-		dichotomyParametrBuildDirector.constructDichotomyParametr(dichotomyParametrBuilder);
-		parametr = dichotomyParametrBuilder.getDichotomyParametr();
-		
-		solver = new Dichotomy(parametr);
+		try{
+			solver = new Dichotomy.Builder().a(3).build();
+			fail("expected illegalArgumentExeption");
+		}catch(Exception ex){
+			assertEquals("A more than B", ex.getMessage());
+		}
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void throwExceptionIfSigmaIsNegative(){
-		DichotomyParametrBuilder dichotomyParametrBuilder = new DichotomyParametrBuilderWithNegativeSigma();
-		dichotomyParametrBuildDirector.constructDichotomyParametr(dichotomyParametrBuilder);
-		parametr = dichotomyParametrBuilder.getDichotomyParametr();
-		
-		solver = new Dichotomy(parametr);
+		solver = new Dichotomy.Builder().a(0).b(10).sigma(-0.4F).build();
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void throwExceptionIfEpsIsNegative(){
-		DichotomyParametrBuilder dichotomyParametrBuilder = new DichotomyParametrBuilderWithNegativeEps();
-		dichotomyParametrBuildDirector.constructDichotomyParametr(dichotomyParametrBuilder);
-		parametr = dichotomyParametrBuilder.getDichotomyParametr();
-		
-		solver = new Dichotomy(parametr);
+		solver = new Dichotomy.Builder().a(0).b(10).sigma(1.F).eps(-1).build();
 	}	
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void throwExceptionIfSigmaIsBig(){
-		DichotomyParametrBuilder dichotomyParametrBuilder = new DichotomyParametrBuilderWithBigSigma();
-		dichotomyParametrBuildDirector.constructDichotomyParametr(dichotomyParametrBuilder);
-		parametr = dichotomyParametrBuilder.getDichotomyParametr();
-		
-		solver = new Dichotomy(parametr);
+		solver = new Dichotomy.Builder().a(0).b(10).eps(0.1F).sigma(10).build();
 	}	
 	
 	@Test
 	public void getMinusOneIfFunctionIsSqrXminusOne(){
-		parametr = new DichotomyParametr(-1, 2, 0.5F, 0.01F, new FunctionSqrXminusOne());
-		solver = new Dichotomy(parametr);
+		solver = new Dichotomy.Builder().a(-1).b(2).sigma(0.4F).eps(0.01F).function(new FunctionSqrXminusOne()).build();
 		
 		float result = solver.findMinimum();
 
@@ -63,8 +44,7 @@ public class WhenCalculateDichotomy{
 
 	@Test
 	public void getZeroIfFunctionIsLnOfXplusOne(){
-		parametr = new DichotomyParametr(0, 1, 0.4F, 0.001F, new FunctionLnOfXplusOne());
-		solver = new Dichotomy(parametr);
+		solver = new Dichotomy.Builder().a(0).b(1).sigma(0.1F).eps(0.01F).function(new FunctionLnOfXplusOne()).build();
 		
 		float result = solver.findMinimum();
 
