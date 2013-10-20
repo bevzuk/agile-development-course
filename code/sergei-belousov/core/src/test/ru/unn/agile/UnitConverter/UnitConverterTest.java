@@ -6,15 +6,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class UnitConverterTest {
-    final double epsilon = 1e-15;
-    private UnitConverter unitConverter;
+    final double epsilon = 1e-12;
+    private UnitConverter weightConverter;
 
     @Before
     public void setUp() {
-        unitConverter = new UnitConverter();
-        unitConverter.addPair("kg", "g", 1000.);
-        unitConverter.addPair("kg", "ct", 5000.);
-        unitConverter.addPair("kg", "lb", 2.205);
+        weightConverter = new UnitConverter();
+        weightConverter.addPair("kg", "g", 1000.);
+        weightConverter.addPair("kg", "ct", 5000.);
+        weightConverter.addPair("kg", "lb", 2.205);
     }
 
     @Test
@@ -37,11 +37,23 @@ public class UnitConverterTest {
         assertConvertReturns(2.205, "kg", "lb", 1.);
     }
 
+    @Test
+    public void convertFromKilogramToGram(){
+        Unit kilograms = new Unit("kg", 1.);
+        try{
+            Unit grams = weightConverter.convert(kilograms, "g");
+            assertTrue(grams.isEqual(new Unit("g", 1000.)));
+        } catch(UnitConvertTableException e){
+            System.out.println(e.getMessage());
+            fail();
+        }
+    }
+
     private void assertConvertReturns(double expected, String from, String to, double value)
     {
         try {
             String formatString = from + "-" + to;
-            assertEquals(expected, unitConverter.convert(formatString, value).getValue(), epsilon);
+            assertEquals(expected, weightConverter.convert(formatString, value).getValue(), epsilon);
         } catch (UnitConvertTableException e) {
             System.out.println(e.getMessage());
             fail("catch exception");

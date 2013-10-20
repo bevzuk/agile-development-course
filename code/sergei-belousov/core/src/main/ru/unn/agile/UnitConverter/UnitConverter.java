@@ -43,6 +43,15 @@ public class UnitConverter {
         }
     }
 
+    public Unit convert(Unit from, String to) throws UnitConvertTableException {
+        try{
+            String fromToFormatString = from.getType() + "-" + to;
+            return getConvertedUnit(fromToFormatString, from.getValue());
+        }catch(UnitConvertTableException e){
+            throw e;
+        }
+    }
+
     private Unit getConvertedUnit(String fromToFormatString, double value) throws UnitConvertTableException{
         try {
             String targetType = getKeyFromString(fromToFormatString).getTo();
