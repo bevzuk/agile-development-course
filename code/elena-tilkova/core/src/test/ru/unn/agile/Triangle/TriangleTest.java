@@ -18,55 +18,34 @@ public class TriangleTest
         assertNotNull(triangle);
     }
 
-    @Test
+    @Test (expected = IllegalArgumentException.class)
     public void canNotCreateTriangleWhihtTwoEqualPoints()
     {
         Point pointA = new Point(5, 5);
         Point pointB = new Point(5, 5);
         Point pointC = new Point(0, 0);
 
-        try
-        {
-            Triangle triangle = new Triangle(pointA, pointB, pointC);
-        }
-        catch (IllegalArgumentException ex)
-        {
-            assertEquals("Points must be different.", ex.getMessage());
-        }
+        Triangle triangle = new Triangle(pointA, pointB, pointC);
     }
 
-    @Test
+    @Test (expected = IllegalArgumentException.class)
     public void canNotCreateTriangleWhihtThreeEqualPoints()
     {
         Point pointA = new Point(5, 5);
         Point pointB = new Point(5, 5);
         Point pointC = new Point(5, 0);
 
-        try
-        {
-            Triangle triangle = new Triangle(pointA, pointB, pointC);
-        }
-        catch (IllegalArgumentException ex)
-        {
-            assertEquals("Points must be different.", ex.getMessage());
-        }
+        Triangle triangle = new Triangle(pointA, pointB, pointC);
     }
 
-    @Test
+    @Test (expected = IllegalArgumentException.class)
     public void canNotCreateTriangleWhihtCollinearPoints()
     {
         Point pointA = new Point(1, 5);
         Point pointB = new Point(2, 5);
         Point pointC = new Point(5, 5);
 
-        try
-        {
-            Triangle triangle = new Triangle(pointA, pointB, pointC);
-        }
-        catch (IllegalArgumentException ex)
-        {
-            assertEquals("Points can't be collinear.", ex.getMessage());
-        }
+        Triangle triangle = new Triangle(pointA, pointB, pointC);
     }
 
     @Test
@@ -159,58 +138,37 @@ public class TriangleTest
         assertEquals(10.0, triangle.sideLength("AB"), delta);
     }
 
-    @Test
+    @Test (expected = IllegalArgumentException.class)
     public void canNotGetSideLengthForWrongSideName()
     {
         Point pointA = new Point(0, 0);
         Point pointB = new Point(0, 10);
         Point pointC = new Point(9, 0);
         Triangle triangle = new Triangle(pointA, pointB, pointC);
-        try
-        {
-            triangle.sideLength("DB");
-        }
-        catch (IllegalArgumentException ex)
-        {
-            System.out.println(ex.getMessage());
-            assertEquals("The name of side is wrong.", ex.getMessage());
-        }
+
+        triangle.sideLength("DB");
     }
 
-    @Test
+    @Test (expected = IllegalArgumentException.class)
     public void canNotGetSideLengthForWrongSideNameSecondLetter()
     {
         Point pointA = new Point(0, 0);
         Point pointB = new Point(0, 10);
         Point pointC = new Point(9, 0);
         Triangle triangle = new Triangle(pointA, pointB, pointC);
-        try
-        {
-            triangle.sideLength("AF");
-        }
-        catch (IllegalArgumentException ex)
-        {
-            System.out.println(ex.getMessage());
-            assertEquals("The name of side is wrong.", ex.getMessage());
-        }
+
+        triangle.sideLength("AF");
     }
 
-    @Test
+    @Test (expected = IllegalArgumentException.class)
     public void canNotGetSideLengthForWrongLengthSideName()
     {
         Point pointA = new Point(0, 0);
         Point pointB = new Point(0, 10);
         Point pointC = new Point(9, 0);
         Triangle triangle = new Triangle(pointA, pointB, pointC);
-        try
-        {
-            triangle.sideLength("ABC");
-        }
-        catch (IllegalArgumentException ex)
-        {
-            System.out.println(ex.getMessage());
-            assertEquals("The name of side is wrong.", ex.getMessage());
-        }
+
+        triangle.sideLength("ABC");
     }
 
     @Test
@@ -223,40 +181,15 @@ public class TriangleTest
         assertEquals(1.57, triangle.angle("A"), delta);
     }
 
-    @Test
+    @Test (expected = IllegalArgumentException.class)
     public void canNotGetAngleForWrongAngleName()
     {
         Point pointA = new Point(0, 0);
         Point pointB = new Point(0, 10);
         Point pointC = new Point(10, 9);
         Triangle triangle = new Triangle(pointA, pointB, pointC);
-        try
-        {
-            triangle.angle("D");
-        }
-        catch (IllegalArgumentException ex)
-        {
-            System.out.println(ex.getMessage());
-            assertEquals("The name of angle is wrong.", ex.getMessage());
-        }
-    }
 
-    @Test
-    public void canNotGetAngleForWrongLengthAngleName()
-    {
-        Point pointA = new Point(0, 0);
-        Point pointB = new Point(0, 10);
-        Point pointC = new Point(10, 9);
-        Triangle triangle = new Triangle(pointA, pointB, pointC);
-        try
-        {
-            triangle.angle("ABC");
-        }
-        catch (IllegalArgumentException ex)
-        {
-            assertEquals("The name of angle is wrong.", ex.getMessage());
-        }
+        triangle.angle("D");
     }
-
 }
 
