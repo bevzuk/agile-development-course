@@ -3,6 +3,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 import org.junit.Test;
+import java.util.regex.*;
 
 public class HuffmanTest {
 
@@ -23,15 +24,9 @@ public class HuffmanTest {
     @Test
     public void outputStringAfterCompressCanContainsOnlyOneAndZero(){
         String outputText=Huffman.compress("Example");
-        boolean correctString=true;
-        char[] outputTextChars = outputText.toCharArray();
-        for (int i=0; i<outputTextChars.length; i++){
-            if(outputTextChars[i]!='0'&&outputTextChars[i]!='1'){
-                correctString=false;
-                break;
-            }
-        }
-        assertEquals(true,correctString);
+        Pattern patternOnlyOneAndZero = Pattern.compile("^[0-1]+$");
+        Matcher matcher = patternOnlyOneAndZero.matcher(outputText);
+        assertEquals(true,matcher.matches());
     }
 
     @Test
