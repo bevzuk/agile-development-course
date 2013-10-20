@@ -36,9 +36,8 @@ public class Point
         this.y = coord;
     }
 
-    public boolean equals(Object object)
+    public boolean equals(Point point)
     {
-        Point point = (Point) object;
         if (point.getFirstCoordinate() == getFirstCoordinate() && point.getSecondCoordinate() == getSecondCoordinate())
             return true;
         else
@@ -51,9 +50,8 @@ public class Point
         return distance;
     }
 
-    public void setCoordinates(Object object)
+    public void setCoordinates(Point point)
     {
-        Point point = (Point) object;
         this.setFirstCoordinate(point.getFirstCoordinate());
         this.setSecondCoordinate(point.getSecondCoordinate());
     }
