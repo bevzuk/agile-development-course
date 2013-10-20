@@ -159,7 +159,7 @@ public class BitArray {
      */
     public String toBitString() {
         StringBuffer buffer = new StringBuffer();
-        for (int i = 0; i < count(); ++i) {
+        for (int i = 0; i < length(); ++i) {
             buffer.append(get(i));
         }
         return buffer.toString();
@@ -182,10 +182,10 @@ public class BitArray {
      * @return this & arg
      */
     public BitArray and(BitArray arg) {
-        if (this.count() != arg.count()) {
+        if (this.length() != arg.length()) {
             throw new IllegalArgumentException("Arguments have defferent len");
         }
-        BitArray result = new BitArray(this.count(), 0);
+        BitArray result = new BitArray(this.length(), 0);
         for (int i = 0; i < intValues.size(); ++i) {
             result.intValues.set(i, intValues.get(i).intValue() & arg.intValues.get(i).intValue());
         }
@@ -198,10 +198,10 @@ public class BitArray {
      * @return this | arg
      */
     public BitArray or(BitArray arg) {
-        if (this.count() != arg.count()) {
+        if (this.length() != arg.length()) {
             throw new IllegalArgumentException("Arguments have different len");
         }
-        BitArray result = new BitArray(this.count(), 0);
+        BitArray result = new BitArray(this.length(), 0);
         for (int i = 0; i < intValues.size(); ++i) {
             result.intValues.set(i, intValues.get(i).intValue() | arg.intValues.get(i).intValue());
         }
@@ -214,10 +214,10 @@ public class BitArray {
      * @return this ^ arg
      */
     public BitArray xor(BitArray arg) {
-        if (this.count() != arg.count()) {
+        if (this.length() != arg.length()) {
             throw new IllegalArgumentException("Arguments have different len");
         }
-        BitArray result = new BitArray(this.count(), 0);
+        BitArray result = new BitArray(this.length(), 0);
         for (int i = 0; i < intValues.size(); ++i) {
             result.intValues.set(i, intValues.get(i).intValue() ^ arg.intValues.get(i).intValue());
         }
@@ -230,7 +230,7 @@ public class BitArray {
      * @return ~this
      */
     public BitArray not() {
-        BitArray result = new BitArray(this.count(), 0);
+        BitArray result = new BitArray(this.length(), 0);
         for (int i = 0; i < intValues.size(); ++i) {
             result.intValues.set(i, ~intValues.get(i).intValue());
         }
@@ -251,7 +251,7 @@ public class BitArray {
         for (int i = 0; i < shiftLenght; ++i) {
             buffer.insert(0, 0);
         }
-        BitArray result = BitArray.fromString(buffer.substring(0, count()));
+        BitArray result = BitArray.fromString(buffer.substring(0, length()));
         return result;
     }
 
@@ -277,12 +277,12 @@ public class BitArray {
      * Concatenates array
      */
     public BitArray append(BitArray arrayToAppend) {
-        BitArray result = new BitArray(count() + arrayToAppend.count(), 0);
+        BitArray result = new BitArray(length() + arrayToAppend.length(), 0);
         int j = 0;
-        for (int i = 0; i < count(); ++i, ++j) {
+        for (int i = 0; i < length(); ++i, ++j) {
             result.set(j, get(i));
         }
-        for (int i = 0; i < arrayToAppend.count(); ++i, ++j) {
+        for (int i = 0; i < arrayToAppend.length(); ++i, ++j) {
             result.set(j, arrayToAppend.get(i));
         }
         return result;
@@ -305,7 +305,7 @@ public class BitArray {
     /**
      * Return count of bit in current instance.
      */
-    public int count() {
+    public int length() {
         return size;
     }
 

@@ -14,14 +14,14 @@ public class BitArrayTest {
     @Test
     public void defaultConstructor() throws Exception {
         BitArray array = new BitArray();
-        assertTrue("count must be 0", array.count() == 0);
+        assertTrue("length must be 0", array.length() == 0);
     }
 
     @Test
     public void constructorInitCount() throws Exception {
         int count = 100;
         BitArray array = new BitArray(count, 0);
-        assertTrue("wrong array size", array.count() == count);
+        assertTrue("wrong array size", array.length() == count);
     }
 
     @Test
@@ -64,7 +64,7 @@ public class BitArrayTest {
     public void addNonZero() throws Exception {
         BitArray array = new BitArray();
         array.add(-1);
-        assertTrue("test for set -1 value", array.get(array.count() - 1) == 1);
+        assertTrue("test for set -1 value", array.get(array.length() - 1) == 1);
     }
 
     // too resource intensive. Uncomment if need.
@@ -72,8 +72,7 @@ public class BitArrayTest {
     public void maxRangeValue() throws Exception {
         if(canTestResourceIntensive) {
             BitArray array = new BitArray(Integer.MAX_VALUE, 0);
-            System.out.println(array.count());
-            assertTrue("check count", array.count() == Integer.MAX_VALUE);
+            assertTrue("check length", array.length() == Integer.MAX_VALUE);
         }
 
     }
@@ -90,11 +89,10 @@ public class BitArrayTest {
         BitArray array = null;
         try {
             array = new BitArray(Integer.MAX_VALUE + 1, 0);
-
+            fail("array not null");
         } catch (Exception ex) {
             //do nothing
         }
-        assertTrue("array not null", array == null);
     }
 
     @Test
@@ -102,11 +100,10 @@ public class BitArrayTest {
         BitArray array = null;
         try {
             array = new BitArray(-1, 0);
-
+            fail("array not null");
         } catch (Exception ex) {
             //do nothing
         }
-        assertTrue("array not null", array == null);
     }
 
    @Test
@@ -126,7 +123,7 @@ public class BitArrayTest {
    }
 
     @Test
-    public void setExceptinalRange() throws Exception {
+    public void setExceptionalRange() throws Exception {
         BitArray array = new BitArray(10, 0);
         try {
             array.set(10, 0);
@@ -173,7 +170,7 @@ public class BitArrayTest {
     public void fromStringNormalLen() throws Exception {
         String testString = "0001001010100101111000101000010010010100110101001010100101001011101001111000110";
         BitArray array = BitArray.fromString(testString);
-        assertTrue("different length", array.count() == testString.length());
+        assertTrue("different length", array.length() == testString.length());
     }
 
     @Test
@@ -251,7 +248,7 @@ public class BitArrayTest {
     public void fromIntArrayLen() throws Exception {
         int[] testArray = {0, 1, 2};
         BitArray array = BitArray.fromArray(testArray);
-        assertTrue("len check", array.count() == testArray.length * 32);
+        assertTrue("len check", array.length() == testArray.length * 32);
     }
 
     @Test
@@ -569,7 +566,7 @@ public class BitArrayTest {
         String testString = "00001110000000";
         BitArray array = BitArray.fromString(testString);
         BitArray resultArray = array.subArray(4, 3);
-        assertTrue("count check", resultArray.count() == 3);
+        assertTrue("length check", resultArray.length() == 3);
     }
 
     @Test
@@ -577,7 +574,7 @@ public class BitArrayTest {
         String testString = "00001110000000";
         BitArray array = BitArray.fromString(testString);
         BitArray resultArray = array.subArray(4, 3);
-        for (int i = 0; i < resultArray.count(); ++i) {
+        for (int i = 0; i < resultArray.length(); ++i) {
             assertTrue("check i: " + i, resultArray.get(i) == 1);
         }
     }
