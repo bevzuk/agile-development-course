@@ -45,9 +45,8 @@ public class Point
             return false;
     }
 
-    public double getDistance(Object object)
+    public double getDistance(Point point)
     {
-        Point point = (Point) object;
         double distance = Math.sqrt(Math.pow(this.x - point.x, 2) + Math.pow(this.y - point.y, 2));
         return distance;
     }

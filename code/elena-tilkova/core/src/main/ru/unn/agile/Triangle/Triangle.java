@@ -113,9 +113,9 @@ public class Triangle
         return sideLength;
     }
 
-    public double cornerMesure(String nameCorner)
+    public double angle(String nameCorner)
     {
-        double cornerMesure = 0;
+        double angle = 0;
         if (nameCorner.length() == 1)
         {
             Point point1 = new Point(0, 0);
@@ -144,15 +144,17 @@ public class Triangle
                 point3.setCoordinates(C);
                 isWrongSideName = false;
             }
-            if (isWrongSideName) throw new IllegalArgumentException("The name of corner is wrong.");
+            if (isWrongSideName) throw new IllegalArgumentException("The name of angle is wrong.");
 
-            double cosCorner = (Math.pow(point3.getDistance(point1), 2) +
+            double cosAngle = (Math.pow(point3.getDistance(point1), 2) +
                     Math.pow(point3.getDistance(point2), 2) -
                     Math.pow(point1.getDistance(point2), 2)) /
                     (2 * point3.getDistance(point1) * point3.getDistance(point2));
 
-            cornerMesure = Math.acos(cosCorner);
+            angle = Math.acos(cosAngle);
         }
-        return cornerMesure;
+        else new IllegalArgumentException("The name of angle is wrong.");
+
+        return angle;
     }
 }
