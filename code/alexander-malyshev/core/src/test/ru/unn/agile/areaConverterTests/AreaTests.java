@@ -2,7 +2,7 @@ package ru.unn.agile.areaConverterTests;
 
 import ru.unn.agile.areaConverter.*;
 
-import junit.framework.*;
+import static junit.framework.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,16 +12,17 @@ public class AreaTests {
     @Test
     public void canCreateAreaInstance() {
         area = new Area(1.0, "Metre");
-        Assert.assertNotNull(area);
+        assertNotNull(area);
     }
 
     @Test
     public void canSetNegativeArea() {
         try {
             area = new Area(-1.0, "Metre");
+            fail();
         }
         catch (Exception e) {
-            Assert.assertEquals(e.getMessage(),"Negative measure");
+            assertEquals("Negative measure", e.getMessage());
         }
     }
 
@@ -29,22 +30,23 @@ public class AreaTests {
     public void canSetWrongScale() {
         try {
             area = new Area(1.0, "some wrong scale");
+            fail();
         }
         catch (Exception e) {
-            Assert.assertEquals(e.getMessage(),"Wrong or empty scale");
+            assertEquals("Wrong or empty scale", e.getMessage());
         }
     }
 
     @Test
     public void canPerformToSiConvertation() {
         area = new Area(1.0, "Hectare");
-        Assert.assertEquals(area.toSI(), 10000.0);
+        assertEquals(10000.0, area.toSI());
     }
 
     @Test
     public void canPerformFromSiConvertation() {
         area = new Area(12.3, "Metre");
-        Assert.assertEquals(area.fromSI("Yard"), 12.3 / 0.83612736);
+        assertEquals(12.3 / 0.83612736, area.fromSI("Yard"));
     }
 
 }
