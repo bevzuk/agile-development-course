@@ -12,6 +12,7 @@ public class StringCalculatorTest {
     private final String wrongParensExceptionText = "Wrong parens in expression";
     private final String fewOpsExceptionText = "Not enough operators in expression";
     private final String notAllowedSymbolsExceptionText = "Undefined symbol in expression";
+    private final String divisionByZeroExceptionText = "Division by zero";
 
     @Test
     public void emptyStringGivesZero() {
@@ -39,7 +40,7 @@ public class StringCalculatorTest {
 
     @Test
     public void wrongSymbolsGivesException() {
-        checkExprGivesException("5+a", notAllowedSymbolsExceptionText);
+        checkExprGivesIllegalArgException("5+a", notAllowedSymbolsExceptionText);
     }
 
     @Test
@@ -74,7 +75,7 @@ public class StringCalculatorTest {
 
     @Test
     public void wrongParensGivesException() {
-        checkExprGivesException("5+5)", wrongParensExceptionText);
+        checkExprGivesIllegalArgException("5+5)", wrongParensExceptionText);
     }
 
     @Test
@@ -85,23 +86,22 @@ public class StringCalculatorTest {
 
     @Test
     public void tooFewOpsGivesException() {
-        checkExprGivesException("5 5", fewOpsExceptionText);
-
+        checkExprGivesIllegalArgException("5 5", fewOpsExceptionText);
     }
 
     @Test
     public void opInBeginGivesException() {
-        checkExprGivesException("+5 5", wrongOpsExceptionText);
+        checkExprGivesIllegalArgException("+5 5", wrongOpsExceptionText);
     }
 
     @Test
     public void opInEndGivesException() {
-        checkExprGivesException("5 5 + ", wrongOpsExceptionText);
+        checkExprGivesIllegalArgException("5 5 + ", wrongOpsExceptionText);
     }
 
     @Test
     public void wrongOpGivesException() {
-        checkExprGivesException("5 6 + * 5 ", wrongOpsExceptionText);
+        checkExprGivesIllegalArgException("5 6 + * 5 ", wrongOpsExceptionText);
     }
 
     @Test
@@ -111,19 +111,25 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void checkOpsPriorWithDivisionAndMinusAndParens() {
-        double res = StringCalculator.calculate("2/(2-2)");
-        assertEquals(2.0 / (2 - 2), res, calcError);
+    public void checkDivisionByZeroIsNotAllowed() {
+        try {
+            StringCalculator.calculate("2/(2-2)");
+            fail("Exception must be thrown");
+        } catch (ArithmeticException e) {
+            assertEquals(divisionByZeroExceptionText, e.getMessage());
+        } catch (Exception e) {
+            fail("Wrong exception type");
+        }
     }
 
     @Test
     public void checkOneOpGiveException() {
-        checkExprGivesException("+", wrongOpsExceptionText);
+        checkExprGivesIllegalArgException("+", wrongOpsExceptionText);
     }
 
     @Test
     public void checkUnaryMinusIsNotAllowed() {
-        checkExprGivesException("-1", wrongOpsExceptionText);
+        checkExprGivesIllegalArgException("-1", wrongOpsExceptionText);
     }
 
     @Test
@@ -144,14 +150,14 @@ public class StringCalculatorTest {
         assertEquals(((2.0 - 2) - 2) - 2, res, calcError);
     }
 
-    private void checkExprGivesException(String expr, String exceptionText) {
+    private void checkExprGivesIllegalArgException(String expr, String exceptionText) {
         try {
             StringCalculator.calculate(expr);
-            fail("Exception must be thrown.");
+            fail("Exception must be thrown");
         } catch (IllegalArgumentException e) {
             assertEquals(exceptionText, e.getMessage());
         } catch (Exception e) {
-            fail("Wrong exception type.");
+            fail("Wrong exception type");
         }
     }
 }

@@ -140,6 +140,8 @@ public class StringCalculator {
                 break;
             case '/':
                 double arg2 = stackArgs.pop();
+                if (arg2 == 0)
+                    throw new ArithmeticException("Division by zero");
                 stackArgs.push(stackArgs.pop() / arg2);
                 break;
         }
