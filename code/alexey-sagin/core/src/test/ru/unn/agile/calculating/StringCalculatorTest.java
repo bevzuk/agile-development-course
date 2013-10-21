@@ -3,16 +3,10 @@ package ru.unn.agile.calculating;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 public class StringCalculatorTest {
 
     private final double calcError = 1e-10;
-    private final String wrongOpsExceptionText = "Wrong operator position in expression";
-    private final String wrongParensExceptionText = "Wrong parens in expression";
-    private final String fewOpsExceptionText = "Not enough operators in expression";
-    private final String notAllowedSymbolsExceptionText = "Undefined symbol in expression";
-    private final String divisionByZeroExceptionText = "Division by zero";
 
     @Test
     public void emptyStringGivesZero() {
@@ -38,9 +32,9 @@ public class StringCalculatorTest {
         assertEquals(5.0 + 5, res, calcError);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void wrongSymbolsGivesException() {
-        checkExprGivesIllegalArgException("5+a", notAllowedSymbolsExceptionText);
+        StringCalculator.calculate("5+a");
     }
 
     @Test
@@ -73,9 +67,9 @@ public class StringCalculatorTest {
         assertEquals(2.0 / (5 + 5 * 7), res, calcError);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void wrongParensGivesException() {
-        checkExprGivesIllegalArgException("5+5)", wrongParensExceptionText);
+        StringCalculator.calculate("5+5)");
     }
 
     @Test
@@ -84,24 +78,24 @@ public class StringCalculatorTest {
         assertEquals((1.1 - 2 * 7) / 19 + 1 + 2 * (2 + 2 / 2), res, calcError);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void tooFewOpsGivesException() {
-        checkExprGivesIllegalArgException("5 5", fewOpsExceptionText);
+        StringCalculator.calculate("5 5");
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void opInBeginGivesException() {
-        checkExprGivesIllegalArgException("+5 5", wrongOpsExceptionText);
+        StringCalculator.calculate("+5 5");
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void opInEndGivesException() {
-        checkExprGivesIllegalArgException("5 5 + ", wrongOpsExceptionText);
+        StringCalculator.calculate("5 5 + ");
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void wrongOpGivesException() {
-        checkExprGivesIllegalArgException("5 6 + * 5 ", wrongOpsExceptionText);
+        StringCalculator.calculate("5 6 + * 5 ");
     }
 
     @Test
@@ -110,26 +104,19 @@ public class StringCalculatorTest {
         assertEquals(1.0 / 1 - 1, res, calcError);
     }
 
-    @Test
+    @Test(expected = ArithmeticException.class)
     public void checkDivisionByZeroIsNotAllowed() {
-        try {
-            StringCalculator.calculate("2/(2-2)");
-            fail("Exception must be thrown");
-        } catch (ArithmeticException e) {
-            assertEquals(divisionByZeroExceptionText, e.getMessage());
-        } catch (Exception e) {
-            fail("Wrong exception type");
-        }
+        StringCalculator.calculate("2/(2-2)");
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void checkOneOpGiveException() {
-        checkExprGivesIllegalArgException("+", wrongOpsExceptionText);
+        StringCalculator.calculate("+");
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void checkUnaryMinusIsNotAllowed() {
-        checkExprGivesIllegalArgException("-1", wrongOpsExceptionText);
+        StringCalculator.calculate("-1");
     }
 
     @Test
@@ -148,16 +135,5 @@ public class StringCalculatorTest {
     public void checkMinusIsLeftAssoc() {
         double res = StringCalculator.calculate("2-2-2-2");
         assertEquals(((2.0 - 2) - 2) - 2, res, calcError);
-    }
-
-    private void checkExprGivesIllegalArgException(String expr, String exceptionText) {
-        try {
-            StringCalculator.calculate(expr);
-            fail("Exception must be thrown");
-        } catch (IllegalArgumentException e) {
-            assertEquals(exceptionText, e.getMessage());
-        } catch (Exception e) {
-            fail("Wrong exception type");
-        }
     }
 }
