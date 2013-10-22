@@ -10,54 +10,39 @@ import static org.junit.Assert.assertArrayEquals;
 public class QuadraticEquationSolverTest {
 
     protected static final double delta = 1e-10;
-    protected QuadraticEquationSolver qSolver = new QuadraticEquationSolver();
 
     @Test(expected = InvalidParameterException.class)
     public void equationWithZeroParametersThrowsException() {
-        qSolver.initializeSolver(0, 0, 0);
-    }
-
-    @Test(expected = InvalidParameterException.class)
-    public void nonInitializedSolverThrowsException() {
-        qSolver.Solve();
+         assertQuadraticEquationSolver(null, 0, 0, 0);
     }
 
     @Test(expected = InvalidParameterException.class)
     public void equationWithCNonZeroOnlyThrowsException() {
-        qSolver.initializeSolver(0, 0, 5);
-        qSolver.Solve();
+        assertQuadraticEquationSolver(null,0, 0, 5);
     }
 
     @Test
     public void linearEquationIsSolvedCorrectly() {
-        qSolver.initializeSolver(0, 5, 10);
-        qSolver.Solve();
-        double[] solution = qSolver.getSolution();
-        assertArrayEquals(new double[]{-2}, solution, delta);
+        assertQuadraticEquationSolver(new double[]{-2},0, 5, 10);
     }
 
     @Test
     public void quadraticEquationIsSolvedCorrectly() {
-        qSolver.initializeSolver(1, -4, 3);
-        qSolver.Solve();
-        double[] solution = qSolver.getSolution();
-        assertArrayEquals(new double[]{1, 3}, solution, delta);
+        assertQuadraticEquationSolver(new double[]{1,3},1, -4, 3);
     }
 
     @Test
     public void equationWithZeroDiscriminantIsSolvedCorrectly() {
-        qSolver.initializeSolver(1, -4, 4);
-        qSolver.Solve();
-        double[] solution = qSolver.getSolution();
-        assertArrayEquals(new double[]{2}, solution, delta);
+        assertQuadraticEquationSolver(new double[]{2},1, -4, 4);
     }
 
     @Test
     public void equationWithNegativeDiscriminantGivesEmptySolution() {
-        qSolver.initializeSolver(1, -4, 5);
-        qSolver.Solve();
-        double[] solution = qSolver.getSolution();
-        assertArrayEquals(new double[]{}, solution, delta);
+        assertQuadraticEquationSolver(new double[]{},1, -4, 5);
     }
+
+    public void assertQuadraticEquationSolver(double x[], double a, double b, double c) {
+         assertArrayEquals(x, QuadraticEquationSolver.solve(a, b, c), delta);
+    };
 }
 
