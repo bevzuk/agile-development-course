@@ -127,7 +127,6 @@ public class CalculatorWindow implements IView
         lblResult = new Label(shlComplexNumberCalculator, SWT.NONE);
         lblResult.setBounds(10, 180, 55, 15);
         lblResult.setText("Result:");
-
     }
 
     public String getReal1()
