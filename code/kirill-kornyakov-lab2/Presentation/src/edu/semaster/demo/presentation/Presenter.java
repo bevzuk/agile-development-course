@@ -18,8 +18,15 @@ public class Presenter
 
     private void processCalcAction()
     {
-        ComplexNumber z1 = convertToComplexNumber(view.getRe1(), view.getIm1());
-        ComplexNumber z2 = convertToComplexNumber(view.getRe2(), view.getIm2());
+        ComplexNumber z1, z2;
+        try {
+            z1 = convertToComplexNumber(view.getRe1(), view.getIm1());
+            z2 = convertToComplexNumber(view.getRe2(), view.getIm2());
+        }
+        catch (Exception e) {
+            view.setMessage("Bad Format");
+            return;
+        }
 
         ComplexNumber result = new ComplexNumber();
         switch (view.getOperation()) {
@@ -35,16 +42,7 @@ public class Presenter
         view.setMessage("Success");
     }
     
-    public ComplexNumber convertToComplexNumber(String re, String im)
-    {
-        ComplexNumber z = null;
-        try {
-             = new ComplexNumber(Double.parseDouble(re), Double.parseDouble(im));
-        }
-        catch (Exception e)
-        {
-            view.setMessage("Bad Format");
-        }
-        return z;
+    public ComplexNumber convertToComplexNumber(String re, String im) {
+        return new ComplexNumber(Double.parseDouble(re), Double.parseDouble(im));
     }
 }

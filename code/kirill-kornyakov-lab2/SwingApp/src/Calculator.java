@@ -17,6 +17,8 @@ public class Calculator implements IView
     private JComboBox cbOperation;
     private JButton btnCalc;
     private JPanel mainPanel;
+    private JLabel lbStatusLabel;
+    private JLabel lbStatus;
 
     private ClickHandler calcHandler;
 
@@ -62,6 +64,16 @@ public class Calculator implements IView
     {
         txtZ3Re.setText(string);
         txtZ3Im.setText(string);
+    }
+
+    public String getMessage()
+    {
+        return lbStatus.getText();
+    }
+
+    public void setMessage(String message)
+    {
+        lbStatus.setText(message);
     }
 
     public void setCalcActionHandler(ClickHandler handler)
