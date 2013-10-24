@@ -53,10 +53,12 @@ public class Calculator implements IView
 
     public Operation getOperation() {
         String operation = cbOperation.getSelectedItem().toString();
-        if (operation == "Add")
+
+        if (operation.equals("Add"))
             return Operation.ADD;
-        else if (operation == "Mul")
+        else if (operation.equals("Mul"))
             return Operation.MULTIPLY;
+
         return null;
     }
 

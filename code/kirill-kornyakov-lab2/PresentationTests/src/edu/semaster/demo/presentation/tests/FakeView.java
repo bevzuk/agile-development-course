@@ -12,9 +12,9 @@ public class FakeView implements IView
     public String im2;
     public Operation op;
     public String result;
+    private String message;
 
     public ClickHandler calcActionHandler;
-    private String message;
 
     public FakeView() {
         op = Operation.ADD;

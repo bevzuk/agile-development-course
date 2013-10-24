@@ -31,24 +31,20 @@ public class PresenterTests
     @Test
     public void canConvertStringToComplexNumber()
     {
-        String realString = "10";
-        String imaginaryString = "20";
-        ComplexNumber convertedNumber = presenter
-                .convertToComplexNumber(realString,
-                        imaginaryString);
-        assertEquals(new ComplexNumber(10, 20), convertedNumber);
+        String re = "10"; String im = "20";
+        ComplexNumber z = presenter.convertToComplexNumber(re, im);
+
+        assertEquals(new ComplexNumber(10, 20), z);
     }
 
     @Test
     public void canConvertStringToComplexNumberWithFloatingPointNumbers()
     {
-        String realString = "3.14";
-        String imaginaryString = "-1e3";
-        ComplexNumber convertedNumber = presenter
-                .convertToComplexNumber(realString,
-                        imaginaryString);
-        assertEquals(new ComplexNumber(3.14, -1e3),
-                convertedNumber);
+        String re = "3.14";
+        String im = "-1e3";
+        ComplexNumber z = presenter.convertToComplexNumber(re, im);
+
+        assertEquals(new ComplexNumber(3.14, -1e3), z);
     }
 
     @Test

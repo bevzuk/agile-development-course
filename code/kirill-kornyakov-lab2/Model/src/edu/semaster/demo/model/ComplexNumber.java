@@ -7,7 +7,7 @@ public class ComplexNumber
 
     public ComplexNumber(double real, double imaginary)
     {
-        this.setReal(real);
+        this.re = real;
         this.im = imaginary;
     }
 
@@ -20,11 +20,8 @@ public class ComplexNumber
     public boolean equals(Object object)
     {
         ComplexNumber number = (ComplexNumber) object;
-        if (number.getReal() == getReal()
-                && number.getImaginary() == getImaginary())
-            return true;
-        else
-            return false;
+        return number.getReal() == getReal()
+            && number.getImaginary() == getImaginary();
     }
 
     public ComplexNumber add(ComplexNumber other)
@@ -40,20 +37,20 @@ public class ComplexNumber
                 other.getReal() * getImaginary() + other.getImaginary() * getReal());
     }
 
-    public void setReal(double real)
-    {
-        this.re = real;
-    }
+//    public void setReal(double real)
+//    {
+//        this.re = real;
+//    }
 
     public double getReal()
     {
         return re;
     }
 
-    public void setImaginary(double imaginary)
-    {
-        this.im = imaginary;
-    }
+//    public void setImaginary(double imaginary)
+//    {
+//        this.im = imaginary;
+//    }
 
     public double getImaginary()
     {
