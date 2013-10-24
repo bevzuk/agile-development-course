@@ -129,22 +129,22 @@ public class CalculatorWindow implements IView
         lblResult.setText("Result:");
     }
 
-    public String getReal1()
+    public String getRe1()
     {
         return m_real1Text.getText();
     }
 
-    public String getImaginary1()
+    public String getIm1()
     {
         return m_imaginary1Text.getText();
     }
 
-    public String getReal2()
+    public String getRe2()
     {
         return m_real2Text.getText();
     }
 
-    public String getImaginary2()
+    public String getIm2()
     {
         return m_imaginary2Text.getText();
     }

@@ -18,36 +18,44 @@ public class Calculator implements IView
     private JButton btnCalc;
     private JPanel mainPanel;
 
-    private ClickHandler m_addHandler;
-    private ClickHandler m_multiplyHandler;
+    private ClickHandler calcHandler;
 
     public Calculator() {
         btnCalc.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                m_addHandler.onClick();
+                calcHandler.onClick();
             }
         });
     }
 
-    public String getReal1()
+    public String getRe1()
     {
         return txtZ1Re.getText();
     }
 
-    public String getImaginary1()
+    public String getIm1()
     {
         return txtZ1Im.getText();
     }
 
-    public String getReal2()
+    public String getRe2()
     {
         return txtZ2Re.getText();
     }
 
-    public String getImaginary2()
+    public String getIm2()
     {
         return txtZ2Im.getText();
+    }
+
+    public Operation getOperation() {
+        String operation = cbOperation.getSelectedItem().toString();
+        if (operation == "Add")
+            return Operation.ADD;
+        else if (operation == "Mul")
+            return Operation.MULTIPLY;
+        return null;
     }
 
     public void setResult(String string)
@@ -56,14 +64,9 @@ public class Calculator implements IView
         txtZ3Im.setText(string);
     }
 
-    public void setAddActionHandler(ClickHandler handler)
+    public void setCalcActionHandler(ClickHandler handler)
     {
-        m_addHandler = handler;
-    }
-
-    public void setMultiplyActionHandler(ClickHandler handler)
-    {
-        m_multiplyHandler = handler;
+        calcHandler = handler;
     }
 
     public static void main(String[] args) {

@@ -2,14 +2,19 @@ package edu.semaster.demo.presentation;
 
 public interface IView
 {
-    String getReal1();
-	String getImaginary1();
+    String getRe1();
+    String getIm1();
 
-	String getReal2();
-	String getImaginary2();
+    String getRe2();
+    String getIm2();
 
-	void setResult(String string);
+    void setResult(String string);
 
-	void setAddActionHandler(ClickHandler handler);
-	void setMultiplyActionHandler(ClickHandler handler);
+    void setMessage(String string);
+    String getMessage();
+
+    public enum Operation { ADD, MULTIPLY }
+    Operation getOperation();
+
+    void setCalcActionHandler(ClickHandler handler);
 }

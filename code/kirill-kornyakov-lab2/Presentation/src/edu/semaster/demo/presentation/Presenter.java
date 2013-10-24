@@ -4,51 +4,47 @@ import edu.semaster.demo.model.ComplexNumber;
 
 public class Presenter
 {
-	private IView m_view;
+    private IView view;
 
-	public Presenter(IView view)
-	{
-		m_view = view;
-		m_view.setAddActionHandler(new ClickHandler()
-		{
-			public void onClick()
-			{
-				Presenter.this.processAddAction();
-			}
-		});
-		m_view.setMultiplyActionHandler(new ClickHandler()
-		{
-			public void onClick()
-			{
-				Presenter.this.processMultiplyAction();
-			}
-		});
-	}
+    public Presenter(IView view)
+    {
+        this.view = view;
+        this.view.setCalcActionHandler(new ClickHandler() {
+            public void onClick() {
+                Presenter.this.processCalcAction();
+            }
+        });
+    }
 
-	private void processAddAction()
-	{
-		ComplexNumber number1 = convertToComplexNumber(
-				m_view.getReal1(), m_view.getImaginary1());
-		ComplexNumber number2 = convertToComplexNumber(
-				m_view.getReal2(), m_view.getImaginary2());
-		ComplexNumber result = number1.add(number2);
-		m_view.setResult(result.toString());
-	}
+    private void processCalcAction()
+    {
+        ComplexNumber z1 = convertToComplexNumber(view.getRe1(), view.getIm1());
+        ComplexNumber z2 = convertToComplexNumber(view.getRe2(), view.getIm2());
 
-	private void processMultiplyAction()
-	{
-		ComplexNumber number1 = convertToComplexNumber(
-				m_view.getReal1(), m_view.getImaginary1());
-		ComplexNumber number2 = convertToComplexNumber(
-				m_view.getReal2(), m_view.getImaginary2());
-		ComplexNumber result = number1.multiply(number2);
-		m_view.setResult(result.toString());
-	}
-	
-	public static ComplexNumber convertToComplexNumber(String realString,
-			String imaginaryString)
-	{
-		return new ComplexNumber(Double.parseDouble(realString),
-				Double.parseDouble(imaginaryString));
-	}
+        ComplexNumber result = new ComplexNumber();
+        switch (view.getOperation()) {
+            case ADD:
+                result = z1.add(z2);
+                break;
+            case MULTIPLY:
+                result = z1.multiply(z2);
+                break;
+        }
+
+        view.setResult(result.toString());
+        view.setMessage("Success");
+    }
+    
+    public ComplexNumber convertToComplexNumber(String re, String im)
+    {
+        ComplexNumber z = null;
+        try {
+             = new ComplexNumber(Double.parseDouble(re), Double.parseDouble(im));
+        }
+        catch (Exception e)
+        {
+            view.setMessage("Bad Format");
+        }
+        return z;
+    }
 }

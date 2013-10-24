@@ -2,60 +2,66 @@ package edu.semaster.demo.model;
 
 public class ComplexNumber
 {
-	private double m_real;
-	private double m_imaginary;
+    private double re;
+    private double im;
 
-	public ComplexNumber(double real, double imaginary)
-	{
-		this.setReal(real);
-		this.m_imaginary = imaginary;
-	}
+    public ComplexNumber(double real, double imaginary)
+    {
+        this.setReal(real);
+        this.im = imaginary;
+    }
 
-	public boolean equals(Object object)
-	{
-		ComplexNumber number = (ComplexNumber) object;
-		if (number.getReal() == getReal()
-				&& number.getImaginary() == getImaginary())
-			return true;
-		else
-			return false;
-	}
+    public ComplexNumber()
+    {
+        this.re = 0;
+        this.im = 0;
+    }
 
-	public ComplexNumber add(ComplexNumber other)
-	{
-		return new ComplexNumber(other.getReal() + getReal(),
-				other.getImaginary() + getImaginary());
-	}
+    public boolean equals(Object object)
+    {
+        ComplexNumber number = (ComplexNumber) object;
+        if (number.getReal() == getReal()
+                && number.getImaginary() == getImaginary())
+            return true;
+        else
+            return false;
+    }
 
-	public ComplexNumber multiply(ComplexNumber other)
-	{
-		return new ComplexNumber(
-				other.getReal() * getReal() - other.getImaginary() * getImaginary(), 
-				other.getReal() * getImaginary() + other.getImaginary() * getReal());
-	}
+    public ComplexNumber add(ComplexNumber other)
+    {
+        return new ComplexNumber(other.getReal() + getReal(),
+                other.getImaginary() + getImaginary());
+    }
 
-	public void setReal(double real)
-	{
-		this.m_real = real;
-	}
+    public ComplexNumber multiply(ComplexNumber other)
+    {
+        return new ComplexNumber(
+                other.getReal() * getReal() - other.getImaginary() * getImaginary(), 
+                other.getReal() * getImaginary() + other.getImaginary() * getReal());
+    }
 
-	public double getReal()
-	{
-		return m_real;
-	}
+    public void setReal(double real)
+    {
+        this.re = real;
+    }
 
-	public void setImaginary(double imaginary)
-	{
-		this.m_imaginary = imaginary;
-	}
+    public double getReal()
+    {
+        return re;
+    }
 
-	public double getImaginary()
-	{
-		return m_imaginary;
-	}
-	
-	public String toString()
-	{
-		return Formatter.getFormatted(this);
-	}
+    public void setImaginary(double imaginary)
+    {
+        this.im = imaginary;
+    }
+
+    public double getImaginary()
+    {
+        return im;
+    }
+    
+    public String toString()
+    {
+        return Formatter.getFormatted(this);
+    }
 }

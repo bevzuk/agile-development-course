@@ -6,47 +6,53 @@ import edu.semaster.demo.presentation.IView;
 
 public class FakeView implements IView
 {
-	public String m_real1;
-	public String m_imaginary1;
-	public String m_real2;
-	public String m_imaginary2;
-	public String m_result;
+    public String re1;
+    public String im1;
+    public String re2;
+    public String im2;
+    public Operation op;
+    public String result;
 
-	public ClickHandler m_addActionHandler;
-	public ClickHandler m_multiplyActionHandler;
+    public ClickHandler calcActionHandler;
+    private String message;
 
-	public String getReal1()
-	{
-		return m_real1;
-	}
+    public FakeView() {
+        op = Operation.ADD;
+    }
 
-	public String getImaginary1()
-	{
-		return m_imaginary1;
-	}
+    public String getRe1() {
+        return re1;
+    }
 
-	public String getReal2()
-	{
-		return m_real2;
-	}
+    public String getIm1() {
+        return im1;
+    }
 
-	public String getImaginary2()
-	{
-		return m_imaginary2;
-	}
+    public String getRe2() {
+        return re2;
+    }
 
-	public void setResult(String string)
-	{
-		m_result = string;
-	}
+    public String getIm2() {
+        return im2;
+    }
 
-	public void setAddActionHandler(ClickHandler handler)
-	{
-		m_addActionHandler = handler;
-	}
+    public void setResult(String string) {
+        result = string;
+    }
 
-	public void setMultiplyActionHandler(ClickHandler handler)
-	{
-		m_multiplyActionHandler = handler;
-	}
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public Operation getOperation() {
+        return op;
+    }
+
+    public void setCalcActionHandler(ClickHandler handler) {
+        calcActionHandler = handler;
+    }
 }
