@@ -6,7 +6,7 @@
       <xy x="20" y="16" width="558" height="209"/>
     </constraints>
     <properties>
-      <preferredSize width="515" height="159"/>
+      <preferredSize width="700" height="159"/>
     </properties>
     <border type="none"/>
     <children>
@@ -169,9 +169,7 @@
             <properties>
               <model>
                 <item value="Add"/>
-                <item value="Sub"/>
                 <item value="Mul"/>
-                <item value="Div"/>
               </model>
             </properties>
           </component>
@@ -191,7 +189,9 @@
           </hspacer>
           <component id="b2d78" class="javax.swing.JLabel" binding="lbStatus">
             <constraints>
-              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="70" height="-1"/>
+              </grid>
             </constraints>
             <properties>
               <text value=""/>
