@@ -41,7 +41,6 @@ public class ViewModel
         catch (Exception e) {
             result = "NA";
             message = "Bad Format";
-            unbind();
             return;
         }
 
