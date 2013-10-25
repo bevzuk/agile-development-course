@@ -81,6 +81,16 @@ public class PresenterTests
     }
 
     @Test
+    public void isResultNAWhenBadFormat()
+    {
+        view.re1 = "a";
+
+        view.calcActionHandler.onClick();
+
+        assertEquals("NA", view.getResult());
+    }
+
+    @Test
     public void canMultiplyNumbers()
     {
         view.re1 = "1"; view.im1 = "0";

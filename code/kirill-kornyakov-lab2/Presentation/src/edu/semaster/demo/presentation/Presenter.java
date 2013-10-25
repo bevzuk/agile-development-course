@@ -25,6 +25,7 @@ public class Presenter
         }
         catch (Exception e) {
             view.setMessage("Bad Format");
+            view.setResult("NA");
             return;
         }
 

@@ -8,16 +8,14 @@ import java.awt.event.ActionListener;
 
 public class Calculator implements IView
 {
+    private JPanel mainPanel;
     private JTextField txtZ1Re;
     private JTextField txtZ1Im;
     private JTextField txtZ2Re;
     private JTextField txtZ2Im;
-    private JTextField txtZ3Re;
-    private JTextField txtZ3Im;
     private JComboBox cbOperation;
     private JButton btnCalc;
-    private JPanel mainPanel;
-    private JLabel lbStatusLabel;
+    private JTextField txtResult;
     private JLabel lbStatus;
 
     private ClickHandler calcHandler;
@@ -64,13 +62,17 @@ public class Calculator implements IView
 
     public void setResult(String string)
     {
-        txtZ3Re.setText(string);
-        txtZ3Im.setText(string);
+        txtResult.setText(string);
     }
 
     public String getMessage()
     {
         return lbStatus.getText();
+    }
+
+    @Override
+    public String getResult() {
+        return txtResult.getText();
     }
 
     public void setMessage(String message)

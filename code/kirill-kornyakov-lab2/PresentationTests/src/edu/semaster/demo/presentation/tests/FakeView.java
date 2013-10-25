@@ -40,6 +40,10 @@ public class FakeView implements IView
         result = string;
     }
 
+    public String getResult() {
+        return result;
+    }
+
     public void setMessage(String message) {
         this.message = message;
     }

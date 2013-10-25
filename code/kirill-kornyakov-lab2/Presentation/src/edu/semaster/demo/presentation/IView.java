@@ -13,6 +13,8 @@ public interface IView
     void setMessage(String string);
     String getMessage();
 
+    String getResult();
+
     public enum Operation { ADD, MULTIPLY }
     Operation getOperation();
 
