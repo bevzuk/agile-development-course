@@ -2,7 +2,6 @@ package edu.semaster.demo.presentation.tests;
 
 import static junit.framework.Assert.*;
 
-import edu.semaster.demo.presentation.IView;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,21 +11,19 @@ import edu.semaster.demo.presentation.ViewModel;
 
 public class ViewModelTests
 {
-    //private FakeView view;
     private ViewModel viewModel;
 
     @Before
     public void setUp()
     {
-        //view = new FakeView();
         viewModel = new ViewModel();
     }
 
-//    @After
-//    public void tearDown()
-//    {
-//        view = null;
-//    }
+    @After
+    public void tearDown()
+    {
+        viewModel = null;
+    }
 
     @Test
     public void canConvertStringToComplexNumber()

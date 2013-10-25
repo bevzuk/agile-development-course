@@ -19,21 +19,20 @@ public class ViewModel
     public ViewModel() {
         op = Operation.ADD;
 
-        setCalcActionHandler(new ClickHandler() {
+        calcActionHandler = new ClickHandler() {
             public void onClick() {
+                ViewModel.this.bind();
                 ViewModel.this.processCalcAction();
+                ViewModel.this.unbind();
             }
-        });
+        };
     }
 
-    public void setCalcActionHandler(ClickHandler handler) {
-        calcActionHandler = handler;
-    }
+    public void bind() {}
+    public void unbind() {}
 
     private void processCalcAction()
     {
-        bind();
-
         ComplexNumber z1, z2;
         try {
             z1 = convertToComplexNumber(re1, im1);
@@ -58,12 +57,7 @@ public class ViewModel
 
         result = resultZ.toString();
         message = "Success";
-
-        unbind();
     }
-
-    private void bind() {}
-    private void unbind() {}
 
     public ComplexNumber convertToComplexNumber(String re, String im) {
         return new ComplexNumber(Double.parseDouble(re), Double.parseDouble(im));
