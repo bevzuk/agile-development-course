@@ -1,4 +1,4 @@
-package edu.semaster.demo.model;
+package ru.unn.agile.ComplexNumber.model;
 
 public class ComplexNumber
 {
@@ -19,7 +19,8 @@ public class ComplexNumber
 
     public boolean equals(Object object)
     {
-        ComplexNumber number = (ComplexNumber) object;
+        ComplexNumber number;
+        number = (ComplexNumber) object;
         return number.getReal() == getReal()
             && number.getImaginary() == getImaginary();
     }

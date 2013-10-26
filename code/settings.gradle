@@ -1,5 +1,6 @@
 include "anton-bevzuk-lab1",
         "kirill-kornyakov-lab1",
+        "kirill-kornyakov-lab2/Model", "kirill-kornyakov-lab2/ViewModel",
         "alexander-lyulkov",
         "alexander-malyshev",
         "alexandr-komin",

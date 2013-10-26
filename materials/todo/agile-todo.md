@@ -2,6 +2,10 @@
   - Реализовать лабу 2, подготовить описание
   - Контрольные списки для проверки
     - Никаких дурацких сокращений
+    - Включить проверку стиля
+  - Clean Code: вставить пример копирования строк на С
+  - Написать про Code Coverage
+  - codeQuality sample in Gradle
 
 # Лекции
   - Понятие антипаттерна <http://en.wikipedia.org/wiki/Anti-pattern#Software_design_anti-patterns>

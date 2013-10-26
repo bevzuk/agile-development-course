@@ -1,4 +1,4 @@
-package edu.semaster.demo.presentation;
+package ru.unn.agile.ComplexNumber.viewmodel;
 
 public interface ClickHandler
 {

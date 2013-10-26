@@ -1,6 +1,6 @@
-package edu.semaster.demo.presentation;
+package ru.unn.agile.ComplexNumber.viewmodel;
 
-import edu.semaster.demo.model.ComplexNumber;
+import ru.unn.agile.ComplexNumber.model.ComplexNumber;
 
 public class ViewModel
 {

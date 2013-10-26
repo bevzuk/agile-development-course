@@ -1,4 +1,4 @@
-package edu.semaster.demo.presentation.tests;
+package ru.unn.agile.ComplexNumber.viewmodel;
 
 import static junit.framework.Assert.*;
 
@@ -6,8 +6,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import edu.semaster.demo.model.ComplexNumber;
-import edu.semaster.demo.presentation.ViewModel;
+import ru.unn.agile.ComplexNumber.model.ComplexNumber;
+import ru.unn.agile.ComplexNumber.viewmodel.ViewModel;
 
 public class ViewModelTests
 {
