@@ -1,6 +1,14 @@
+// Kirill Kornyakov
+include "kirill-kornyakov-lab2/Model"
+include "kirill-kornyakov-lab2/ViewModel"
+include "kirill-kornyakov-lab2/View"
+
+project(":kirill-kornyakov-lab2/Model").name = "kirill-kornyakov-Model"
+project(":kirill-kornyakov-lab2/ViewModel").name = "kirill-kornyakov-ViewModel"
+project(":kirill-kornyakov-lab2/View").name = "kirill-kornyakov-View"
+
 include "anton-bevzuk-lab1",
         "kirill-kornyakov-lab1",
-        "kirill-kornyakov-lab2/Model", "kirill-kornyakov-lab2/ViewModel",
         "alexander-lyulkov",
         "alexander-malyshev",
         "alexandr-komin",

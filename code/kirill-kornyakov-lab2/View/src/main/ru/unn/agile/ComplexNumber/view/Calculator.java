@@ -1,4 +1,6 @@
-import edu.semaster.demo.presentation.ViewModel;
+package ru.unn.agile.ComplexNumber.view;
+
+import ru.unn.agile.ComplexNumber.viewmodel.ViewModel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -52,11 +54,9 @@ public class Calculator extends ViewModel
     }
 
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        new ViewModel();
-
         JFrame frame = new JFrame("Calculator");
-        frame.setContentPane(calculator.mainPanel);
+
+        frame.setContentPane(new Calculator().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
