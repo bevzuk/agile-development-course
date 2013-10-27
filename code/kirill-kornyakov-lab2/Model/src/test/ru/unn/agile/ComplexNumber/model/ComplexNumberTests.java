@@ -2,7 +2,6 @@ package ru.unn.agile.ComplexNumber.model;
 
 import org.junit.Test;
 
-//import edu.semaster.demo.model.ComplexNumber;
 import static junit.framework.Assert.*;
 
 public class ComplexNumberTests

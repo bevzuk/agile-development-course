@@ -6,6 +6,7 @@
   - Clean Code: вставить пример копирования строк на С
   - Написать про Code Coverage
   - codeQuality sample in Gradle
+  - Try to declare name in Gradle
 
 # Лекции
   - Понятие антипаттерна <http://en.wikipedia.org/wiki/Anti-pattern#Software_design_anti-patterns>
